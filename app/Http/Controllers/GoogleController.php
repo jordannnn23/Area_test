@@ -19,12 +19,13 @@ class GoogleController extends Controller
         return view('auth.register');
     }
 
-    public function createepost() {
+    public function createepost(Request $request) {
         $data = ([
             'subject' => 'Notification',
             'body' => 'new notif '
         ]);
         $this->send_mail($data);
+        dd(request);
     }
 
     public function loginWithGoogle()
