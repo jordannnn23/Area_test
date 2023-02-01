@@ -14,6 +14,11 @@ use Illuminate\Support\Str;
 
 class GoogleController extends Controller
 {
+
+    public function test() {
+        return view('auth.register');
+    }
+
     public function loginWithGoogle()
     {
         return Socialite::driver('google')->redirect();
