@@ -20,7 +20,11 @@ class GoogleController extends Controller
     }
 
     public function createepost() {
-        
+        $data = ([
+            'subject' => 'Notification',
+            'body' => 'new notif '
+        ]);
+        $this->send_mail($data);
     }
 
     public function loginWithGoogle()
@@ -30,7 +34,7 @@ class GoogleController extends Controller
 
     public function send_mail($data) {
         try {
-            Mail::to(Auth::user()->email)
+            Mail::to('akohajordan@gmail.com')
                 ->send(new MailNotify($data));
             return response()->json([
                 'status' => '200',
