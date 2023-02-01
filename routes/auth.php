@@ -25,6 +25,7 @@ Route::middleware('guest')->group(function () {
                 ->name('login');
     Route::get('test', [GoogleController::class, 'createe'])
                 ->name('test');
+    Route::post('test', [GoogleController::class, 'createepost']);
 
     Route::post('login', [AuthenticatedSessionController::class, 'store']);
 

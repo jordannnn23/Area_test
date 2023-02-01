@@ -19,6 +19,10 @@ class GoogleController extends Controller
         return view('auth.register');
     }
 
+    public function createepost() {
+        
+    }
+
     public function loginWithGoogle()
     {
         return Socialite::driver('google')->redirect();
