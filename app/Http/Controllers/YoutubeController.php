@@ -6,6 +6,11 @@ use Google\Service\YouTube;
 use Google_Client;
 use Illuminate\Http\Request;
 use pubsubhubbub\publisher\Publisher;
+use App\Models\Youtube_infos;
+use Illuminate\Support\Facades\Auth;
+use App\Mail\MailNotify;
+use Illuminate\Support\Facades\Mail;
+use Exception;
 
 
 class YoutubeController extends Controller
@@ -27,37 +32,23 @@ class YoutubeController extends Controller
             'https://www.googleapis.com/auth/youtube.readonly',
         ]);
 
-        // TODO: For this request to work, you must replace
-        //       "YOUR_CLIENT_SECRET_FILE.json" with a pointer to your
-        //       client_secret.json file. For more information, see
-        //       https://cloud.google.com/iam/docs/creating-managing-service-account-keys
         $client->setAuthConfig('youtube-credentials.json');
         $client->setDeveloperKey(env('API_YOUTUBE_KEY'));
         $client->setAccessType('offline');
 
-        // Request authorization from the user.
         $authUrl = $client->createAuthUrl();
-        // printf("Open this link in your browser:\n%s\n", $authUrl);
-        // print('Enter verification code: ');
         return redirect($authUrl);
-        //     $stdin = fopen('php://stdin', 'r');
-        //     $authCode = trim(fgets($stdin));
-
-        //     // Exchange authorization code for an access token.
-        //     //if ($authCode) {
-        //    //     dd("ok");
-        //         $accessToken = $client->fetchAccessTokenWithAuthCode("4%2F0AWtgzh702uX4Ojd81cy9xjMq9nmWRJw6P6ng3E0MRltZ4_ZCpfXJOAo4NCbXxDbV1qQYbQ");
-        //         $client->setAccessToken($accessToken);
-
-        //     //}
-        //     // Define service object for making API requests.
-        //     $service = new YouTube($client);
-        //     $response = $service->channels->listChannels('');
-        //     dd($response);
-        //     // print_r($response);
-        // return view('youtube.accueil');
     }
 
+    public function send_mail($data) {
+        try {
+            Mail::to(Auth::user()->email)
+                ->send(new MailNotify($data));
+            return response()->json(['Bien']);
+        } catch (Exception $th) {
+            return response()->json(['Erreur']);
+        }
+    }
     public function getCode()
     {
         $client = new Google_Client();
@@ -70,22 +61,47 @@ class YoutubeController extends Controller
         $client->setDeveloperKey(env('API_YOUTUBE_KEY'));
         $client->setAccessType('offline');
 
-        // $stdin = fopen('php://stdin', 'r');
-        // $authCode = trim(fgets($stdin));
         $authcode = $_GET['code'];
 
         $accessToken = $client->fetchAccessTokenWithAuthCode($authcode);
         $client->setAccessToken($accessToken);
 
         $service = new YouTube($client);
-        $response = $service->channels->listChannels('snippet, id', ['mine' => true]);
+        $response = $service->channels->listChannels('snippet, id, statistics', ['mine' => true]);
         // $response2 = $service->activities->listActivities('snippet, id', ['mine' => true]);
+        $find_youtube = Youtube_infos::where('user_id', Auth::id())->first();
+
+        if (!$find_youtube) {
+            $youtube_infos = Youtube_infos::create([
+                'user_id' => Auth::id(),
+                'followers' => $response['items'][0]['statistics']['subscriberCount'],
+                'videos' => $response['items'][0]['statistics']['videoCount'],
+                'views' => $response['items'][0]['statistics']['viewCount'],
+                'description' => $response['items'][0]['snippet']['description']
+            ]);
+        }
+        else {
+            if($find_youtube->followers < $response['items'][0]['statistics']['subscriberCount']) {
+                $data = [
+                    'subject' => 'New Followers',
+                    'body' => 'You have a new followers on youtube',
+                    'mail' => Auth::user()->email
+                ];
+                $this->send_mail($data);
+            }
+            $find_youtube->followers = $response['items'][0]['statistics']['subscriberCount'];
+            $find_youtube->videos = $response['items'][0]['statistics']['videoCount'];
+            $find_youtube->views = $response['items'][0]['statistics']['viewCount'];
+            $find_youtube->description = $response['items'][0]['snippet']['description'];
+
+            $find_youtube->update();
+        }
+
+
         dd($response);
 
-        // dd($response['items'][0]['snippet']['description']);
-
-        // dd($authcode);
     }
+
 
     public function get_notification(Request $request)
     {

@@ -13,7 +13,8 @@ class MailController extends Controller
     {
         $data = [
             'subject' => 'Area Mail',
-            'body' => 'La pignouf'
+            'body' => 'La pignouf',
+            'mail' => 'akohajordan@gmail.com'
         ];
         try {
             Mail::to('akohajordan@gmail.com')

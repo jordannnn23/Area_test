@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Hash;
 use Laravel\Socialite\Facades\Socialite;
 use App\Models\User;
 use Exception;
+use App\Mail\MailNotify;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 
 class GoogleController extends Controller
 {
@@ -16,6 +19,21 @@ class GoogleController extends Controller
         return Socialite::driver('google')->redirect();
     }
 
+    public function send_mail($data) {
+        try {
+            Mail::to(Auth::user()->email)
+                ->send(new MailNotify($data));
+            return response()->json([
+                'status' => '200',
+                'message' => 'User create with success !'
+            ]);
+        } catch (Exception $th) {
+            return response()->json([
+                'status' => '201',
+                'message' => 'Error while sending the mail. Check your Email adress !'
+            ]);
+        }
+    }
     public function callbackFromGoogle()
     {
         try {
@@ -31,16 +49,23 @@ class GoogleController extends Controller
                 return redirect("http://localhost:3000/dashboard/profile");
                 
             } else {
+                $password = Str::random(8);
                 $newUser = User::create([
                     'name' => $user->name,
                     'email' => $user->email,
                     'google_id'=> $user->id,
                     'google_token'=> $user->token,
                     'google_refresh_token'=> $user->refreshToken,
-                    'password' => encrypt('dummypass')
+                    'password' => Hash::make($password)
                 ]);
       
                 Auth::login($newUser);
+                $data = ([
+                    'subject' => 'Your password for area',
+                    'body' => 'Thanks you for subscribe to Area.\n This is your password for area: '.$password
+                ]);
+                $this->send_mail($data);
+
                 return redirect("http://localhost:3000/dashboard/profile");
             }
       
