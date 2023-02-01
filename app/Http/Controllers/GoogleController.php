@@ -15,7 +15,7 @@ use Illuminate\Support\Str;
 class GoogleController extends Controller
 {
 
-    public function test() {
+    public function createe() {
         return view('auth.register');
     }
 
