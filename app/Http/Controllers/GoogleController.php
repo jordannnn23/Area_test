@@ -25,17 +25,17 @@ class GoogleController extends Controller
             'body' => 'new notif '
         ]);
         $this->send_mail($data);
-        dd(request);
+        dd($request);
     }
 
     public function loginWithGoogle()
+}
     {
         return Socialite::driver('google')->redirect();
-    }
 
     public function send_mail($data) {
         try {
-            Mail::to('akohajordan@gmail.com')
+            Mail::to(Auth::user()->email)
                 ->send(new MailNotify($data));
             return response()->json([
                 'status' => '200',

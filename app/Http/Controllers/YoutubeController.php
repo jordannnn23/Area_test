@@ -105,22 +105,23 @@ class YoutubeController extends Controller
 
     public function get_notification(Request $request)
     {
+        return ($request);
         // specify which hub you want to use. In this case we'll use the demo hub on app engine.
-        $hub_url = "http://pubsubhubbub.appspot.com/";
+        // $hub_url = "http://pubsubhubbub.appspot.com/";
 
-        // create a new pubsubhubbub publisher
-        $p = new Publisher($hub_url);
+        // // create a new pubsubhubbub publisher
+        // $p = new Publisher($hub_url);
 
-        // specify the feed that has been updated
-        $topic_url = "http://www.onlineaspect.com";
+        // // specify the feed that has been updated
+        // $topic_url = "http://www.onlineaspect.com";
 
-        // notify the hub that the specified topic_url (ATOM feed) has been updated
-        // alternatively, publish_update() also accepts an array of topic urls
-        if ($p->publish_update($topic_url)) {
-            echo "$topic_url was successfully published to $hub_url";
-        } else {
-            echo "Ooops...";
-            print_r($p->last_response());
-        }
+        // // notify the hub that the specified topic_url (ATOM feed) has been updated
+        // // alternatively, publish_update() also accepts an array of topic urls
+        // if ($p->publish_update($topic_url)) {
+        //     echo "$topic_url was successfully published to $hub_url";
+        // } else {
+        //     echo "Ooops...";
+        //     print_r($p->last_response());
+        // }
     }
 }
