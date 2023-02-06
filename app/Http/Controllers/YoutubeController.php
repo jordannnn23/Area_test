@@ -113,10 +113,8 @@ class YoutubeController extends Controller
             'mail' => 'akohajordan@gmail.com'
         ];
 
-        return response()->json([
-            'status' => '200',
-            'message' => 'Good'
-        ]);
+        $value = $_GET['hub_challenge'];
+        return response()->query($value);
         //$this->send_mail($data);
         //dd($request);
 
