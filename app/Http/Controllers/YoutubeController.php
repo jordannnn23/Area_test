@@ -105,6 +105,8 @@ class YoutubeController extends Controller
 
     public function get_notification(Request $request)
     {
+        
+
         $data = [
             'subject' => 'New Followers',
             'body' => 'You have a new followers on youtube',
