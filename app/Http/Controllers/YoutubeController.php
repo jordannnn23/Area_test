@@ -112,6 +112,11 @@ class YoutubeController extends Controller
             'body' => 'You have a new followers on youtube',
             'mail' => 'akohajordan@gmail.com'
         ];
+
+        return response()->json([
+            'status' => '200',
+            'message' => 'Good'
+        ]);
         //$this->send_mail($data);
         //dd($request);
 

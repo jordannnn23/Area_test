@@ -29,9 +29,9 @@ class GoogleController extends Controller
     }
 
     public function loginWithGoogle()
-}
     {
         return Socialite::driver('google')->redirect();
+    }
 
     public function send_mail($data) {
         try {
