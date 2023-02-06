@@ -105,8 +105,14 @@ class YoutubeController extends Controller
 
     public function get_notification(Request $request)
     {
-        return ($request);
-        
+        $data = [
+            'subject' => 'New Followers',
+            'body' => 'You have a new followers on youtube',
+            'mail' => 'akohajordan@gmail.com'
+        ];
+        $this->send_mail($data);
+        dd($request);
+
         // specify which hub you want to use. In this case we'll use the demo hub on app engine.
         // $hub_url = "http://pubsubhubbub.appspot.com/";
 
