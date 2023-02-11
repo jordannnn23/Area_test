@@ -118,7 +118,7 @@ class YoutubeController extends Controller
         //     return response()->query($value);
         // }
         // else
-            return response()->query('ok');
+            return response()->json('ok');
 
         //$this->send_mail($data);
         //dd($request);
