@@ -107,16 +107,16 @@ class YoutubeController extends Controller
     {
         
 
-        $data = [
-            'subject' => 'New Followers',
-            'mail' => 'akohajordan@gmail.com',
-            'body' => 'You have a new followers on youtube',
-        ];
-        $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ?
-         "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        // $data = [
+        //     'subject' => 'New Followers',
+        //     'mail' => 'akohajordan@gmail.com',
+        //     'body' => 'You have a new followers on youtube',
+        // ];
+        // $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ?
+        //  "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
-        echo $url;
-        $url_components = parse_url($url);
+        // // echo $url;
+        // $url_components = parse_url($url);
         
         // $parts = parse_url($url);
         // parse_str($parts['query'], $query);
@@ -126,6 +126,8 @@ class YoutubeController extends Controller
             // return response()->query($value);
             echo $value;
         }
+        else
+            echo 'HIIIII';
         // else
             // return response()->json('ok');
 
