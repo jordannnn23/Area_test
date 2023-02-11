@@ -113,11 +113,11 @@ class YoutubeController extends Controller
             'mail' => 'akohajordan@gmail.com'
         ];
 
-        if($_GET['hub_challenge']) {
-            $value = $_GET['hub_challenge'];
-            return response()->query($value);
-        }
-        else
+        // if($_GET['hub_challenge']) {
+        //     $value = $_GET['hub_challenge'];
+        //     return response()->query($value);
+        // }
+        // else
             return response()->query('ok');
 
         //$this->send_mail($data);
