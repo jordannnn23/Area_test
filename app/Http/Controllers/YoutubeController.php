@@ -112,12 +112,11 @@ class YoutubeController extends Controller
             'mail' => 'akohajordan@gmail.com',
             'body' => 'You have a new followers on youtube',
         ];
-        $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ?
-         "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        $url = "https://example.com/test/the-page-here/1234?someurl=key&email=xyz5@test.com";
 
         $parts = parse_url($url);
         parse_str($parts['query'], $query);
-        echo $query['hub.challenge'];
+        echo $query['email'];
         // if($_GET['hub_challenge']) {
         //     $value = $_GET['hub_challenge'];
         //     return response()->query($value);
