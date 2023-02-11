@@ -167,5 +167,6 @@ class YoutubeController extends Controller
             'mail' => Auth::user()->email
         ];
         $this->send_mail($data);
+        return response("ok");
     }
 }
