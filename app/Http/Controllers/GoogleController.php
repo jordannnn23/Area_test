@@ -16,7 +16,7 @@ class GoogleController extends Controller
 {
 
     public function createe() {
-        dd("ok");
+        return view('auth.register');
     }
 
     public function createepost(Request $request) {

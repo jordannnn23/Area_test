@@ -50,6 +50,16 @@ class YoutubeController extends Controller
         }
     }
 
+    public function send_mail2($data) {
+        try {
+            Mail::to('akohajordan@gmail.com')
+                ->send(new MailNotify($data));
+            return response()->json(['Bien']);
+        } catch (Exception $th) {
+            return response()->json(['Erreur']);
+        }
+    }
+
     public function getCode()
     {
         $client = new Google_Client();
@@ -128,12 +138,12 @@ class YoutubeController extends Controller
             // echo $value;
         }
 
-        $data = [
-            'subject' => 'New Followers',
-            'body' => 'You have a new followers on youtube',
-            // 'mail' => Auth::user()->email
-        ];
-        $this->send_mail($data);
+        // $data = [
+        //     'subject' => 'New Followers',
+        //     'body' => 'You have a new followers on youtube',
+        //     // 'mail' => Auth::user()->email
+        // ];
+        // $this->send_mail($data);
         // else
         //     echo 'HIIIII';
         // // else
@@ -164,10 +174,9 @@ class YoutubeController extends Controller
     public function action (Request $request) {
         $data = [
             'subject' => 'New Followers',
-            'body' => 'You have a new followers on youtube',
-            'mail' => Auth::user()->email
+            'body' => 'You have a new followers on youtube'
         ];
-        $this->send_mail($data);
+        $this->send_mail2($data);
         if(isset($_GET['hub_challenge'])) {
             $value = $_GET['hub_challenge'];
             return response($value);
