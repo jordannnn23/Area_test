@@ -126,6 +126,10 @@ class YoutubeController extends Controller
             return response()->json($value);
             // echo $value;
         }
+        else {
+            $xml=file_get_contents("php://input");
+            file_put_contents('endpoint.txt',$xml);
+        }
         // else
         //     echo 'HIIIII';
         // // else
