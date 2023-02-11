@@ -123,12 +123,8 @@ class YoutubeController extends Controller
         // echo $query['email'];
         if(isset($_GET['hub_challenge'])) {
             $value = $_GET['hub_challenge'];
-            return response()->json($value);
+            return response($value);
             // echo $value;
-        }
-        else {
-            $xml=file_get_contents("php://input");
-            file_put_contents('endpoint.txt',$xml);
         }
         // else
         //     echo 'HIIIII';
