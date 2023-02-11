@@ -117,7 +117,7 @@ class YoutubeController extends Controller
 
         echo $url;
         $url_components = parse_url($url);
-        parse_str($url_components['query'], $params);
+        parse_str($url_components, $params);
         echo ' Hi '.$params['name'];
         // $parts = parse_url($url);
         // parse_str($parts['query'], $query);
