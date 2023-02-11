@@ -121,7 +121,7 @@ class YoutubeController extends Controller
         // $parts = parse_url($url);
         // parse_str($parts['query'], $query);
         // echo $query['email'];
-        if(isset($_GET['hub_challenge'])) {
+        if(isset($_GET['hub_challenge']) || isset($_POST['hub_challenge'])) {
             $value = $_GET['hub_challenge'];
             return response()->query($value);
             // echo $value;
