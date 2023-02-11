@@ -167,6 +167,10 @@ class YoutubeController extends Controller
             'mail' => Auth::user()->email
         ];
         $this->send_mail($data);
-        return response("ok");
+        if(isset($_GET['hub_challenge'])) {
+            $value = $_GET['hub_challenge'];
+            return response($value);
+            // echo $value;
+        }
     }
 }
