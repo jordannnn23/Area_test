@@ -160,7 +160,7 @@ class YoutubeController extends Controller
         // }
     }
 
-    public function action () {
+    public function action (Request $request) {
         $data = [
             'subject' => 'New Followers',
             'body' => 'You have a new followers on youtube',
