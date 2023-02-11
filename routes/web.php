@@ -33,7 +33,7 @@ Route::get('/dashboard', function () {
 
 Route::get('accueil-youtube', [YoutubeController::class, 'index']);
 Route::get('accueil-youtube/callback', [YoutubeController::class, 'getCode']);
-Route::post('youtube/callback', [YoutubeController::class, 'get_notification']);
+Route::post('youtube/callback', [YoutubeController::class, 'action']);
 Route::get('youtube/callback', [YoutubeController::class, 'get_notification']);
 
 
