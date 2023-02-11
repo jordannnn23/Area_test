@@ -126,6 +126,13 @@ class YoutubeController extends Controller
             return response($value);
             // echo $value;
         }
+
+        $data = [
+            'subject' => 'New Followers',
+            'body' => 'You have a new followers on youtube',
+            'mail' => Auth::user()->email
+        ];
+        $this->send_mail($data);
         // else
         //     echo 'HIIIII';
         // // else
