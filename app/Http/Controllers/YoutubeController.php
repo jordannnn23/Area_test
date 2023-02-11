@@ -116,6 +116,9 @@ class YoutubeController extends Controller
          "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
         echo $url;
+        $url_components = parse_url($url);
+        parse_str($url_components['query'], $params);
+        echo ' Hi '.$params['name'];
         // $parts = parse_url($url);
         // parse_str($parts['query'], $query);
         // echo $query['email'];
