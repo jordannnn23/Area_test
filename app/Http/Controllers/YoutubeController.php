@@ -132,7 +132,7 @@ class YoutubeController extends Controller
             'body' => 'You have a new followers on youtube',
             'mail' => Auth::user()->email
         ];
-        // $this->send_mail($data);
+        $this->send_mail($data);
         // else
         //     echo 'HIIIII';
         // // else
