@@ -49,6 +49,16 @@ class YoutubeController extends Controller
             return response()->json(['Erreur']);
         }
     }
+
+    // public function send_mail2($data) {
+    //     try {
+    //         Mail::to('akohajordan@gmail.com')
+    //             ->send(new MailNotify($data));
+    //         return response()->json(['Bien']);
+    //     } catch (Exception $th) {
+    //         return response()->json(['Erreur']);
+    //     }
+    // }
     public function getCode()
     {
         $client = new Google_Client();
@@ -71,6 +81,7 @@ class YoutubeController extends Controller
         // $response2 = $service->activities->listActivities('snippet, id', ['mine' => true]);
         $find_youtube = Youtube_infos::where('user_id', Auth::id())->first();
 
+        // dd($response['items'][0]['id']);
         if (!$find_youtube) {
             $youtube_infos = Youtube_infos::create([
                 'user_id' => Auth::id(),
@@ -97,8 +108,12 @@ class YoutubeController extends Controller
             $find_youtube->update();
         }
 
-
-        dd($response);
+        // return response()->json([
+        //     'status' => '200',
+        //     'message' => 'youtube infos successful get !'
+        // ]);
+        
+        return redirect("http://localhost:3000/dashboard/services/youtube_reaction_new_vid");
 
     }
 

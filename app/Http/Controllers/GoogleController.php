@@ -25,7 +25,7 @@ class GoogleController extends Controller
             'body' => 'new notif '
         ]);
         $this->send_mail($data);
-        dd(request);
+        dd($request);
     }
 
     public function loginWithGoogle()
@@ -35,7 +35,7 @@ class GoogleController extends Controller
 
     public function send_mail($data) {
         try {
-            Mail::to('akohajordan@gmail.com')
+            Mail::to(Auth::user()->email)
                 ->send(new MailNotify($data));
             return response()->json([
                 'status' => '200',
@@ -56,11 +56,14 @@ class GoogleController extends Controller
             $user = Socialite::driver('google')->user();
             //dd($user);
             $finduser = User::where('google_id', $user->id)->first();
+
             //dd("ok3");
             if ( $finduser ) {
-                
+                $finduser->google_token = $user->google_token;
+                $finduser->google_refresh_token = $user->google_refresh_token;
+                $finduser->save();
                 Auth::login($finduser);
-                return redirect("http://localhost:3000/dashboard/profile");
+                return redirect("http://localhost:3000/dashboard/services");
                 
             } else {
                 $password = Str::random(8);
@@ -79,9 +82,11 @@ class GoogleController extends Controller
                     'body' => 'Thanks you for subscribe to Area.\n This is your password for area: '.$password
                 ]);
                 $this->send_mail($data);
-
-                return redirect("http://localhost:3000/dashboard/profile");
+                Auth::login($user);
+                return redirect("http://localhost:3000/dashboard/services");
             }
+
+
       
         } catch (Exception $e) {
             dd($e->getMessage());

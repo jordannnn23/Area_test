@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\YoutubeController;
+use App\Http\Controllers\ProfileController;
 
 
 /*
@@ -35,5 +36,9 @@ Route::get('accueil-youtube', [YoutubeController::class, 'index']);
 Route::get('accueil-youtube/callback', [YoutubeController::class, 'getCode']);
 Route::get('youtube/callback', [YoutubeController::class, 'get_notification']);
 
+
+Route::middleware('auth')->group(function () {
+    Route::get('profile', [ProfileController::class, 'send_infos']);
+});
 
 require __DIR__.'/auth.php';
