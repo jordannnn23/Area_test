@@ -6,7 +6,7 @@ use Google\Service\YouTube;
 use Google_Client;
 use Illuminate\Http\Request;
 use pubsubhubbub\publisher\Publisher;
-use \Pubsubhubbub\Subscriber\Subscriber;
+// use \Pubsubhubbub\Subscriber\Subscriber;
 use App\Models\Youtube_infos;
 use Illuminate\Support\Facades\Auth;
 use App\Mail\MailNotify;
@@ -188,18 +188,18 @@ class YoutubeController extends Controller
     }
 
     public function register() {
-        // $hub_url      = "http://pubsubhubbub.appspot.com";
-        // $callback_url = "put your own endpoint here";
+        $hub_url      = "http://pubsubhubbub.appspot.com";
+        $callback_url = "put your own endpoint here";
 
-        // // create a new subscriber
-        // $s = new Subscriber($hub_url, $callback_url);
+        // create a new subscriber
+        $s = new Subscriber($hub_url, $callback_url);
 
-        // $feed = "http://feeds.feedburner.com/onlineaspect";
+        $feed = "http://feeds.feedburner.com/onlineaspect";
 
-        // // subscribe to a feed
-        // $s->subscribe($feed);
+        // subscribe to a feed
+        $s->subscribe($feed);
 
-        // // unsubscribe from a feed
-        // $s->unsubscribe($feed);
+        // unsubscribe from a feed
+        $s->unsubscribe($feed);
     }
 }
