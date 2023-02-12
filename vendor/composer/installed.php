@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '6560a3efb502ef14c7a9c48db8828d9e5b557d72',
+        'reference' => '103571a08a981ff476a149c4328b1732808a9797',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -478,7 +478,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6560a3efb502ef14c7a9c48db8828d9e5b557d72',
+            'reference' => '103571a08a981ff476a149c4328b1732808a9797',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -911,15 +911,6 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'dev_requirement' => false,
-        ),
-        'pubsubhubbub/subscriber' => array(
-            'pretty_version' => '1.0.0',
-            'version' => '1.0.0.0',
-            'reference' => '31188fcae05f99a4f4cb08d6c33bd027e637c52b',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../pubsubhubbub/subscriber',
-            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'ralouphie/getallheaders' => array(

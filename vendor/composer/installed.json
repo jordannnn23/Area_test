@@ -5239,56 +5239,6 @@
             "install-path": "../pubsubhubbub/publisher"
         },
         {
-            "name": "pubsubhubbub/subscriber",
-            "version": "1.0.0",
-            "version_normalized": "1.0.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pubsubhubbub/php-subscriber.git",
-                "reference": "31188fcae05f99a4f4cb08d6c33bd027e637c52b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pubsubhubbub/php-subscriber/zipball/31188fcae05f99a4f4cb08d6c33bd027e637c52b",
-                "reference": "31188fcae05f99a4f4cb08d6c33bd027e637c52b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.0.0"
-            },
-            "time": "2015-10-16T19:35:14+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "classmap": [
-                    "subscriber.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "pubsubhubbub subscriber Contributors",
-                    "homepage": "https://github.com/pubsubhubbub/php-subscriber/contributors"
-                }
-            ],
-            "description": "pubsubhubbub implementation of subscriber.",
-            "homepage": "https://github.com/pubsubhubbub/php-subscriber",
-            "keywords": [
-                "data",
-                "feeds",
-                "pubsubhubbub",
-                "subscribers"
-            ],
-            "support": {
-                "issues": "https://github.com/pubsubhubbub/php-subscriber/issues",
-                "source": "https://github.com/pubsubhubbub/php-subscriber/tree/1.0.0"
-            },
-            "install-path": "../pubsubhubbub/subscriber"
-        },
-        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "version_normalized": "3.0.3.0",
