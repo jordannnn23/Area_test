@@ -6,6 +6,7 @@ use Google\Service\YouTube;
 use Google_Client;
 use Illuminate\Http\Request;
 use pubsubhubbub\publisher\Publisher;
+use \Pubsubhubbub\Subscriber\Subscriber;
 use App\Models\Youtube_infos;
 use Illuminate\Support\Facades\Auth;
 use App\Mail\MailNotify;
@@ -85,6 +86,7 @@ class YoutubeController extends Controller
         if (!$find_youtube) {
             $youtube_infos = Youtube_infos::create([
                 'user_id' => Auth::id(),
+                'channel_id' => $response['items'][0]['id'],
                 'followers' => $response['items'][0]['statistics']['subscriberCount'],
                 'videos' => $response['items'][0]['statistics']['videoCount'],
                 'views' => $response['items'][0]['statistics']['viewCount'],
@@ -104,6 +106,7 @@ class YoutubeController extends Controller
             $find_youtube->videos = $response['items'][0]['statistics']['videoCount'];
             $find_youtube->views = $response['items'][0]['statistics']['viewCount'];
             $find_youtube->description = $response['items'][0]['snippet']['description'];
+            $find_youtube->channel_id = $response['items'][0]['id'];
 
             $find_youtube->update();
         }
@@ -182,5 +185,21 @@ class YoutubeController extends Controller
             return response($value);
             // echo $value;
         }
+    }
+
+    public function register() {
+        // $hub_url      = "http://pubsubhubbub.appspot.com";
+        // $callback_url = "put your own endpoint here";
+
+        // // create a new subscriber
+        // $s = new Subscriber($hub_url, $callback_url);
+
+        // $feed = "http://feeds.feedburner.com/onlineaspect";
+
+        // // subscribe to a feed
+        // $s->subscribe($feed);
+
+        // // unsubscribe from a feed
+        // $s->unsubscribe($feed);
     }
 }
