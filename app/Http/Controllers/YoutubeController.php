@@ -175,6 +175,7 @@ class YoutubeController extends Controller
     }
 
     public function action (Request $request) {
+        $user_id = Auth::id();
         $data = [
             'subject' => 'New Followers',
             'body' => 'You have a new followers on youtube'
