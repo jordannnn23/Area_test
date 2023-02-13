@@ -195,7 +195,7 @@ class YoutubeController extends Controller
         // create a new subscriber
         $s = new Subscriber($hub_url, $callback_url);
 
-        $feed = "http://feeds.feedburner.com/onlineaspect";
+        $feed = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=UCZPpXVKHL-_SI0ySKMh-Z0A";
 
         // subscribe to a feed
         $s->subscribe($feed);
