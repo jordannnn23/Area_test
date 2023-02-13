@@ -83,7 +83,7 @@ class YoutubeController extends Controller
         $response = $service->channels->listChannels('snippet, id, statistics', ['mine' => true]);
         // $response2 = $service->activities->listActivities('snippet, id', ['mine' => true]);
         $find_youtube = Youtube_infos::where('user_id', Auth::id())->first();
-        $find_user = User::where('id', Auth::id())->first();
+        $find_user = User::where('_id', Auth::id())->first();
 
         if (!$find_youtube) {
             $youtube_infos = Youtube_infos::create([
@@ -177,7 +177,7 @@ class YoutubeController extends Controller
     }
 
     public function action (Request $request, $user_id) {
-        $find_user = User::where('id', $user_id)->first();
+        $find_user = User::where('_id', $user_id)->first();
         $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
         $message = "You have a new update on your youtube video.\n Go check the video https://youtube/channel/".$find_youtube->channel_id;
         $data = [
@@ -195,7 +195,7 @@ class YoutubeController extends Controller
     public function register($user_id) {
         // dd(Auth::user()->email);
         // $user_id = Auth::id();
-        $find_user = User::where('id', $user_id)->first();
+        $find_user = User::where('_id', $user_id)->first();
         $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
         $hub_url      = "http://pubsubhubbub.appspot.com";
         $callback_url = env('BACKEND_URL')."youtube/callback/".$find_user->id;
