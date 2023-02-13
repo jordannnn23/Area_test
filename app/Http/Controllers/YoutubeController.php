@@ -192,7 +192,7 @@ class YoutubeController extends Controller
         }
     }
 
-    public function register($user_id = null) {
+    public function register($user_id) {
         // dd(Auth::user()->email);
         // $user_id = Auth::id();
         $find_user = User::where('id', $user_id)->first();
