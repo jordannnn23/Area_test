@@ -196,6 +196,7 @@ class YoutubeController extends Controller
         // dd(Auth::user()->email);
         // $user_id = Auth::id();
         $find_user = User::where('_id', $user_id)->first();
+        dd($find_user);
         $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
         $hub_url      = "http://pubsubhubbub.appspot.com";
         $callback_url = env('BACKEND_URL')."youtube/callback/".$find_user->id;
