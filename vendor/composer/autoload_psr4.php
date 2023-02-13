@@ -67,6 +67,7 @@ return array(
     'Laravel\\Sanctum\\' => array($vendorDir . '/laravel/sanctum/src'),
     'Laravel\\Sail\\' => array($vendorDir . '/laravel/sail/src'),
     'Laravel\\Breeze\\' => array($vendorDir . '/laravel/breeze/src'),
+    'Laminas\\Xml\\' => array($vendorDir . '/laminas/laminas-xml/src'),
     'JnJairo\\Laravel\\Ngrok\\' => array($vendorDir . '/jn-jairo/laravel-ngrok/src'),
     'Jenssegers\\Mongodb\\' => array($vendorDir . '/jenssegers/mongodb/src'),
     'Jean85\\' => array($vendorDir . '/jean85/pretty-package-versions/src'),

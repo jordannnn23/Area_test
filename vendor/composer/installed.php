@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '0947140f3e5c4b9976dfc26fe2107baf31bad27f',
+        'reference' => '16dc7f119571776445fc92a1028ae5df9c3f4b85',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -457,6 +457,15 @@
                 0 => '*',
             ),
         ),
+        'laminas/laminas-xml' => array(
+            'pretty_version' => '1.5.0',
+            'version' => '1.5.0.0',
+            'reference' => '30a4da5a003971de8f54e6810e742fe375e5d5d3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laminas/laminas-xml',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'laravel/breeze' => array(
             'pretty_version' => 'v1.10.0',
             'version' => '1.10.0.0',
@@ -478,7 +487,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '0947140f3e5c4b9976dfc26fe2107baf31bad27f',
+            'reference' => '16dc7f119571776445fc92a1028ae5df9c3f4b85',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -574,6 +583,12 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'miniflux/picofeed' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '0.1.35',
+            ),
+        ),
         'mockery/mockery' => array(
             'pretty_version' => '1.5.1',
             'version' => '1.5.1.0',
@@ -667,6 +682,15 @@
             'reference' => '3d81e4309d2a927abbe66df935f4bb60082805ad',
             'type' => 'library',
             'install_path' => __DIR__ . '/../opis/closure',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'p3k/picofeed' => array(
+            'pretty_version' => 'v0.1.40',
+            'version' => '0.1.40.0',
+            'reference' => '356fd66d48779193b10ac28532cb4a4e11bb801c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../p3k/picofeed',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

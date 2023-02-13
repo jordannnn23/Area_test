@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Mail\MailNotify;
 use Illuminate\Support\Facades\Mail;
 use Exception;
+use PicoFeed\Reader\Reader;
+use PicoFeed\PicoFeedException;
 
 class YoutubeController extends Controller
 {
@@ -193,28 +195,40 @@ class YoutubeController extends Controller
     }
 
     public function register($user_id) {
-        // dd(Auth::user()->email);
-        // $user_id = Auth::id();
+
         $find_user = User::where('_id', $user_id)->first();
-        // dd($find_user);
+
         $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
         $hub_url      = "http://pubsubhubbub.appspot.com";
         $callback_url = env('BACKEND_URL')."youtube/callback/".$find_user->id;
-        // dd($callback_url);
-        // create a new subscriber
+
         $s = new Subscriber($hub_url, $callback_url);
 
         $feed = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=".$find_youtube->channel_id;
 
-        // subscribe to a feed
         $s->subscribe($feed);
 
-        //Publish
         $p = new Publisher($hub_url);
         $topic_url = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=".$find_user->id;
         $p->publish_update($topic_url);
+    }
 
-        // unsubscribe from a feed
-        // $s->unsubscribe($feed);
+    public function unregister($user_id) {
+
+        $find_user = User::where('_id', $user_id)->first();
+
+        $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
+        $hub_url      = "http://pubsubhubbub.appspot.com";
+        $callback_url = env('BACKEND_URL')."youtube/callback/".$find_user->id;
+
+        $s = new Subscriber($hub_url, $callback_url);
+
+        $feed = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=".$find_youtube->channel_id;
+
+        $s->unsubscribe($feed);
+
+        // $p = new Publisher($hub_url);
+        // $topic_url = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=".$find_user->id;
+        // $p->publish_update($topic_url);
     }
 }

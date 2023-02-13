@@ -15,6 +15,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.5",
+        "p3k/picofeed": "^0.1.40",
         "pubsubhubbub/publisher": "*",
         "pubsubhubbub/subscriber": "^1.0"
     },
