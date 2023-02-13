@@ -52,9 +52,9 @@ class YoutubeController extends Controller
         }
     }
 
-    public function send_mail2($data) {
+    public function send_mail2($data, $email) {
         try {
-            Mail::to('dylanyobo18@gmail.com')
+            Mail::to($email)
                 ->send(new MailNotify($data));
             return response()->json(['Bien']);
         } catch (Exception $th) {
@@ -114,7 +114,7 @@ class YoutubeController extends Controller
         }
 
 
-        dd($response);
+        // dd($response);
 
     }
 
@@ -176,13 +176,15 @@ class YoutubeController extends Controller
         // }
     }
 
-    public function action (Request $request) {
-        $user_id = Auth::id();
+    public function action (Request $request, $user_id = null) {
+        $find_user = User::where('id', $user_id)->first();
+        $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
+        $message = "You have a new update on your youtube video.\n Go check the video https://youtube/channel/".$find_youtube->channel_id;
         $data = [
             'subject' => 'Video Update',
-            'body' => 'You have a new update on your youtube video'
+            'body' => $message
         ];
-        $this->send_mail2($data);
+        $this->send_mail2($data, $find_user->email);
         if(isset($_GET['hub_challenge'])) {
             $value = $_GET['hub_challenge'];
             return response($value);
@@ -190,23 +192,25 @@ class YoutubeController extends Controller
         }
     }
 
-    public function register() {
+    public function register($user_id = null) {
         // dd(Auth::user()->email);
         // $user_id = Auth::id();
+        $find_user = User::where('id', $user_id)->first();
+        $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
         $hub_url      = "http://pubsubhubbub.appspot.com";
-        $callback_url = env('BACKEND_URL')."youtube/callback/".Auth::id();
+        $callback_url = env('BACKEND_URL')."youtube/callback/".$find_user->id;
         // dd($callback_url);
         // create a new subscriber
         $s = new Subscriber($hub_url, $callback_url);
 
-        $feed = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=UCZPpXVKHL-_SI0ySKMh-Z0A";
+        $feed = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=".$find_user->id;
 
         // subscribe to a feed
         $s->subscribe($feed);
 
         //Publish
         $p = new Publisher($hub_url);
-        $topic_url = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=UCZPpXVKHL-_SI0ySKMh-Z0A";
+        $topic_url = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=".$find_user->id;
         $p->publish_update($topic_url);
 
         // unsubscribe from a feed
