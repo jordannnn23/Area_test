@@ -201,6 +201,6 @@ class YoutubeController extends Controller
         $s->subscribe($feed);
 
         // unsubscribe from a feed
-        $s->unsubscribe($feed);
+        // $s->unsubscribe($feed);
     }
 }
