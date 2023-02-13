@@ -6,6 +6,7 @@ use Google\Service\YouTube;
 use Google_Client;
 use Illuminate\Http\Request;
 use pubsubhubbub\publisher\Publisher;
+use App\Models\User;
 // use pubsubhubbub\subscriber\Subscriber;
 use App\Http\Controllers\Subscriber;
 use App\Models\Youtube_infos;
@@ -82,6 +83,7 @@ class YoutubeController extends Controller
         $response = $service->channels->listChannels('snippet, id, statistics', ['mine' => true]);
         // $response2 = $service->activities->listActivities('snippet, id', ['mine' => true]);
         $find_youtube = Youtube_infos::where('user_id', Auth::id())->first();
+        $find_user = User::where('id', Auth::id())->first();
 
         if (!$find_youtube) {
             $youtube_infos = Youtube_infos::create([
