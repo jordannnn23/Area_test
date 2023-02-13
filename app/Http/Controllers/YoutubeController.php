@@ -196,7 +196,7 @@ class YoutubeController extends Controller
         // dd(Auth::user()->email);
         // $user_id = Auth::id();
         $find_user = User::where('_id', $user_id)->first();
-        dd($find_user);
+        // dd($find_user);
         $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
         $hub_url      = "http://pubsubhubbub.appspot.com";
         $callback_url = env('BACKEND_URL')."youtube/callback/".$find_user->id;
@@ -204,7 +204,7 @@ class YoutubeController extends Controller
         // create a new subscriber
         $s = new Subscriber($hub_url, $callback_url);
 
-        $feed = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=".$find_user->id;
+        $feed = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=".$find_youtube->channel_id;
 
         // subscribe to a feed
         $s->subscribe($feed);
