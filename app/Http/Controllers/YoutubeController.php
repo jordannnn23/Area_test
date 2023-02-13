@@ -53,7 +53,7 @@ class YoutubeController extends Controller
 
     public function send_mail2($data) {
         try {
-            Mail::to('akohajordan@gmail.com')
+            Mail::to('dylanyobo18@gmail.com')
                 ->send(new MailNotify($data));
             return response()->json(['Bien']);
         } catch (Exception $th) {
