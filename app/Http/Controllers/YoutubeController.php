@@ -177,8 +177,8 @@ class YoutubeController extends Controller
     public function action (Request $request) {
         $user_id = Auth::id();
         $data = [
-            'subject' => 'New Followers',
-            'body' => 'You have a new followers on youtube'
+            'subject' => 'Video Update',
+            'body' => 'You have a new update on your youtube video'
         ];
         $this->send_mail2($data);
         if(isset($_GET['hub_challenge'])) {
