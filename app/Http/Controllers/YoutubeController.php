@@ -176,7 +176,7 @@ class YoutubeController extends Controller
         // }
     }
 
-    public function action (Request $request, $user_id = null) {
+    public function action (Request $request, $user_id) {
         $find_user = User::where('id', $user_id)->first();
         $find_youtube = Youtube_infos::where('user_id', $user_id)->first();
         $message = "You have a new update on your youtube video.\n Go check the video https://youtube/channel/".$find_youtube->channel_id;
