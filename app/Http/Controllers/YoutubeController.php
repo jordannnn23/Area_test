@@ -189,7 +189,7 @@ class YoutubeController extends Controller
 
     public function register() {
         // dd(Auth::user()->email);
-        $user_id = Auth::id();
+        // $user_id = Auth::id();
         $hub_url      = "http://pubsubhubbub.appspot.com";
         $callback_url = env('BACKEND_URL')."youtube/callback/".Auth::id();
         dd($callback_url);
