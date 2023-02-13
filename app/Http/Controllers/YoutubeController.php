@@ -191,7 +191,7 @@ class YoutubeController extends Controller
         $user_id = Auth::id();
         $hub_url      = "http://pubsubhubbub.appspot.com";
         $callback_url = env('BACKEND_URL')."youtube/callback/".$user_id;
-
+        dd($callback_url);
         // create a new subscriber
         $s = new Subscriber($hub_url, $callback_url);
 
