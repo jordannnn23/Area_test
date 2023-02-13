@@ -201,6 +201,11 @@ class YoutubeController extends Controller
         // subscribe to a feed
         $s->subscribe($feed);
 
+        //Publish
+        $p = new Publisher($hub_url);
+        $topic_url = "https://www.youtube.com/xml/feeds/videos.xml?channel_id=UCZPpXVKHL-_SI0ySKMh-Z0A";
+        $p->publish_update($topic_url);
+
         // unsubscribe from a feed
         // $s->unsubscribe($feed);
     }
