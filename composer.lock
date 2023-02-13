@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f8bf8b59b2c13bbba6ca0a1cc255123",
+    "content-hash": "3a22e49bc1d49f344ea1894a07617b34",
     "packages": [
         {
             "name": "alaouy/youtube",
@@ -779,16 +779,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.286.0",
+            "version": "v0.287.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "4a00eb9803e01f97d96e49fd82dbb03802610def"
+                "reference": "ed58596d34272a5cd0dc2c0595d9a678b9834880"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/4a00eb9803e01f97d96e49fd82dbb03802610def",
-                "reference": "4a00eb9803e01f97d96e49fd82dbb03802610def",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/ed58596d34272a5cd0dc2c0595d9a678b9834880",
+                "reference": "ed58596d34272a5cd0dc2c0595d9a678b9834880",
                 "shasum": ""
             },
             "require": {
@@ -817,9 +817,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.286.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.287.0"
             },
-            "time": "2023-02-05T01:20:11+00:00"
+            "time": "2023-02-12T01:08:11+00:00"
         },
         {
             "name": "google/auth",
@@ -3641,6 +3641,53 @@
                 "source": "https://github.com/pubsubhubbub/php-publisher/tree/master"
             },
             "time": "2021-12-07T05:38:17+00:00"
+        },
+        {
+            "name": "pubsubhubbub/subscriber",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pubsubhubbub/php-subscriber.git",
+                "reference": "31188fcae05f99a4f4cb08d6c33bd027e637c52b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pubsubhubbub/php-subscriber/zipball/31188fcae05f99a4f4cb08d6c33bd027e637c52b",
+                "reference": "31188fcae05f99a4f4cb08d6c33bd027e637c52b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "subscriber.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "pubsubhubbub subscriber Contributors",
+                    "homepage": "https://github.com/pubsubhubbub/php-subscriber/contributors"
+                }
+            ],
+            "description": "pubsubhubbub implementation of subscriber.",
+            "homepage": "https://github.com/pubsubhubbub/php-subscriber",
+            "keywords": [
+                "data",
+                "feeds",
+                "pubsubhubbub",
+                "subscribers"
+            ],
+            "support": {
+                "issues": "https://github.com/pubsubhubbub/php-subscriber/issues",
+                "source": "https://github.com/pubsubhubbub/php-subscriber/tree/1.0.0"
+            },
+            "time": "2015-10-16T19:35:14+00:00"
         },
         {
             "name": "ralouphie/getallheaders",

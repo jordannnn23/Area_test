@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '103571a08a981ff476a149c4328b1732808a9797',
+        'reference' => '0947140f3e5c4b9976dfc26fe2107baf31bad27f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -176,9 +176,9 @@
             'dev_requirement' => false,
         ),
         'google/apiclient-services' => array(
-            'pretty_version' => 'v0.286.0',
-            'version' => '0.286.0.0',
-            'reference' => '4a00eb9803e01f97d96e49fd82dbb03802610def',
+            'pretty_version' => 'v0.287.0',
+            'version' => '0.287.0.0',
+            'reference' => 'ed58596d34272a5cd0dc2c0595d9a678b9834880',
             'type' => 'library',
             'install_path' => __DIR__ . '/../google/apiclient-services',
             'aliases' => array(),
@@ -478,7 +478,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '103571a08a981ff476a149c4328b1732808a9797',
+            'reference' => '0947140f3e5c4b9976dfc26fe2107baf31bad27f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -911,6 +911,15 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
+            'dev_requirement' => false,
+        ),
+        'pubsubhubbub/subscriber' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => '31188fcae05f99a4f4cb08d6c33bd027e637c52b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../pubsubhubbub/subscriber',
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'ralouphie/getallheaders' => array(

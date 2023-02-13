@@ -6,13 +6,13 @@ use Google\Service\YouTube;
 use Google_Client;
 use Illuminate\Http\Request;
 use pubsubhubbub\publisher\Publisher;
-// use \Pubsubhubbub\Subscriber\Subscriber;
+// use pubsubhubbub\subscriber\Subscriber;
+use App\Http\Controllers\Subscriber;
 use App\Models\Youtube_infos;
 use Illuminate\Support\Facades\Auth;
 use App\Mail\MailNotify;
 use Illuminate\Support\Facades\Mail;
 use Exception;
-
 
 class YoutubeController extends Controller
 {
@@ -120,7 +120,7 @@ class YoutubeController extends Controller
     public function get_notification(Request $request)
     {
         
-
+        $user_id = Auth::id();
         // $data = [
         //     'subject' => 'New Followers',
         //     'mail' => 'akohajordan@gmail.com',
@@ -188,8 +188,9 @@ class YoutubeController extends Controller
     }
 
     public function register() {
+        $user_id = Auth::id();
         $hub_url      = "http://pubsubhubbub.appspot.com";
-        $callback_url = "put your own endpoint here";
+        $callback_url = env('BACKEND_URL')."youtube/callback/".$user_id;
 
         // create a new subscriber
         $s = new Subscriber($hub_url, $callback_url);
