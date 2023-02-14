@@ -80,8 +80,7 @@ class GoogleController extends Controller
                 ]);
                 $this->send_mail($data);
             }
-
-                return redirect("http://localhost:3000/dashboard/profile");
+            return redirect("http://localhost:3000/dashboard/profile");
       
         } catch (Exception $e) {
             dd($e->getMessage());

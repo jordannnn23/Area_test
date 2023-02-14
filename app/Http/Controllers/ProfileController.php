@@ -11,7 +11,7 @@ class ProfileController extends Controller
     //
     public function index()
     {
-        $finduser = User::where('email', 'akohajordan@gmail.com')->first();
+        $finduser = User::where('email', Auth::user()->email)->first();
         // dd(Auth::user()->name);
         // dd(Auth::user());
         $data = [
