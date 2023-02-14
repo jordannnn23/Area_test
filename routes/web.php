@@ -38,7 +38,7 @@ Route::post('youtube/callback/{user_id}', [YoutubeController::class, 'action']);
 Route::get('youtube/callback/{user_id}', [YoutubeController::class, 'get_notification']);
 Route::get('youtube/register/{user_id}', [YoutubeController::class, 'register'])->name('youtube_register');
 Route::get('youtube/unregister/{user_id}', [YoutubeController::class, 'unregister'])->name('youtube_unregister');
-// Route::get('dashboard/profile', [ProfileController::class, 'index']);
+Route::get('dashboard/profile', [ProfileController::class, 'index']);
 
 
 require __DIR__.'/auth.php';
