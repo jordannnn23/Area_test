@@ -13,7 +13,7 @@ class ProfileController extends Controller
     {
         $finduser = User::where('email', Auth::user()->email)->first();
         // dd(Auth::user()->name);
-        dd(Auth::user());
+        // dd(Auth::user());
         $data = [
             'nom' => $finduser->name,
             'email' => $finduser->email
