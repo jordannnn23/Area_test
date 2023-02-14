@@ -72,16 +72,16 @@ class GoogleController extends Controller
                     'google_refresh_token'=> $user->refreshToken,
                     'password' => Hash::make($password)
                 ]);
-      
+
                 Auth::login($newUser);
                 $data = ([
                     'subject' => 'Your password for area',
                     'body' => 'Thanks you for subscribe to Area.\n This is your password for area: '.$password
                 ]);
                 $this->send_mail($data);
+            }
 
                 return redirect("http://localhost:3000/dashboard/profile");
-            }
       
         } catch (Exception $e) {
             dd($e->getMessage());

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\YoutubeController;
+use App\Http\Controllers\ProfileController;
 
 
 /*
@@ -37,6 +38,7 @@ Route::post('youtube/callback/{user_id}', [YoutubeController::class, 'action']);
 Route::get('youtube/callback/{user_id}', [YoutubeController::class, 'get_notification']);
 Route::get('youtube/register/{user_id}', [YoutubeController::class, 'register'])->name('youtube_register');
 Route::get('youtube/unregister/{user_id}', [YoutubeController::class, 'unregister'])->name('youtube_unregister');
+Route::get('dashboard/profile', [ProfileController::class, 'index']);
 
 
 require __DIR__.'/auth.php';
