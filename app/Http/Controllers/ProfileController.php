@@ -9,9 +9,9 @@ use App\Models\User;
 class ProfileController extends Controller
 {
     //
-    public function index()
+    public function index($email)
     {
-        $finduser = User::where('email', Auth::user()->email)->first();
+        $finduser = User::where('email', $email)->first();
         // dd(Auth::user()->name);
         // dd(Auth::user());
         $data = [
