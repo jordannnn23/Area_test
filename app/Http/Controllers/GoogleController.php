@@ -58,9 +58,9 @@ class GoogleController extends Controller
             $finduser = User::where('google_id', $user->id)->first();
             //dd("ok3");
             if ( $finduser ) {
-                
+                $email = $finduser->email;
                 Auth::login($finduser);
-                return redirect("http://localhost:3000/dashboard/profile");
+                return redirect("http://localhost:3000/dashboard/profile")->with('email');
                 
             } else {
                 $password = Str::random(8);
