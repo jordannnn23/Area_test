@@ -112,7 +112,7 @@ class GoogleController extends Controller
                 $this->send_mail($data);
             }
             return response()->json([
-                "message"=>"Customer already exist!",
+                "message"=>"Customer add with success",
                 "status"=>200,
             ]);
         } catch (Exception $e) {
