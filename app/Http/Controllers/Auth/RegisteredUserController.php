@@ -34,7 +34,6 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-        
         $finduser = User::where('email', $request->email)->first();
         
         if ( $finduser != null ) {

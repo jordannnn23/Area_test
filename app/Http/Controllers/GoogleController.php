@@ -48,19 +48,19 @@ class GoogleController extends Controller
             ]);
         }
     }
-    public function callbackFromGoogle()
+    public function callbackFromGoogle(Request $request)
     {
         try {
             
             //dd("ok2");
-            $user = Socialite::driver('google')->user();
+            $user = Socialite::driver('google')->user($request->token);
             //dd($user);
             $finduser = User::where('google_id', $user->id)->first();
             //dd("ok3");
             if ( $finduser ) {
                 $email = $finduser->email;
                 Auth::login($finduser);
-                return redirect("http://localhost:3000/dashboard/profile")->with('email');
+                return redirect()->away("http://localhost:3000/dashboard/profile")->with('email');
                 
             } else {
                 $password = Str::random(8);
