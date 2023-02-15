@@ -92,7 +92,7 @@ class GoogleController extends Controller
         try {
             $request->validate([
                 'name' => ['required', 'string', 'max:255'],
-                'email' => ['required|unique'],
+                'email' => ['required'],
             ]);
             $finduser = User::where('email', $request->email)->first();
             if ($finduser) {
