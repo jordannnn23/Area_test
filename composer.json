@@ -17,7 +17,8 @@
         "laravel/tinker": "^2.5",
         "p3k/picofeed": "^0.1.40",
         "pubsubhubbub/publisher": "*",
-        "pubsubhubbub/subscriber": "^1.0"
+        "pubsubhubbub/subscriber": "^1.0",
+        "socialiteproviders/google": "^4.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

@@ -68,6 +68,9 @@ Route::get('/auth/google/redirect', [GoogleController::class, 'loginWithGoogle']
  
 Route::get('/auth/google/callback', [GoogleController::class, 'callbackFromGoogle'])->name('redirect');
 
+Route::post('/auth/google', [GoogleController::class, 'storeInfos'])->name('store_infos');
+
 Route::get('/auth/github/redirect', [GithubController::class, 'loginWithGithub'])->name('loginGithub');
  
 Route::get('/auth/github/callback', [GithubController::class, 'callbackFromGithub'])->name('redirectGithub');
+

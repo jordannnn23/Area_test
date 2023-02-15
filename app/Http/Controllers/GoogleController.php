@@ -53,7 +53,7 @@ class GoogleController extends Controller
         try {
             
             //dd("ok2");
-            $user = Socialite::driver('google')->user($request->token);
+            $user = Socialite::driver('google')->user();
             //dd($user);
             $finduser = User::where('google_id', $user->id)->first();
             //dd("ok3");
@@ -86,5 +86,38 @@ class GoogleController extends Controller
             dd($e->getMessage());
             abort(500);
         }
-    }   
+    }
+
+    public function storeInfos(Request $request) {
+        try {
+            $finduser = User::where('email', $request->email)->first();
+            if ($finduser) {
+                return response()->json([
+                    "message"=>"Customer already exist!",
+                    "status"=>201,
+                ]);
+            }
+            else {
+                $password = Str::random(8);
+                $newUser = User::create([
+                    'name' => $request->name,
+                    'email' => $request->email,
+                    'google_id'=> $request->id,
+                    'password' => Hash::make($password)
+                ]);
+                $data = ([
+                    'subject' => 'Your password for area',
+                    'body' => 'Thanks you for subscribe to Area.\n This is your password for area: '.$password
+                ]);
+                $this->send_mail($data);
+            }
+            return response()->json([
+                "message"=>"Customer already exist!",
+                "status"=>200,
+            ]);
+        } catch (Exception $e) {
+            dd($e->getMessage());
+            abort(500);
+        }
+    }
 }
