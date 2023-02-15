@@ -90,6 +90,10 @@ class GoogleController extends Controller
 
     public function storeInfos(Request $request) {
         try {
+            $request->validate([
+                'name' => ['required', 'string', 'max:255'],
+                'email' => ['required|unique'],
+            ]);
             $finduser = User::where('email', $request->email)->first();
             if ($finduser) {
                 return response()->json([
