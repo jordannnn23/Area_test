@@ -67,6 +67,7 @@ class YoutubeController extends Controller
         $client->setAuthConfig('youtube-credentials.json');
         $client->setDeveloperKey(env('API_YOUTUBE_KEY'));
         $client->setAccessType('offline');
+        $client->setApprovalPrompt('force');
 
         $authcode = $_GET['code'];
 
