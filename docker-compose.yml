@@ -1,0 +1,12 @@
+version: "2"
+services:
+  web_server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - /Backend_service
+    ports:
+      - "8080:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
