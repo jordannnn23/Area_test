@@ -31,7 +31,7 @@ class YoutubeController extends Controller
         $client->setAuthConfig('youtube-credentials.json');
         $client->setDeveloperKey(env('API_YOUTUBE_KEY'));
         $client->setAccessType('offline');
-        $client->setApprovalPrompt('consent');
+        $client->setApprovalPrompt('force');
         $client->setIncludeGrantedScopes(true);
 
         $authUrl = $client->createAuthUrl();
@@ -70,7 +70,7 @@ class YoutubeController extends Controller
         $client->setDeveloperKey(env('API_YOUTUBE_KEY'));
         $client->setAccessType('offline');
         // $client->setApprovalPrompt('force');
-        $client->setApprovalPrompt('consent');
+        $client->setApprovalPrompt('force');
         $client->setIncludeGrantedScopes(true);
 
         $authcode = $_GET['code'];
