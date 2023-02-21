@@ -22,14 +22,6 @@ class YoutubeController extends Controller
     //
     public function index()
     {
-        // $client = new Google_Client();
-        // $client->setDeveloperKey(env('API_YOUTUBE_KEY'));
-
-        // $youtube = new YouTube($client);
-
-        // $response = $youtube->search->listSearch('id, snippet', ['q' => 'Giannis Antetokounmpo',
-        // 'order' => 'relevance', 'maxResults' => 10, 'type' => 'video']);
-
         $client = new Google_Client();
         $client->setApplicationName('API code samples');
         $client->setScopes([
@@ -76,15 +68,18 @@ class YoutubeController extends Controller
         $client->setDeveloperKey(env('API_YOUTUBE_KEY'));
         $client->setAccessType('offline');
 
-        // $authcode = $_GET['code'];
+        $authcode = $_GET['code'];
 
-        $accessToken = "ya29.a0AVvZVsoz7A4tahBr4-sNJpZ1yPk9UTwmzMQpl5Dx5dhlkqYUFj2EZcAhbANcZKtp2jzbsoKl_5wHolAO783LBuPZFqp_w0SWADbgt4DIz3H-VS93iRb8OTe-Jjhra2IONGG0PN9rfL166Dvv_zYh6BuUkAD0zAaCgYKAVQSARESFQGbdwaI46pPeXVc4U-uruKcXvVB2A0165";
-        // dd($accessToken);
+        if ($client->isAccessTokenExpired()) {
+            $accessToken = $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
+            // file_put_contents($credentialsPath, json_encode($client->getAccessToken()));
+        }
+        else
+            $accessToken = $client->fetchAccessTokenWithAuthCode($authcode);
+
         $client->setAccessToken($accessToken);
-
         $service = new YouTube($client);
         $response = $service->channels->listChannels('snippet, id, statistics', ['mine' => true]);
-        // $response2 = $service->activities->listActivities('snippet, id', ['mine' => true]);
         $find_youtube = Youtube_infos::where('user_id', Auth::id())->first();
         $find_user = User::where('_id', Auth::id())->first();
 
@@ -115,10 +110,6 @@ class YoutubeController extends Controller
 
             $find_youtube->update();
         }
-
-
-        // dd($response);
-
     }
 
 
@@ -126,20 +117,6 @@ class YoutubeController extends Controller
     {
         
         $user_id = Auth::id();
-        // $data = [
-        //     'subject' => 'New Followers',
-        //     'mail' => 'akohajordan@gmail.com',
-        //     'body' => 'You have a new followers on youtube',
-        // ];
-        // $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ?
-        //  "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
-        // // echo $url;
-        // $url_components = parse_url($url);
-        
-        // $parts = parse_url($url);
-        // parse_str($parts['query'], $query);
-        // echo $query['email'];
         if(isset($_GET['hub_challenge'])) {
             $value = $_GET['hub_challenge'];
             return response($value);
@@ -185,7 +162,7 @@ class YoutubeController extends Controller
         $message = "You have a new update on your youtube video.\n Go check the video https://youtube.com/channel/".$find_youtube->channel_id;
         $data = [
             'subject' => 'Video Update',
-            'body' => $message
+            'body' => $request
         ];
         $this->send_mail2($data, $find_user->email);
         if(isset($_GET['hub_challenge'])) {

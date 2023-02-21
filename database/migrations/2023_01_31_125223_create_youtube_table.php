@@ -22,6 +22,8 @@ class CreateYoutubeTable extends Migration
             $table->unsignedBigInteger('videos')->nullable();
             $table->unsignedBigInteger('views')->nullable();
             $table->string('description')->nullable();
+            $table->string('accessToken')->nullable();
+            $table->string('refreshToken')->nullable();
             $table->timestamps();
         });
     }

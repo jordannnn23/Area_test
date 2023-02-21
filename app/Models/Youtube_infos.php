@@ -15,6 +15,8 @@ class Youtube_infos extends Model
         'followers',
         'videos',
         'views',
-        'description'
+        'description',
+        'accessToken',
+        'refreshToken'
     ];
 }
