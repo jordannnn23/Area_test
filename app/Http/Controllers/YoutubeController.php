@@ -79,7 +79,7 @@ class YoutubeController extends Controller
         // $authcode = $_GET['code'];
 
         $accessToken = "ya29.a0AVvZVsoz7A4tahBr4-sNJpZ1yPk9UTwmzMQpl5Dx5dhlkqYUFj2EZcAhbANcZKtp2jzbsoKl_5wHolAO783LBuPZFqp_w0SWADbgt4DIz3H-VS93iRb8OTe-Jjhra2IONGG0PN9rfL166Dvv_zYh6BuUkAD0zAaCgYKAVQSARESFQGbdwaI46pPeXVc4U-uruKcXvVB2A0165";
-        dd($accessToken);
+        // dd($accessToken);
         $client->setAccessToken($accessToken);
 
         $service = new YouTube($client);
