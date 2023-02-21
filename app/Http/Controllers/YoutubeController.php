@@ -163,7 +163,7 @@ class YoutubeController extends Controller
         $message = "You have a new update on your youtube video.\n Go check the video https://youtube.com/channel/".$find_youtube->channel_id;
         $data = [
             'subject' => 'Video Update',
-            'body' => $request->body
+            'body' => $request->query->all()
         ];
         $this->send_mail2($data, $find_user->email);
         if(isset($_GET['hub_challenge'])) {
