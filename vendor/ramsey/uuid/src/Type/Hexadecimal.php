@@ -17,15 +17,8 @@ namespace Ramsey\Uuid\Type;
 use Ramsey\Uuid\Exception\InvalidArgumentException;
 use ValueError;
 
-<<<<<<< HEAD
-use function ctype_xdigit;
-use function sprintf;
-use function strpos;
-use function strtolower;
-=======
 use function preg_match;
 use function sprintf;
->>>>>>> develop
 use function substr;
 
 /**
@@ -39,31 +32,6 @@ use function substr;
  */
 final class Hexadecimal implements TypeInterface
 {
-<<<<<<< HEAD
-    /**
-     * @var string
-     */
-    private $value;
-
-    /**
-     * @param string $value The hexadecimal value to store
-     */
-    public function __construct(string $value)
-    {
-        $value = strtolower($value);
-
-        if (strpos($value, '0x') === 0) {
-            $value = substr($value, 2);
-        }
-
-        if (!ctype_xdigit($value)) {
-            throw new InvalidArgumentException(
-                'Value must be a hexadecimal number'
-            );
-        }
-
-        $this->value = $value;
-=======
     private string $value;
 
     /**
@@ -72,7 +40,6 @@ final class Hexadecimal implements TypeInterface
     public function __construct(self | string $value)
     {
         $this->value = $value instanceof self ? (string) $value : $this->prepareValue($value);
->>>>>>> develop
     }
 
     public function toString(): string
@@ -106,20 +73,6 @@ final class Hexadecimal implements TypeInterface
     /**
      * Constructs the object from a serialized string representation
      *
-<<<<<<< HEAD
-     * @param string $serialized The serialized string representation of the object
-     *
-     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
-     * @psalm-suppress UnusedMethodCall
-     */
-    public function unserialize($serialized): void
-    {
-        $this->__construct($serialized);
-    }
-
-    /**
-     * @param array{string: string} $data
-=======
      * @param string $data The serialized string representation of the object
      *
      * @psalm-suppress UnusedMethodCall
@@ -131,7 +84,6 @@ final class Hexadecimal implements TypeInterface
 
     /**
      * @param array{string?: string} $data
->>>>>>> develop
      */
     public function __unserialize(array $data): void
     {
@@ -143,8 +95,6 @@ final class Hexadecimal implements TypeInterface
 
         $this->unserialize($data['string']);
     }
-<<<<<<< HEAD
-=======
 
     private function prepareValue(string $value): string
     {
@@ -162,5 +112,4 @@ final class Hexadecimal implements TypeInterface
 
         return $value;
     }
->>>>>>> develop
 }

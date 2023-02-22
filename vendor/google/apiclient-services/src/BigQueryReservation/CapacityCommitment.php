@@ -27,19 +27,10 @@ class CapacityCommitment extends \Google\Model
    * @var string
    */
   public $commitmentStartTime;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   /**
    * @var string
    */
   public $edition;
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   protected $failureStatusType = Status::class;
   protected $failureStatusDataType = '';
   public $failureStatus;
@@ -97,11 +88,6 @@ class CapacityCommitment extends \Google\Model
     return $this->commitmentStartTime;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @param string
    */
   public function setEdition($edition)
@@ -116,10 +102,6 @@ class CapacityCommitment extends \Google\Model
     return $this->edition;
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @param Status
    */
   public function setFailureStatus(Status $failureStatus)

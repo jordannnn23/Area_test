@@ -22,14 +22,7 @@ class GoogleIdentityStsV1ExchangeOauthTokenResponse extends \Google\Model
   protected $internal_gapi_mappings = [
         "accessToken" => "access_token",
         "expiresIn" => "expires_in",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         "idToken" => "id_token",
->>>>>>> develop
-=======
-        "idToken" => "id_token",
->>>>>>> develop
         "refreshToken" => "refresh_token",
         "tokenType" => "token_type",
   ];
@@ -44,19 +37,10 @@ class GoogleIdentityStsV1ExchangeOauthTokenResponse extends \Google\Model
   /**
    * @var string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   public $idToken;
   /**
    * @var string
    */
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   public $refreshToken;
   /**
    * @var string
@@ -98,11 +82,6 @@ class GoogleIdentityStsV1ExchangeOauthTokenResponse extends \Google\Model
   /**
    * @param string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   public function setIdToken($idToken)
   {
     $this->idToken = $idToken;
@@ -117,10 +96,6 @@ class GoogleIdentityStsV1ExchangeOauthTokenResponse extends \Google\Model
   /**
    * @param string
    */
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   public function setRefreshToken($refreshToken)
   {
     $this->refreshToken = $refreshToken;

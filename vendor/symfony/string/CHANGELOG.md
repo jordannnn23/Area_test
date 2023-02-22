@@ -1,14 +1,11 @@
 CHANGELOG
 =========
 
-<<<<<<< HEAD
-=======
 6.2
 ---
 
   * Add support for emoji in `AsciiSlugger`
 
->>>>>>> develop
 5.4
 ---
 

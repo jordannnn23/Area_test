@@ -34,11 +34,7 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
      * @param mixed $subject   The subject of the event, usually an object or a callable
      * @param array $arguments Arguments to store in the event
      */
-<<<<<<< HEAD
-    public function __construct($subject = null, array $arguments = [])
-=======
     public function __construct(mixed $subject = null, array $arguments = [])
->>>>>>> develop
     {
         $this->subject = $subject;
         $this->arguments = $arguments;
@@ -46,15 +42,8 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
 
     /**
      * Getter for subject property.
-<<<<<<< HEAD
-     *
-     * @return mixed
-     */
-    public function getSubject()
-=======
      */
     public function getSubject(): mixed
->>>>>>> develop
     {
         return $this->subject;
     }
@@ -62,17 +51,9 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
     /**
      * Get argument by key.
      *
-<<<<<<< HEAD
-     * @return mixed
-     *
-     * @throws \InvalidArgumentException if key is not found
-     */
-    public function getArgument(string $key)
-=======
      * @throws \InvalidArgumentException if key is not found
      */
     public function getArgument(string $key): mixed
->>>>>>> develop
     {
         if ($this->hasArgument($key)) {
             return $this->arguments[$key];
@@ -84,17 +65,9 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
     /**
      * Add argument to event.
      *
-<<<<<<< HEAD
-     * @param mixed $value Value
-     *
-     * @return $this
-     */
-    public function setArgument(string $key, $value)
-=======
      * @return $this
      */
     public function setArgument(string $key, mixed $value): static
->>>>>>> develop
     {
         $this->arguments[$key] = $value;
 
@@ -103,15 +76,8 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
 
     /**
      * Getter for all arguments.
-<<<<<<< HEAD
-     *
-     * @return array
-     */
-    public function getArguments()
-=======
      */
     public function getArguments(): array
->>>>>>> develop
     {
         return $this->arguments;
     }
@@ -121,11 +87,7 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
      *
      * @return $this
      */
-<<<<<<< HEAD
-    public function setArguments(array $args = [])
-=======
     public function setArguments(array $args = []): static
->>>>>>> develop
     {
         $this->arguments = $args;
 
@@ -134,15 +96,8 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
 
     /**
      * Has argument.
-<<<<<<< HEAD
-     *
-     * @return bool
-     */
-    public function hasArgument(string $key)
-=======
      */
     public function hasArgument(string $key): bool
->>>>>>> develop
     {
         return \array_key_exists($key, $this->arguments);
     }
@@ -152,18 +107,9 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
      *
      * @param string $key Array key
      *
-<<<<<<< HEAD
-     * @return mixed
-     *
-     * @throws \InvalidArgumentException if key does not exist in $this->args
-     */
-    #[\ReturnTypeWillChange]
-    public function offsetGet($key)
-=======
      * @throws \InvalidArgumentException if key does not exist in $this->args
      */
     public function offsetGet(mixed $key): mixed
->>>>>>> develop
     {
         return $this->getArgument($key);
     }
@@ -171,19 +117,9 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
     /**
      * ArrayAccess for argument setter.
      *
-<<<<<<< HEAD
-     * @param string $key   Array key to set
-     * @param mixed  $value Value
-     *
-     * @return void
-     */
-    #[\ReturnTypeWillChange]
-    public function offsetSet($key, $value)
-=======
      * @param string $key Array key to set
      */
     public function offsetSet(mixed $key, mixed $value): void
->>>>>>> develop
     {
         $this->setArgument($key, $value);
     }
@@ -192,16 +128,8 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
      * ArrayAccess for unset argument.
      *
      * @param string $key Array key
-<<<<<<< HEAD
-     *
-     * @return void
-     */
-    #[\ReturnTypeWillChange]
-    public function offsetUnset($key)
-=======
      */
     public function offsetUnset(mixed $key): void
->>>>>>> develop
     {
         if ($this->hasArgument($key)) {
             unset($this->arguments[$key]);
@@ -212,16 +140,8 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
      * ArrayAccess has argument.
      *
      * @param string $key Array key
-<<<<<<< HEAD
-     *
-     * @return bool
-     */
-    #[\ReturnTypeWillChange]
-    public function offsetExists($key)
-=======
      */
     public function offsetExists(mixed $key): bool
->>>>>>> develop
     {
         return $this->hasArgument($key);
     }
@@ -231,12 +151,7 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
      *
      * @return \ArrayIterator<string, mixed>
      */
-<<<<<<< HEAD
-    #[\ReturnTypeWillChange]
-    public function getIterator()
-=======
     public function getIterator(): \ArrayIterator
->>>>>>> develop
     {
         return new \ArrayIterator($this->arguments);
     }

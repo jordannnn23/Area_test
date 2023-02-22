@@ -58,19 +58,10 @@ class IPAllocationPolicy extends \Google\Model
   /**
    * @var string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   public $servicesIpv6CidrBlock;
   /**
    * @var string
    */
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   public $servicesSecondaryRangeName;
   /**
    * @var string
@@ -79,19 +70,10 @@ class IPAllocationPolicy extends \Google\Model
   /**
    * @var string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   public $subnetIpv6CidrBlock;
   /**
    * @var string
    */
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   public $subnetworkName;
   /**
    * @var string
@@ -235,11 +217,6 @@ class IPAllocationPolicy extends \Google\Model
   /**
    * @param string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   public function setServicesIpv6CidrBlock($servicesIpv6CidrBlock)
   {
     $this->servicesIpv6CidrBlock = $servicesIpv6CidrBlock;
@@ -254,10 +231,6 @@ class IPAllocationPolicy extends \Google\Model
   /**
    * @param string
    */
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   public function setServicesSecondaryRangeName($servicesSecondaryRangeName)
   {
     $this->servicesSecondaryRangeName = $servicesSecondaryRangeName;
@@ -286,11 +259,6 @@ class IPAllocationPolicy extends \Google\Model
   /**
    * @param string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   public function setSubnetIpv6CidrBlock($subnetIpv6CidrBlock)
   {
     $this->subnetIpv6CidrBlock = $subnetIpv6CidrBlock;
@@ -305,10 +273,6 @@ class IPAllocationPolicy extends \Google\Model
   /**
    * @param string
    */
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   public function setSubnetworkName($subnetworkName)
   {
     $this->subnetworkName = $subnetworkName;

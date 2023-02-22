@@ -16,33 +16,21 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
-        "php": ">=7.2.5"
-=======
         "php": ">=8.1"
->>>>>>> develop
     },
     "suggest": {
         "symfony/translation-implementation": ""
     },
     "autoload": {
-<<<<<<< HEAD
-        "psr-4": { "Symfony\\Contracts\\Translation\\": "" }
-=======
         "psr-4": { "Symfony\\Contracts\\Translation\\": "" },
         "exclude-from-classmap": [
             "/Test/"
         ]
->>>>>>> develop
     },
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
-<<<<<<< HEAD
-            "dev-main": "2.5-dev"
-=======
             "dev-main": "3.3-dev"
->>>>>>> develop
         },
         "thanks": {
             "name": "symfony/contracts",

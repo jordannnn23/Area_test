@@ -24,14 +24,7 @@ namespace Ramsey\Collection;
  */
 abstract class AbstractSet extends AbstractCollection
 {
-<<<<<<< HEAD
-    /**
-     * @inheritDoc
-     */
-    public function add($element): bool
-=======
     public function add(mixed $element): bool
->>>>>>> develop
     {
         if ($this->contains($element)) {
             return false;
@@ -40,14 +33,7 @@ abstract class AbstractSet extends AbstractCollection
         return parent::add($element);
     }
 
-<<<<<<< HEAD
-    /**
-     * @inheritDoc
-     */
-    public function offsetSet($offset, $value): void
-=======
     public function offsetSet(mixed $offset, mixed $value): void
->>>>>>> develop
     {
         if ($this->contains($value)) {
             return;

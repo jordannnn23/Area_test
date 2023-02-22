@@ -17,40 +17,12 @@
 
 namespace Google\Service\Contentwarehouse;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-class RepositoryWebrefAnnotationDebugInfo extends \Google\Collection
-{
-  protected $collection_key = 'infoString';
-=======
 class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
 {
->>>>>>> develop
-=======
-class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
-{
->>>>>>> develop
   /**
    * @var string
    */
   public $description;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  /**
-   * @var string[]
-   */
-  public $infoString;
-  protected $rawClassificationType = EntitySignalsEntityClassification::class;
-  protected $rawClassificationDataType = '';
-  public $rawClassification;
-  /**
-   * @var string
-   */
-  public $url;
-=======
->>>>>>> develop
-=======
->>>>>>> develop
 
   /**
    * @param string
@@ -66,54 +38,6 @@ class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
   {
     return $this->description;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  /**
-   * @param string[]
-   */
-  public function setInfoString($infoString)
-  {
-    $this->infoString = $infoString;
-  }
-  /**
-   * @return string[]
-   */
-  public function getInfoString()
-  {
-    return $this->infoString;
-  }
-  /**
-   * @param EntitySignalsEntityClassification
-   */
-  public function setRawClassification(EntitySignalsEntityClassification $rawClassification)
-  {
-    $this->rawClassification = $rawClassification;
-  }
-  /**
-   * @return EntitySignalsEntityClassification
-   */
-  public function getRawClassification()
-  {
-    return $this->rawClassification;
-  }
-  /**
-   * @param string
-   */
-  public function setUrl($url)
-  {
-    $this->url = $url;
-  }
-  /**
-   * @return string
-   */
-  public function getUrl()
-  {
-    return $this->url;
-  }
-=======
->>>>>>> develop
-=======
->>>>>>> develop
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

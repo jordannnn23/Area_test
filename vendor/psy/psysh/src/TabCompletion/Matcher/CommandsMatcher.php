@@ -3,11 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
-<<<<<<< HEAD
- * (c) 2012-2022 Justin Hileman
-=======
  * (c) 2012-2023 Justin Hileman
->>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -59,11 +55,6 @@ class CommandsMatcher extends AbstractMatcher
      * Check whether a command $name is defined.
      *
      * @param string $name
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     protected function isCommand(string $name): bool
     {
@@ -74,11 +65,6 @@ class CommandsMatcher extends AbstractMatcher
      * Check whether input matches a defined command.
      *
      * @param string $name
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     protected function matchCommand(string $name): bool
     {

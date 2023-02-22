@@ -25,23 +25,13 @@ use Symfony\Component\VarDumper\Cloner\Data;
  */
 class TranslationDataCollector extends DataCollector implements LateDataCollectorInterface
 {
-<<<<<<< HEAD
-    private $translator;
-=======
     private DataCollectorTranslator $translator;
->>>>>>> develop
 
     public function __construct(DataCollectorTranslator $translator)
     {
         $this->translator = $translator;
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function lateCollect()
     {
         $messages = $this->sanitizeCollectedMessages($this->translator->getCollectedMessages());
@@ -52,37 +42,18 @@ class TranslationDataCollector extends DataCollector implements LateDataCollecto
         $this->data = $this->cloneVar($this->data);
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function collect(Request $request, Response $response, \Throwable $exception = null)
     {
         $this->data['locale'] = $this->translator->getLocale();
         $this->data['fallback_locales'] = $this->translator->getFallbackLocales();
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function reset()
     {
         $this->data = [];
     }
 
-<<<<<<< HEAD
-    /**
-     * @return array|Data
-     */
-    public function getMessages()
-=======
     public function getMessages(): array|Data
->>>>>>> develop
     {
         return $this->data['messages'] ?? [];
     }
@@ -115,12 +86,6 @@ class TranslationDataCollector extends DataCollector implements LateDataCollecto
         return (isset($this->data['fallback_locales']) && \count($this->data['fallback_locales']) > 0) ? $this->data['fallback_locales'] : [];
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function getName(): string
     {
         return 'translation';

@@ -24,16 +24,6 @@ class OperationMetadata extends \Google\Model
    */
   public $apiVersion;
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-   * @var bool
-   */
-  public $cancelRequested;
-  /**
-=======
->>>>>>> develop
-=======
->>>>>>> develop
    * @var string
    */
   public $createTime;
@@ -42,14 +32,6 @@ class OperationMetadata extends \Google\Model
    */
   public $endTime;
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-   * @var string
-   */
-  public $statusDetail;
-=======
-=======
->>>>>>> develop
    * @var bool
    */
   public $requestedCancellation;
@@ -57,10 +39,6 @@ class OperationMetadata extends \Google\Model
    * @var string
    */
   public $statusMessage;
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   /**
    * @var string
    */
@@ -85,26 +63,6 @@ class OperationMetadata extends \Google\Model
     return $this->apiVersion;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-   * @param bool
-   */
-  public function setCancelRequested($cancelRequested)
-  {
-    $this->cancelRequested = $cancelRequested;
-  }
-  /**
-   * @return bool
-   */
-  public function getCancelRequested()
-  {
-    return $this->cancelRequested;
-  }
-  /**
-=======
->>>>>>> develop
-=======
->>>>>>> develop
    * @param string
    */
   public function setCreateTime($createTime)
@@ -133,16 +91,6 @@ class OperationMetadata extends \Google\Model
     return $this->endTime;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-   * @param string
-   */
-  public function setStatusDetail($statusDetail)
-  {
-    $this->statusDetail = $statusDetail;
-=======
-=======
->>>>>>> develop
    * @param bool
    */
   public function setRequestedCancellation($requestedCancellation)
@@ -162,29 +110,13 @@ class OperationMetadata extends \Google\Model
   public function setStatusMessage($statusMessage)
   {
     $this->statusMessage = $statusMessage;
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   }
   /**
    * @return string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-  public function getStatusDetail()
-  {
-    return $this->statusDetail;
-=======
   public function getStatusMessage()
   {
     return $this->statusMessage;
->>>>>>> develop
-=======
-  public function getStatusMessage()
-  {
-    return $this->statusMessage;
->>>>>>> develop
   }
   /**
    * @param string

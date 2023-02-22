@@ -26,11 +26,7 @@ class TranslationWriter implements TranslationWriterInterface
     /**
      * @var array<string, DumperInterface>
      */
-<<<<<<< HEAD
-    private $dumpers = [];
-=======
     private array $dumpers = [];
->>>>>>> develop
 
     /**
      * Adds a dumper to the writer.
@@ -42,15 +38,8 @@ class TranslationWriter implements TranslationWriterInterface
 
     /**
      * Obtains the list of supported formats.
-<<<<<<< HEAD
-     *
-     * @return array
-     */
-    public function getFormats()
-=======
      */
     public function getFormats(): array
->>>>>>> develop
     {
         return array_keys($this->dumpers);
     }

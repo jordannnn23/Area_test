@@ -19,10 +19,7 @@ use ValueError;
 
 use function is_numeric;
 use function sprintf;
-<<<<<<< HEAD
-=======
 use function str_starts_with;
->>>>>>> develop
 
 /**
  * A value object representing a decimal
@@ -38,27 +35,10 @@ use function str_starts_with;
  */
 final class Decimal implements NumberInterface
 {
-<<<<<<< HEAD
-    /**
-     * @var string
-     */
-    private $value;
-
-    /**
-     * @var bool
-     */
-    private $isNegative = false;
-
-    /**
-     * @param mixed $value The decimal value to store
-     */
-    public function __construct($value)
-=======
     private string $value;
     private bool $isNegative = false;
 
     public function __construct(float | int | string | self $value)
->>>>>>> develop
     {
         $value = (string) $value;
 
@@ -70,11 +50,7 @@ final class Decimal implements NumberInterface
         }
 
         // Remove the leading +-symbol.
-<<<<<<< HEAD
-        if (strpos($value, '+') === 0) {
-=======
         if (str_starts_with($value, '+')) {
->>>>>>> develop
             $value = substr($value, 1);
         }
 
@@ -83,11 +59,7 @@ final class Decimal implements NumberInterface
             $value = '0';
         }
 
-<<<<<<< HEAD
-        if (strpos($value, '-') === 0) {
-=======
         if (str_starts_with($value, '-')) {
->>>>>>> develop
             $this->isNegative = true;
         }
 
@@ -130,20 +102,6 @@ final class Decimal implements NumberInterface
     /**
      * Constructs the object from a serialized string representation
      *
-<<<<<<< HEAD
-     * @param string $serialized The serialized string representation of the object
-     *
-     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
-     * @psalm-suppress UnusedMethodCall
-     */
-    public function unserialize($serialized): void
-    {
-        $this->__construct($serialized);
-    }
-
-    /**
-     * @param array{string: string} $data
-=======
      * @param string $data The serialized string representation of the object
      *
      * @psalm-suppress UnusedMethodCall
@@ -157,7 +115,6 @@ final class Decimal implements NumberInterface
      * @param array{string?: string} $data
      *
      * @psalm-suppress UnusedMethodCall
->>>>>>> develop
      */
     public function __unserialize(array $data): void
     {

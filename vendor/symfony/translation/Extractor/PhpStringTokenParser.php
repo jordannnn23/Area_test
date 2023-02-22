@@ -11,11 +11,8 @@
 
 namespace Symfony\Component\Translation\Extractor;
 
-<<<<<<< HEAD
-=======
 trigger_deprecation('symfony/translation', '6.2', '"%s" is deprecated.', PhpStringTokenParser::class);
 
->>>>>>> develop
 /*
  * The following is derived from code at http://github.com/nikic/PHP-Parser
  *
@@ -52,12 +49,9 @@ trigger_deprecation('symfony/translation', '6.2', '"%s" is deprecated.', PhpStri
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-<<<<<<< HEAD
-=======
 /**
  * @deprecated since Symfony 6.2
  */
->>>>>>> develop
 class PhpStringTokenParser
 {
     protected static $replacements = [
@@ -75,15 +69,8 @@ class PhpStringTokenParser
      * Parses a string token.
      *
      * @param string $str String token content
-<<<<<<< HEAD
-     *
-     * @return string
-     */
-    public static function parse(string $str)
-=======
      */
     public static function parse(string $str): string
->>>>>>> develop
     {
         $bLength = 0;
         if ('b' === $str[0]) {
@@ -106,15 +93,8 @@ class PhpStringTokenParser
      *
      * @param string      $str   String without quotes
      * @param string|null $quote Quote type
-<<<<<<< HEAD
-     *
-     * @return string
-     */
-    public static function parseEscapeSequences(string $str, string $quote = null)
-=======
      */
     public static function parseEscapeSequences(string $str, string $quote = null): string
->>>>>>> develop
     {
         if (null !== $quote) {
             $str = str_replace('\\'.$quote, $quote, $str);
@@ -145,15 +125,8 @@ class PhpStringTokenParser
      *
      * @param string $startToken Doc string start token content (<<<SMTHG)
      * @param string $str        String token content
-<<<<<<< HEAD
-     *
-     * @return string
-     */
-    public static function parseDocString(string $startToken, string $str)
-=======
      */
     public static function parseDocString(string $startToken, string $str): string
->>>>>>> develop
     {
         // strip last newline (thanks tokenizer for sticking it into the string!)
         $str = preg_replace('~(\r\n|\n|\r)$~', '', $str);

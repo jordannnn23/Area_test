@@ -42,21 +42,10 @@ class AlertsFeedback extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string customerId Optional. The unique identifier of the Google
-<<<<<<< HEAD
-<<<<<<< HEAD
-   * Workspace organization account of the customer the alert is associated with.
-   * Inferred from the caller identity if not provided.
-=======
-=======
->>>>>>> develop
    * Workspace account of the customer the alert is associated with. The
    * `customer_id` must have the initial "C" stripped (for example, `046psxkn`).
    * Inferred from the caller identity if not provided. [Find your customer
    * ID](https://support.google.com/cloudidentity/answer/10070793).
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @return AlertFeedback
    */
   public function create($alertId, AlertFeedback $postBody, $optParams = [])
@@ -74,21 +63,10 @@ class AlertsFeedback extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string customerId Optional. The unique identifier of the Google
-<<<<<<< HEAD
-<<<<<<< HEAD
-   * Workspace organization account of the customer the alert feedback are
-   * associated with. Inferred from the caller identity if not provided.
-=======
-=======
->>>>>>> develop
    * Workspace account of the customer the alert is associated with. The
    * `customer_id` must have the initial "C" stripped (for example, `046psxkn`).
    * Inferred from the caller identity if not provided. [Find your customer
    * ID](https://support.google.com/cloudidentity/answer/10070793).
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @opt_param string filter Optional. A query string for filtering alert
    * feedback results. For more details, see [Query
    * filters](https://developers.google.com/admin-sdk/alertcenter/guides/query-

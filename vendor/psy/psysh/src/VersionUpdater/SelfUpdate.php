@@ -3,11 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
-<<<<<<< HEAD
- * (c) 2012-2022 Justin Hileman
-=======
  * (c) 2012-2023 Justin Hileman
->>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -61,11 +57,6 @@ class SelfUpdate
     /**
      * Get the currently set Downloader or create one based on the capabilities of the php environment.
      *
-<<<<<<< HEAD
-     * @return Downloader
-     *
-=======
->>>>>>> develop
      * @throws ErrorException if a downloader cannot be created for the php environment
      */
     private function getDownloader(): Downloader
@@ -84,11 +75,6 @@ class SelfUpdate
      * if it's present
      *
      * @param string $latestVersion
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     private function getAssetUrl(string $latestVersion): string
     {
@@ -110,11 +96,6 @@ class SelfUpdate
      * @param OutputInterface $output
      *
      * @throws ErrorException if the current version is not restored when installation fails
-<<<<<<< HEAD
-     *
-     * @return int
-=======
->>>>>>> develop
      */
     public function run(InputInterface $input, OutputInterface $output): int
     {

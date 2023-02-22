@@ -27,14 +27,7 @@ use function is_string;
 use function mt_srand;
 use function range;
 use function realpath;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use function sort;
->>>>>>> develop
-=======
-use function sort;
->>>>>>> develop
 use function sprintf;
 use function time;
 use PHPUnit\Framework\Exception;
@@ -579,18 +572,9 @@ final class TestRunner extends BaseTestRunner
             $warnings[] = 'Directives printerClass and testdox are mutually exclusive';
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         $warnings = array_merge($warnings, $suite->warnings());
         sort($warnings);
 
->>>>>>> develop
-=======
-        $warnings = array_merge($warnings, $suite->warnings());
-        sort($warnings);
-
->>>>>>> develop
         foreach ($warnings as $warning) {
             $this->writeMessage('Warning', $warning);
         }
@@ -666,24 +650,6 @@ final class TestRunner extends BaseTestRunner
             }
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $testSuiteWarningsPrinted = false;
-
-        foreach ($suite->warnings() as $warning) {
-            $this->writeMessage('Warning', $warning);
-
-            $testSuiteWarningsPrinted = true;
-        }
-
-        if ($testSuiteWarningsPrinted) {
-            $this->write(PHP_EOL);
-        }
-
-=======
->>>>>>> develop
-=======
->>>>>>> develop
         $suite->run($result);
 
         foreach ($this->extensions as $extension) {

@@ -23,18 +23,11 @@ use Ramsey\Uuid\Provider\TimeProviderInterface;
 use Ramsey\Uuid\Type\Hexadecimal;
 use Throwable;
 
-<<<<<<< HEAD
-use function ctype_xdigit;
-=======
->>>>>>> develop
 use function dechex;
 use function hex2bin;
 use function is_int;
 use function pack;
-<<<<<<< HEAD
-=======
 use function preg_match;
->>>>>>> develop
 use function sprintf;
 use function str_pad;
 use function strlen;
@@ -47,37 +40,11 @@ use const STR_PAD_LEFT;
  */
 class DefaultTimeGenerator implements TimeGeneratorInterface
 {
-<<<<<<< HEAD
-    /**
-     * @var NodeProviderInterface
-     */
-    private $nodeProvider;
-
-    /**
-     * @var TimeConverterInterface
-     */
-    private $timeConverter;
-
-    /**
-     * @var TimeProviderInterface
-     */
-    private $timeProvider;
-
-    public function __construct(
-        NodeProviderInterface $nodeProvider,
-        TimeConverterInterface $timeConverter,
-        TimeProviderInterface $timeProvider
-    ) {
-        $this->nodeProvider = $nodeProvider;
-        $this->timeConverter = $timeConverter;
-        $this->timeProvider = $timeProvider;
-=======
     public function __construct(
         private NodeProviderInterface $nodeProvider,
         private TimeConverterInterface $timeConverter,
         private TimeProviderInterface $timeProvider
     ) {
->>>>>>> develop
     }
 
     /**
@@ -136,21 +103,13 @@ class DefaultTimeGenerator implements TimeGeneratorInterface
      * Uses the node provider given when constructing this instance to get
      * the node ID (usually a MAC address)
      *
-<<<<<<< HEAD
-     * @param string|int|null $node A node value that may be used to override the node provider
-=======
      * @param int|string|null $node A node value that may be used to override the node provider
->>>>>>> develop
      *
      * @return string 6-byte binary string representation of the node
      *
      * @throws InvalidArgumentException
      */
-<<<<<<< HEAD
-    private function getValidNode($node): string
-=======
     private function getValidNode(int | string | null $node): string
->>>>>>> develop
     {
         if ($node === null) {
             $node = $this->nodeProvider->getNode();
@@ -161,11 +120,7 @@ class DefaultTimeGenerator implements TimeGeneratorInterface
             $node = dechex($node);
         }
 
-<<<<<<< HEAD
-        if (!ctype_xdigit((string) $node) || strlen((string) $node) > 12) {
-=======
         if (!preg_match('/^[A-Fa-f0-9]+$/', (string) $node) || strlen((string) $node) > 12) {
->>>>>>> develop
             throw new InvalidArgumentException('Invalid node value');
         }
 

@@ -40,43 +40,19 @@ use const STR_PAD_LEFT;
  */
 final class Fields implements FieldsInterface
 {
-<<<<<<< HEAD
-=======
     use MaxTrait;
->>>>>>> develop
     use NilTrait;
     use SerializableFieldsTrait;
     use VariantTrait;
     use VersionTrait;
 
     /**
-<<<<<<< HEAD
-     * @var string
-     */
-    private $bytes;
-
-    /**
-=======
->>>>>>> develop
      * @param string $bytes A 16-byte binary string representation of a UUID
      *
      * @throws InvalidArgumentException if the byte string is not exactly 16 bytes
      * @throws InvalidArgumentException if the byte string does not represent an RFC 4122 UUID
      * @throws InvalidArgumentException if the byte string does not contain a valid version
      */
-<<<<<<< HEAD
-    public function __construct(string $bytes)
-    {
-        if (strlen($bytes) !== 16) {
-            throw new InvalidArgumentException(
-                'The byte string must be 16 bytes long; '
-                . 'received ' . strlen($bytes) . ' bytes'
-            );
-        }
-
-        $this->bytes = $bytes;
-
-=======
     public function __construct(private string $bytes)
     {
         if (strlen($this->bytes) !== 16) {
@@ -86,7 +62,6 @@ final class Fields implements FieldsInterface
             );
         }
 
->>>>>>> develop
         if (!$this->isCorrectVariant()) {
             throw new InvalidArgumentException(
                 'The byte string received does not conform to the RFC 4122 variant'
@@ -107,9 +82,6 @@ final class Fields implements FieldsInterface
 
     public function getClockSeq(): Hexadecimal
     {
-<<<<<<< HEAD
-        $clockSeq = hexdec(bin2hex(substr($this->bytes, 8, 2))) & 0x3fff;
-=======
         if ($this->isMax()) {
             $clockSeq = 0xffff;
         } elseif ($this->isNil()) {
@@ -117,7 +89,6 @@ final class Fields implements FieldsInterface
         } else {
             $clockSeq = hexdec(bin2hex(substr($this->bytes, 8, 2))) & 0x3fff;
         }
->>>>>>> develop
 
         return new Hexadecimal(str_pad(dechex($clockSeq), 4, '0', STR_PAD_LEFT));
     }
@@ -169,35 +140,6 @@ final class Fields implements FieldsInterface
      */
     public function getTimestamp(): Hexadecimal
     {
-<<<<<<< HEAD
-        switch ($this->getVersion()) {
-            case Uuid::UUID_TYPE_DCE_SECURITY:
-                $timestamp = sprintf(
-                    '%03x%04s%08s',
-                    hexdec($this->getTimeHiAndVersion()->toString()) & 0x0fff,
-                    $this->getTimeMid()->toString(),
-                    ''
-                );
-
-                break;
-            case Uuid::UUID_TYPE_PEABODY:
-                $timestamp = sprintf(
-                    '%08s%04s%03x',
-                    $this->getTimeLow()->toString(),
-                    $this->getTimeMid()->toString(),
-                    hexdec($this->getTimeHiAndVersion()->toString()) & 0x0fff
-                );
-
-                break;
-            default:
-                $timestamp = sprintf(
-                    '%03x%04s%08s',
-                    hexdec($this->getTimeHiAndVersion()->toString()) & 0x0fff,
-                    $this->getTimeMid()->toString(),
-                    $this->getTimeLow()->toString()
-                );
-        }
-=======
         $timestamp = match ($this->getVersion()) {
             Uuid::UUID_TYPE_DCE_SECURITY => sprintf(
                 '%03x%04s%08s',
@@ -226,23 +168,12 @@ final class Fields implements FieldsInterface
                 $this->getTimeLow()->toString()
             ),
         };
->>>>>>> develop
 
         return new Hexadecimal($timestamp);
     }
 
     public function getVersion(): ?int
     {
-<<<<<<< HEAD
-        if ($this->isNil()) {
-            return null;
-        }
-
-        /** @var array $parts */
-        $parts = unpack('n*', $this->bytes);
-
-        return (int) $parts[4] >> 12;
-=======
         if ($this->isNil() || $this->isMax()) {
             return null;
         }
@@ -251,16 +182,11 @@ final class Fields implements FieldsInterface
         $parts = unpack('n*', $this->bytes);
 
         return $parts[4] >> 12;
->>>>>>> develop
     }
 
     private function isCorrectVariant(): bool
     {
-<<<<<<< HEAD
-        if ($this->isNil()) {
-=======
         if ($this->isNil() || $this->isMax()) {
->>>>>>> develop
             return true;
         }
 

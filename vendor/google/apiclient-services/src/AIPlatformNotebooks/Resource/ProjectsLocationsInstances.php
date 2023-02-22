@@ -25,14 +25,7 @@ use Google\Service\AIPlatformNotebooks\ListInstancesResponse;
 use Google\Service\AIPlatformNotebooks\Operation;
 use Google\Service\AIPlatformNotebooks\Policy;
 use Google\Service\AIPlatformNotebooks\RegisterInstanceRequest;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Google\Service\AIPlatformNotebooks\ReportInstanceEventRequest;
->>>>>>> develop
-=======
-use Google\Service\AIPlatformNotebooks\ReportInstanceEventRequest;
->>>>>>> develop
 use Google\Service\AIPlatformNotebooks\ReportInstanceInfoRequest;
 use Google\Service\AIPlatformNotebooks\ResetInstanceRequest;
 use Google\Service\AIPlatformNotebooks\RollbackInstanceRequest;
@@ -239,11 +232,6 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
     return $this->call('report', [$params], Operation::class);
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * Reports and processes an instance event. (instances.reportEvent)
    *
    * @param string $name Required. Format:
@@ -259,10 +247,6 @@ class ProjectsLocationsInstances extends \Google\Service\Resource
     return $this->call('reportEvent', [$params], Operation::class);
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * Resets a notebook instance. (instances.reset)
    *
    * @param string $name Required. Format:

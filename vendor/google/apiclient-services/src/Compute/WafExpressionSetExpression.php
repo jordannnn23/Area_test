@@ -23,19 +23,10 @@ class WafExpressionSetExpression extends \Google\Model
    * @var string
    */
   public $id;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   /**
    * @var int
    */
   public $sensitivity;
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
 
   /**
    * @param string
@@ -51,11 +42,6 @@ class WafExpressionSetExpression extends \Google\Model
   {
     return $this->id;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   /**
    * @param int
    */
@@ -70,10 +56,6 @@ class WafExpressionSetExpression extends \Google\Model
   {
     return $this->sensitivity;
   }
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

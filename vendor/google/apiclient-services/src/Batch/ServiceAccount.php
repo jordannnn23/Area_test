@@ -17,37 +17,17 @@
 
 namespace Google\Service\Batch;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-class ServiceAccount extends \Google\Model
-{
-=======
 class ServiceAccount extends \Google\Collection
 {
   protected $collection_key = 'scopes';
->>>>>>> develop
-=======
-class ServiceAccount extends \Google\Collection
-{
-  protected $collection_key = 'scopes';
->>>>>>> develop
   /**
    * @var string
    */
   public $email;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   /**
    * @var string[]
    */
   public $scopes;
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
 
   /**
    * @param string
@@ -63,11 +43,6 @@ class ServiceAccount extends \Google\Collection
   {
     return $this->email;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   /**
    * @param string[]
    */
@@ -82,10 +57,6 @@ class ServiceAccount extends \Google\Collection
   {
     return $this->scopes;
   }
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

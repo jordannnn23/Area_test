@@ -16,11 +16,7 @@
         }
     ],
     "require": {
-<<<<<<< HEAD
-        "php": ">=7.2.5",
-=======
         "php": ">=8.1",
->>>>>>> develop
         "psr/event-dispatcher": "^1"
     },
     "suggest": {
@@ -32,11 +28,7 @@
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
-<<<<<<< HEAD
-            "dev-main": "2.5-dev"
-=======
             "dev-main": "3.3-dev"
->>>>>>> develop
         },
         "thanks": {
             "name": "symfony/contracts",

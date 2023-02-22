@@ -3,15 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
- * (c) 2012-2022 Justin Hileman
-=======
  * (c) 2012-2023 Justin Hileman
->>>>>>> develop
-=======
- * (c) 2012-2023 Justin Hileman
->>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -104,14 +96,6 @@ class ListPass extends CodeCleanerPass
      * Validate whether a given item in an array is valid for short assignment.
      *
      * @param Expr $item
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
-=======
->>>>>>> develop
      */
     private static function isValidArrayItem(Expr $item): bool
     {

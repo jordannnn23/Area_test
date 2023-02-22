@@ -36,18 +36,9 @@ class IosModel extends \Google\Collection
    * @var string
    */
   public $name;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   protected $perVersionInfoType = PerIosVersionInfo::class;
   protected $perVersionInfoDataType = 'array';
   public $perVersionInfo;
->>>>>>> develop
-=======
-  protected $perVersionInfoType = PerIosVersionInfo::class;
-  protected $perVersionInfoDataType = 'array';
-  public $perVersionInfo;
->>>>>>> develop
   /**
    * @var int
    */
@@ -126,11 +117,6 @@ class IosModel extends \Google\Collection
     return $this->name;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @param PerIosVersionInfo[]
    */
   public function setPerVersionInfo($perVersionInfo)
@@ -145,10 +131,6 @@ class IosModel extends \Google\Collection
     return $this->perVersionInfo;
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @param int
    */
   public function setScreenDensity($screenDensity)

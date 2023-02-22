@@ -17,16 +17,6 @@
 
 namespace Google\Service\Integrations\Resource;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateBundleRequest;
-use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateBundleResponse;
-use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse;
-
-=======
->>>>>>> develop
-=======
->>>>>>> develop
 /**
  * The "products" collection of methods.
  * Typical usage is:
@@ -37,42 +27,6 @@ use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTaskEntitiesRe
  */
 class ProjectsLocationsProducts extends \Google\Service\Resource
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  /**
-   * PROTECT WITH A VISIBILITY LABEL. THIS METHOD WILL BE MOVED TO A SEPARATE
-   * SERVICE. Create a bundle. (products.createBundle)
-   *
-   * @param string $parent Required. The location resource of the request.
-   * @param GoogleCloudIntegrationsV1alphaCreateBundleRequest $postBody
-   * @param array $optParams Optional parameters.
-   * @return GoogleCloudIntegrationsV1alphaCreateBundleResponse
-   */
-  public function createBundle($parent, GoogleCloudIntegrationsV1alphaCreateBundleRequest $postBody, $optParams = [])
-  {
-    $params = ['parent' => $parent, 'postBody' => $postBody];
-    $params = array_merge($params, $optParams);
-    return $this->call('createBundle', [$params], GoogleCloudIntegrationsV1alphaCreateBundleResponse::class);
-  }
-  /**
-   * This is a UI only method and will be moved away. Returns a list of common
-   * tasks. (products.listTaskEntities)
-   *
-   * @param string $parent Required. The location resource of the request. This is
-   * not going to be used but preserve the field for future.
-   * @param array $optParams Optional parameters.
-   * @return GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse
-   */
-  public function listTaskEntities($parent, $optParams = [])
-  {
-    $params = ['parent' => $parent];
-    $params = array_merge($params, $optParams);
-    return $this->call('listTaskEntities', [$params], GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse::class);
-  }
-=======
->>>>>>> develop
-=======
->>>>>>> develop
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

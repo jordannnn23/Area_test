@@ -20,20 +20,10 @@ use Symfony\Component\Translation\MessageCatalogue;
  */
 class CsvFileDumper extends FileDumper
 {
-<<<<<<< HEAD
-    private $delimiter = ';';
-    private $enclosure = '"';
-
-    /**
-     * {@inheritdoc}
-     */
-    public function formatCatalogue(MessageCatalogue $messages, string $domain, array $options = [])
-=======
     private string $delimiter = ';';
     private string $enclosure = '"';
 
     public function formatCatalogue(MessageCatalogue $messages, string $domain, array $options = []): string
->>>>>>> develop
     {
         $handle = fopen('php://memory', 'r+');
 
@@ -57,14 +47,7 @@ class CsvFileDumper extends FileDumper
         $this->enclosure = $enclosure;
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-    protected function getExtension()
-=======
     protected function getExtension(): string
->>>>>>> develop
     {
         return 'csv';
     }

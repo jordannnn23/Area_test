@@ -68,64 +68,26 @@ class CliTestDoxPrinter extends TestDoxPrinter
     ];
 
     private const STATUS_STYLES = [
-<<<<<<< HEAD
-<<<<<<< HEAD
-        BaseTestRunner::STATUS_PASSED => [
-            'symbol' => '✔',
-            'color'  => 'fg-green',
-        ],
-        BaseTestRunner::STATUS_ERROR => [
-=======
-=======
->>>>>>> develop
         BaseTestRunner::STATUS_PASSED     => [
             'symbol' => '✔',
             'color'  => 'fg-green',
         ],
         BaseTestRunner::STATUS_ERROR      => [
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
             'symbol'  => '✘',
             'color'   => 'fg-yellow',
             'message' => 'bg-yellow,fg-black',
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-        BaseTestRunner::STATUS_FAILURE => [
-=======
         BaseTestRunner::STATUS_FAILURE    => [
->>>>>>> develop
-=======
-        BaseTestRunner::STATUS_FAILURE    => [
->>>>>>> develop
             'symbol'  => '✘',
             'color'   => 'fg-red',
             'message' => 'bg-red,fg-white',
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-        BaseTestRunner::STATUS_SKIPPED => [
-=======
         BaseTestRunner::STATUS_SKIPPED    => [
->>>>>>> develop
-=======
-        BaseTestRunner::STATUS_SKIPPED    => [
->>>>>>> develop
             'symbol'  => '↩',
             'color'   => 'fg-cyan',
             'message' => 'fg-cyan',
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-        BaseTestRunner::STATUS_RISKY => [
-=======
         BaseTestRunner::STATUS_RISKY      => [
->>>>>>> develop
-=======
-        BaseTestRunner::STATUS_RISKY      => [
->>>>>>> develop
             'symbol'  => '☢',
             'color'   => 'fg-yellow',
             'message' => 'fg-yellow',
@@ -135,28 +97,12 @@ class CliTestDoxPrinter extends TestDoxPrinter
             'color'   => 'fg-yellow',
             'message' => 'fg-yellow',
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-        BaseTestRunner::STATUS_WARNING => [
-=======
         BaseTestRunner::STATUS_WARNING    => [
->>>>>>> develop
-=======
-        BaseTestRunner::STATUS_WARNING    => [
->>>>>>> develop
             'symbol'  => '⚠',
             'color'   => 'fg-yellow',
             'message' => 'fg-yellow',
         ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-        BaseTestRunner::STATUS_UNKNOWN => [
-=======
         BaseTestRunner::STATUS_UNKNOWN    => [
->>>>>>> develop
-=======
-        BaseTestRunner::STATUS_UNKNOWN    => [
->>>>>>> develop
             'symbol'  => '?',
             'color'   => 'fg-blue',
             'message' => 'fg-white,bg-blue',

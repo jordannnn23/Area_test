@@ -42,12 +42,6 @@ abstract class FileDumper implements DumperInterface
         $this->relativePathTemplate = $relativePathTemplate;
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function dump(MessageCatalogue $messages, array $options = [])
     {
         if (!\array_key_exists('path', $options)) {
@@ -89,19 +83,6 @@ abstract class FileDumper implements DumperInterface
 
     /**
      * Transforms a domain of a message catalogue to its string representation.
-<<<<<<< HEAD
-     *
-     * @return string
-     */
-    abstract public function formatCatalogue(MessageCatalogue $messages, string $domain, array $options = []);
-
-    /**
-     * Gets the file extension of the dumper.
-     *
-     * @return string
-     */
-    abstract protected function getExtension();
-=======
      */
     abstract public function formatCatalogue(MessageCatalogue $messages, string $domain, array $options = []): string;
 
@@ -109,7 +90,6 @@ abstract class FileDumper implements DumperInterface
      * Gets the file extension of the dumper.
      */
     abstract protected function getExtension(): string;
->>>>>>> develop
 
     /**
      * Gets the relative file path using the template.

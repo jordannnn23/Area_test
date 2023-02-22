@@ -20,14 +20,7 @@ use Symfony\Component\Translation\MessageCatalogue;
  */
 class IniFileDumper extends FileDumper
 {
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-    public function formatCatalogue(MessageCatalogue $messages, string $domain, array $options = [])
-=======
     public function formatCatalogue(MessageCatalogue $messages, string $domain, array $options = []): string
->>>>>>> develop
     {
         $output = '';
 
@@ -39,14 +32,7 @@ class IniFileDumper extends FileDumper
         return $output;
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-    protected function getExtension()
-=======
     protected function getExtension(): string
->>>>>>> develop
     {
         return 'ini';
     }

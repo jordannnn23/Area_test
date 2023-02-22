@@ -20,18 +20,9 @@ namespace Google\Service\Contentwarehouse;
 class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
 {
   protected $collection_key = 'htmlAttribution';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   protected $decorationType = SocialGraphApiProtoDecorationOverlay::class;
   protected $decorationDataType = 'array';
   public $decoration;
->>>>>>> develop
-=======
-  protected $decorationType = SocialGraphApiProtoDecorationOverlay::class;
-  protected $decorationDataType = 'array';
-  public $decoration;
->>>>>>> develop
   /**
    * @var string
    */
@@ -59,18 +50,9 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
    * @var string
    */
   public $monogramBackground;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   protected $originalPhotoType = SocialGraphApiProtoImageReference::class;
   protected $originalPhotoDataType = '';
   public $originalPhoto;
->>>>>>> develop
-=======
-  protected $originalPhotoType = SocialGraphApiProtoImageReference::class;
-  protected $originalPhotoDataType = '';
-  public $originalPhoto;
->>>>>>> develop
   protected $photoIdType = AppsPeopleOzExternalMergedpeopleapiPhotoPhotoStorageId::class;
   protected $photoIdDataType = '';
   public $photoId;
@@ -88,11 +70,6 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
   public $viewerUrl;
 
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @param SocialGraphApiProtoDecorationOverlay[]
    */
   public function setDecoration($decoration)
@@ -107,10 +84,6 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
     return $this->decoration;
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @param string
    */
   public function setEmojiAvatarUrl($emojiAvatarUrl)
@@ -209,11 +182,6 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
     return $this->monogramBackground;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @param SocialGraphApiProtoImageReference
    */
   public function setOriginalPhoto(SocialGraphApiProtoImageReference $originalPhoto)
@@ -228,10 +196,6 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
     return $this->originalPhoto;
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @param AppsPeopleOzExternalMergedpeopleapiPhotoPhotoStorageId
    */
   public function setPhotoId(AppsPeopleOzExternalMergedpeopleapiPhotoPhotoStorageId $photoId)

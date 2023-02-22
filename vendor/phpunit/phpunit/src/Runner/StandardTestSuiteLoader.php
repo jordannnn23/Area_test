@@ -47,12 +47,6 @@ final class StandardTestSuiteLoader implements TestSuiteLoader
             );
 
             if (empty($loadedClasses)) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                throw $this->exceptionFor($suiteClassName, $suiteClassFile);
-=======
-=======
->>>>>>> develop
                 throw new Exception(
                     sprintf(
                         'Class %s could not be found in %s',
@@ -60,10 +54,6 @@ final class StandardTestSuiteLoader implements TestSuiteLoader
                         $suiteClassFile
                     )
                 );
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
             }
         }
 
@@ -82,12 +72,6 @@ final class StandardTestSuiteLoader implements TestSuiteLoader
         }
 
         if (!class_exists($suiteClassName, false)) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            throw $this->exceptionFor($suiteClassName, $suiteClassFile);
-=======
-=======
->>>>>>> develop
             throw new Exception(
                 sprintf(
                     'Class %s could not be found in %s',
@@ -95,10 +79,6 @@ final class StandardTestSuiteLoader implements TestSuiteLoader
                     $suiteClassFile
                 )
             );
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
         }
 
         try {
@@ -113,12 +93,6 @@ final class StandardTestSuiteLoader implements TestSuiteLoader
         }
         // @codeCoverageIgnoreEnd
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if ($class->isSubclassOf(TestCase::class) && !$class->isAbstract()) {
-=======
-=======
->>>>>>> develop
         if ($class->isSubclassOf(TestCase::class)) {
             if ($class->isAbstract()) {
                 throw new Exception(
@@ -130,10 +104,6 @@ final class StandardTestSuiteLoader implements TestSuiteLoader
                 );
             }
 
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
             return $class;
         }
 
@@ -143,24 +113,6 @@ final class StandardTestSuiteLoader implements TestSuiteLoader
                 // @codeCoverageIgnoreStart
             } catch (ReflectionException $e) {
                 throw new Exception(
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    $e->getMessage(),
-                    $e->getCode(),
-                    $e
-                );
-            }
-            // @codeCoverageIgnoreEnd
-
-            if (!$method->isAbstract() && $method->isPublic() && $method->isStatic()) {
-                return $class;
-            }
-        }
-
-        throw $this->exceptionFor($suiteClassName, $suiteClassFile);
-=======
-=======
->>>>>>> develop
                     sprintf(
                         'Method %s::suite() declared in %s is abstract',
                         $suiteClassName,
@@ -191,31 +143,10 @@ final class StandardTestSuiteLoader implements TestSuiteLoader
         }
 
         return $class;
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
     }
 
     public function reload(ReflectionClass $aClass): ReflectionClass
     {
         return $aClass;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    private function exceptionFor(string $className, string $filename): Exception
-    {
-        return new Exception(
-            sprintf(
-                "Class '%s' could not be found in '%s'.",
-                $className,
-                $filename
-            )
-        );
-    }
-=======
->>>>>>> develop
-=======
->>>>>>> develop
 }

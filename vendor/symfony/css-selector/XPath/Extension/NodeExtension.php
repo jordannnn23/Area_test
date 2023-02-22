@@ -31,11 +31,7 @@ class NodeExtension extends AbstractExtension
     public const ATTRIBUTE_NAME_IN_LOWER_CASE = 2;
     public const ATTRIBUTE_VALUE_IN_LOWER_CASE = 4;
 
-<<<<<<< HEAD
-    private $flags;
-=======
     private int $flags;
->>>>>>> develop
 
     public function __construct(int $flags = 0)
     {
@@ -45,11 +41,7 @@ class NodeExtension extends AbstractExtension
     /**
      * @return $this
      */
-<<<<<<< HEAD
-    public function setFlag(int $flag, bool $on): self
-=======
     public function setFlag(int $flag, bool $on): static
->>>>>>> develop
     {
         if ($on && !$this->hasFlag($flag)) {
             $this->flags += $flag;
@@ -67,23 +59,6 @@ class NodeExtension extends AbstractExtension
         return (bool) ($this->flags & $flag);
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-    public function getNodeTranslators(): array
-    {
-        return [
-            'Selector' => [$this, 'translateSelector'],
-            'CombinedSelector' => [$this, 'translateCombinedSelector'],
-            'Negation' => [$this, 'translateNegation'],
-            'Function' => [$this, 'translateFunction'],
-            'Pseudo' => [$this, 'translatePseudo'],
-            'Attribute' => [$this, 'translateAttribute'],
-            'Class' => [$this, 'translateClass'],
-            'Hash' => [$this, 'translateHash'],
-            'Element' => [$this, 'translateElement'],
-=======
     public function getNodeTranslators(): array
     {
         return [
@@ -96,7 +71,6 @@ class NodeExtension extends AbstractExtension
             'Class' => $this->translateClass(...),
             'Hash' => $this->translateHash(...),
             'Element' => $this->translateElement(...),
->>>>>>> develop
         ];
     }
 
@@ -205,12 +179,6 @@ class NodeExtension extends AbstractExtension
         return $xpath;
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function getName(): string
     {
         return 'node';

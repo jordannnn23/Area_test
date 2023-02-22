@@ -39,19 +39,10 @@ class Execution extends \Google\Model
   protected $errorDataType = '';
   public $error;
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @var string[]
    */
   public $labels;
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @var string
    */
   public $name;
@@ -146,11 +137,6 @@ class Execution extends \Google\Model
     return $this->error;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @param string[]
    */
   public function setLabels($labels)
@@ -165,10 +151,6 @@ class Execution extends \Google\Model
     return $this->labels;
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @param string
    */
   public function setName($name)

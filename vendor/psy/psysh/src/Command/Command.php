@@ -3,15 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
- * (c) 2012-2022 Justin Hileman
-=======
  * (c) 2012-2023 Justin Hileman
->>>>>>> develop
-=======
- * (c) 2012-2023 Justin Hileman
->>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -94,15 +86,7 @@ abstract class Command extends BaseCommand
     /**
      * These arguments will be excluded from help output.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return array
-=======
      * @return string[]
->>>>>>> develop
-=======
-     * @return string[]
->>>>>>> develop
      */
     protected function getHiddenArguments(): array
     {
@@ -124,15 +108,7 @@ abstract class Command extends BaseCommand
     /**
      * These options will be excluded from help output.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * @return array
-=======
      * @return string[]
->>>>>>> develop
-=======
-     * @return string[]
->>>>>>> develop
      */
     protected function getHiddenOptions(): array
     {
@@ -141,14 +117,6 @@ abstract class Command extends BaseCommand
 
     /**
      * Format command aliases as text..
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
-=======
->>>>>>> develop
      */
     private function aliasesAsText(): string
     {
@@ -157,14 +125,6 @@ abstract class Command extends BaseCommand
 
     /**
      * Format command arguments as text.
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
-=======
->>>>>>> develop
      */
     private function argumentsAsText(): string
     {
@@ -194,14 +154,6 @@ abstract class Command extends BaseCommand
 
     /**
      * Format options as text.
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
-=======
->>>>>>> develop
      */
     private function optionsAsText(): string
     {
@@ -241,14 +193,6 @@ abstract class Command extends BaseCommand
 
     /**
      * Calculate the maximum padding width for a set of lines.
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-     * @return int
-=======
->>>>>>> develop
-=======
->>>>>>> develop
      */
     private function getMaxWidth(): int
     {
@@ -274,14 +218,6 @@ abstract class Command extends BaseCommand
      * Format an option default as text.
      *
      * @param mixed $default
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
-=======
->>>>>>> develop
      */
     private function formatDefaultValue($default): string
     {
@@ -327,14 +263,6 @@ abstract class Command extends BaseCommand
 
     /**
      * Legacy fallback for getTable.
-<<<<<<< HEAD
-<<<<<<< HEAD
-     *
-     * @return TableHelper
-=======
->>>>>>> develop
-=======
->>>>>>> develop
      */
     protected function getTableHelper(): TableHelper
     {

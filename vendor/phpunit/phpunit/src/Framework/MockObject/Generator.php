@@ -993,23 +993,10 @@ EOT;
                     $isInterface,
                     $additionalInterfaces
                 ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                'clone'           => $cloneTrait,
-                'mock_class_name' => $_mockClassName['className'],
-                'mocked_methods'  => $mockedMethods,
-                'method'          => $method,
-=======
-=======
->>>>>>> develop
                 'clone'             => $cloneTrait,
                 'mock_class_name'   => $_mockClassName['className'],
                 'mocked_methods'    => $mockedMethods,
                 'method'            => $method,
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
             ]
         );
 

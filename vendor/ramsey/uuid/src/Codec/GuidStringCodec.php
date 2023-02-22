@@ -18,10 +18,7 @@ use Ramsey\Uuid\Guid\Guid;
 use Ramsey\Uuid\UuidInterface;
 
 use function bin2hex;
-<<<<<<< HEAD
-=======
 use function sprintf;
->>>>>>> develop
 use function substr;
 
 /**
@@ -33,8 +30,6 @@ use function substr;
  */
 class GuidStringCodec extends StringCodec
 {
-<<<<<<< HEAD
-=======
     public function encode(UuidInterface $uuid): string
     {
         $hex = bin2hex($uuid->getFields()->getBytes());
@@ -55,7 +50,6 @@ class GuidStringCodec extends StringCodec
         );
     }
 
->>>>>>> develop
     public function decode(string $encodedUuid): UuidInterface
     {
         $bytes = $this->getBytes($encodedUuid);

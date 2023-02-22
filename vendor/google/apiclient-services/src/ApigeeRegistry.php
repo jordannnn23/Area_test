@@ -463,19 +463,10 @@ class ApigeeRegistry extends \Google\Service
                   'type' => 'string',
                   'required' => true,
                 ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
                 'filter' => [
                   'location' => 'query',
                   'type' => 'string',
                 ],
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
                 'pageSize' => [
                   'location' => 'query',
                   'type' => 'integer',
@@ -1000,19 +991,10 @@ class ApigeeRegistry extends \Google\Service
                   'type' => 'string',
                   'required' => true,
                 ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
                 'filter' => [
                   'location' => 'query',
                   'type' => 'string',
                 ],
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
                 'pageSize' => [
                   'location' => 'query',
                   'type' => 'integer',

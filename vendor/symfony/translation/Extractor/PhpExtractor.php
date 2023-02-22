@@ -11,11 +11,8 @@
 
 namespace Symfony\Component\Translation\Extractor;
 
-<<<<<<< HEAD
-=======
 trigger_deprecation('symfony/translation', '6.2', '"%s" is deprecated, use "%s" instead.', PhpExtractor::class, PhpAstExtractor::class);
 
->>>>>>> develop
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Translation\MessageCatalogue;
 
@@ -23,11 +20,8 @@ use Symfony\Component\Translation\MessageCatalogue;
  * PhpExtractor extracts translation messages from a PHP template.
  *
  * @author Michel Salib <michelsalib@hotmail.com>
-<<<<<<< HEAD
-=======
  *
  * @deprecated since Symfony 6.2, use the PhpAstExtractor instead
->>>>>>> develop
  */
 class PhpExtractor extends AbstractFileExtractor implements ExtractorInterface
 {
@@ -38,11 +32,7 @@ class PhpExtractor extends AbstractFileExtractor implements ExtractorInterface
     /**
      * Prefix for new found message.
      */
-<<<<<<< HEAD
-    private $prefix = '';
-=======
     private string $prefix = '';
->>>>>>> develop
 
     /**
      * The sequence that captures translation messages.
@@ -142,14 +132,7 @@ class PhpExtractor extends AbstractFileExtractor implements ExtractorInterface
         ],
     ];
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-    public function extract($resource, MessageCatalogue $catalog)
-=======
     public function extract(string|iterable $resource, MessageCatalogue $catalog)
->>>>>>> develop
     {
         $files = $this->extractFiles($resource);
         foreach ($files as $file) {
@@ -159,12 +142,6 @@ class PhpExtractor extends AbstractFileExtractor implements ExtractorInterface
         }
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function setPrefix(string $prefix)
     {
         $this->prefix = $prefix;
@@ -172,17 +149,8 @@ class PhpExtractor extends AbstractFileExtractor implements ExtractorInterface
 
     /**
      * Normalizes a token.
-<<<<<<< HEAD
-     *
-     * @param mixed $token
-     *
-     * @return string|null
-     */
-    protected function normalizeToken($token)
-=======
      */
     protected function normalizeToken(mixed $token): ?string
->>>>>>> develop
     {
         if (isset($token[1]) && 'b"' !== $token) {
             return $token[1];
@@ -337,29 +305,14 @@ class PhpExtractor extends AbstractFileExtractor implements ExtractorInterface
     }
 
     /**
-<<<<<<< HEAD
-     * @return bool
-     *
-     * @throws \InvalidArgumentException
-     */
-    protected function canBeExtracted(string $file)
-=======
      * @throws \InvalidArgumentException
      */
     protected function canBeExtracted(string $file): bool
->>>>>>> develop
     {
         return $this->isFile($file) && 'php' === pathinfo($file, \PATHINFO_EXTENSION);
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-    protected function extractFromDirectory($directory)
-=======
     protected function extractFromDirectory(string|array $directory): iterable
->>>>>>> develop
     {
         if (!class_exists(Finder::class)) {
             throw new \LogicException(sprintf('You cannot use "%s" as the "symfony/finder" package is not installed. Try running "composer require symfony/finder".', static::class));

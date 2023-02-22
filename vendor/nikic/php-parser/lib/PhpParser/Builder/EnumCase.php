@@ -78,18 +78,8 @@ class EnumCase implements PhpParser\Builder
         return new Stmt\EnumCase(
             $this->name,
             $this->value,
-<<<<<<< HEAD
-<<<<<<< HEAD
-            $this->attributes,
-            $this->attributeGroups
-=======
             $this->attributeGroups,
             $this->attributes
->>>>>>> develop
-=======
-            $this->attributeGroups,
-            $this->attributes
->>>>>>> develop
         );
     }
 }

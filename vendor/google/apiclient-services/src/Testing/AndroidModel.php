@@ -52,18 +52,9 @@ class AndroidModel extends \Google\Collection
    * @var string
    */
   public $name;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   protected $perVersionInfoType = PerAndroidVersionInfo::class;
   protected $perVersionInfoDataType = 'array';
   public $perVersionInfo;
->>>>>>> develop
-=======
-  protected $perVersionInfoType = PerAndroidVersionInfo::class;
-  protected $perVersionInfoDataType = 'array';
-  public $perVersionInfo;
->>>>>>> develop
   /**
    * @var int
    */
@@ -206,11 +197,6 @@ class AndroidModel extends \Google\Collection
     return $this->name;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @param PerAndroidVersionInfo[]
    */
   public function setPerVersionInfo($perVersionInfo)
@@ -225,10 +211,6 @@ class AndroidModel extends \Google\Collection
     return $this->perVersionInfo;
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @param int
    */
   public function setScreenDensity($screenDensity)

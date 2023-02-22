@@ -3,11 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
-<<<<<<< HEAD
- * (c) 2012-2022 Justin Hileman
-=======
  * (c) 2012-2023 Justin Hileman
->>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -60,15 +56,6 @@ class PropertyEnumerator extends Enumerator
     /**
      * Get defined properties for the given class or object Reflector.
      *
-<<<<<<< HEAD
-     * @param bool       $showAll   Include private and protected properties
-     * @param \Reflector $reflector
-     * @param bool       $noInherit Exclude inherited properties
-     *
-     * @return array
-     */
-    protected function getProperties(bool $showAll, \Reflector $reflector, bool $noInherit = false): array
-=======
      * @param bool             $showAll   Include private and protected properties
      * @param \ReflectionClass $reflector
      * @param bool             $noInherit Exclude inherited properties
@@ -76,7 +63,6 @@ class PropertyEnumerator extends Enumerator
      * @return array
      */
     protected function getProperties(bool $showAll, \ReflectionClass $reflector, bool $noInherit = false): array
->>>>>>> develop
     {
         $className = $reflector->getName();
 
@@ -126,11 +112,6 @@ class PropertyEnumerator extends Enumerator
      * Get a label for the particular kind of "class" represented.
      *
      * @param \ReflectionClass $reflector
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     protected function getKindLabel(\ReflectionClass $reflector): string
     {
@@ -145,11 +126,6 @@ class PropertyEnumerator extends Enumerator
      * Get output style for the given property's visibility.
      *
      * @param \ReflectionProperty $property
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     private function getVisibilityStyle(\ReflectionProperty $property): string
     {
@@ -167,11 +143,6 @@ class PropertyEnumerator extends Enumerator
      *
      * @param \ReflectionProperty $property
      * @param mixed               $target
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     protected function presentValue(\ReflectionProperty $property, $target): string
     {

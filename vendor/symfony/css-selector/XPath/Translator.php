@@ -30,33 +30,16 @@ use Symfony\Component\CssSelector\Parser\ParserInterface;
  */
 class Translator implements TranslatorInterface
 {
-<<<<<<< HEAD
-    private $mainParser;
-=======
     private ParserInterface $mainParser;
->>>>>>> develop
 
     /**
      * @var ParserInterface[]
      */
-<<<<<<< HEAD
-    private $shortcutParsers = [];
-=======
     private array $shortcutParsers = [];
->>>>>>> develop
 
     /**
      * @var Extension\ExtensionInterface[]
      */
-<<<<<<< HEAD
-    private $extensions = [];
-
-    private $nodeTranslators = [];
-    private $combinationTranslators = [];
-    private $functionTranslators = [];
-    private $pseudoClassTranslators = [];
-    private $attributeMatchingTranslators = [];
-=======
     private array $extensions = [];
 
     private array $nodeTranslators = [];
@@ -64,7 +47,6 @@ class Translator implements TranslatorInterface
     private array $functionTranslators = [];
     private array $pseudoClassTranslators = [];
     private array $attributeMatchingTranslators = [];
->>>>>>> develop
 
     public function __construct(ParserInterface $parser = null)
     {
@@ -105,12 +87,6 @@ class Translator implements TranslatorInterface
         return sprintf('concat(%s)', implode(', ', $parts));
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function cssToXPath(string $cssExpr, string $prefix = 'descendant-or-self::'): string
     {
         $selectors = $this->parseSelectors($cssExpr);
@@ -127,12 +103,6 @@ class Translator implements TranslatorInterface
         return implode(' | ', $selectors);
     }
 
-<<<<<<< HEAD
-    /**
-     * {@inheritdoc}
-     */
-=======
->>>>>>> develop
     public function selectorToXPath(SelectorNode $selector, string $prefix = 'descendant-or-self::'): string
     {
         return ($prefix ?: '').$this->nodeToXPath($selector);
@@ -141,11 +111,7 @@ class Translator implements TranslatorInterface
     /**
      * @return $this
      */
-<<<<<<< HEAD
-    public function registerExtension(Extension\ExtensionInterface $extension): self
-=======
     public function registerExtension(Extension\ExtensionInterface $extension): static
->>>>>>> develop
     {
         $this->extensions[$extension->getName()] = $extension;
 
@@ -173,11 +139,7 @@ class Translator implements TranslatorInterface
     /**
      * @return $this
      */
-<<<<<<< HEAD
-    public function registerParserShortcut(ParserInterface $shortcut): self
-=======
     public function registerParserShortcut(ParserInterface $shortcut): static
->>>>>>> develop
     {
         $this->shortcutParsers[] = $shortcut;
 
@@ -252,11 +214,7 @@ class Translator implements TranslatorInterface
         foreach ($this->shortcutParsers as $shortcut) {
             $tokens = $shortcut->parse($css);
 
-<<<<<<< HEAD
-            if (!empty($tokens)) {
-=======
             if ($tokens) {
->>>>>>> develop
                 return $tokens;
             }
         }

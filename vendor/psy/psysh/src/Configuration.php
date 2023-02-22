@@ -3,11 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
-<<<<<<< HEAD
- * (c) 2012-2022 Justin Hileman
-=======
  * (c) 2012-2023 Justin Hileman
->>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -122,10 +118,7 @@ class Configuration
 
     // services
     private $readline;
-<<<<<<< HEAD
-=======
     /** @var ShellOutput */
->>>>>>> develop
     private $output;
     private $shell;
     private $cleaner;
@@ -184,11 +177,6 @@ class Configuration
      * @throws \InvalidArgumentException
      *
      * @param InputInterface $input
-<<<<<<< HEAD
-     *
-     * @return self
-=======
->>>>>>> develop
      */
     public static function fromInput(InputInterface $input): self
     {
@@ -547,11 +535,7 @@ class Configuration
     /**
      * Get files to be included by default at the start of each shell session.
      *
-<<<<<<< HEAD
-     * @return array
-=======
      * @return string[]
->>>>>>> develop
      */
     public function getDefaultIncludes(): array
     {
@@ -633,11 +617,6 @@ class Configuration
      * overridden.
      *
      * @throws RuntimeException if no temporary directory is set and it is not possible to create one
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     public function getRuntimeDir(): string
     {
@@ -667,11 +646,6 @@ class Configuration
      *
      * Defaults to `/history` inside the shell's base config dir unless
      * explicitly overridden.
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     public function getHistoryFile(): string
     {
@@ -840,11 +814,6 @@ class Configuration
      * Get the appropriate Readline implementation class name.
      *
      * @see self::getReadline
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     private function getReadlineClass(): string
     {
@@ -984,11 +953,6 @@ class Configuration
      * By default, PsySH will automatically insert semicolons at the end of
      * statements if they're missing. To strictly require semicolons, set
      * `requireSemicolons` to true.
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public function requireSemicolons(): bool
     {
@@ -1013,11 +977,6 @@ class Configuration
      *
      * Note that this does not disable Unicode output in general, it just makes
      * it so PsySH won't output any itself.
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public function useUnicode(): bool
     {
@@ -1052,11 +1011,6 @@ class Configuration
      * level.
      *
      *     http://php.net/manual/en/function.error-reporting.php
-<<<<<<< HEAD
-     *
-     * @return int
-=======
->>>>>>> develop
      */
     public function errorLoggingLevel(): int
     {
@@ -1077,11 +1031,6 @@ class Configuration
      * Get a CodeCleaner service instance.
      *
      * If none has been explicitly defined, this will create a new instance.
-<<<<<<< HEAD
-     *
-     * @return CodeCleaner
-=======
->>>>>>> develop
      */
     public function getCodeCleaner(): CodeCleaner
     {
@@ -1145,11 +1094,6 @@ class Configuration
 
     /**
      * @deprecated Call `useTabCompletion` instead
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public function getTabCompletion(): bool
     {
@@ -1181,11 +1125,6 @@ class Configuration
      *
      * @see self::verbosity
      * @see self::getPager
-<<<<<<< HEAD
-     *
-     * @return ShellOutput
-=======
->>>>>>> develop
      */
     public function getOutput(): ShellOutput
     {
@@ -1230,11 +1169,6 @@ class Configuration
 
     /**
      * Get the interactive setting for shell input.
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public function getInputInteractive(): bool
     {
@@ -1313,11 +1247,6 @@ class Configuration
 
     /**
      * Get an AutoCompleter service instance.
-<<<<<<< HEAD
-     *
-     * @return AutoCompleter
-=======
->>>>>>> develop
      */
     public function getAutoCompleter(): AutoCompleter
     {
@@ -1330,11 +1259,6 @@ class Configuration
 
     /**
      * @deprecated Nothing should be using this anymore
-<<<<<<< HEAD
-     *
-     * @return array
-=======
->>>>>>> develop
      */
     public function getTabCompletionMatchers(): array
     {
@@ -1495,11 +1419,6 @@ class Configuration
 
     /**
      * Get the Presenter service.
-<<<<<<< HEAD
-     *
-     * @return Presenter
-=======
->>>>>>> develop
      */
     public function getPresenter(): Presenter
     {
@@ -1531,11 +1450,6 @@ class Configuration
      * are found.
      *
      * This will default to true in a future release, but is false for now.
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public function warnOnMultipleConfigs(): bool
     {
@@ -1545,11 +1459,8 @@ class Configuration
     /**
      * Set the current color mode.
      *
-<<<<<<< HEAD
-=======
      * @throws \InvalidArgumentException if the color mode isn't auto, forced or disabled
      *
->>>>>>> develop
      * @param string $colorMode
      */
     public function setColorMode(string $colorMode)
@@ -1569,11 +1480,6 @@ class Configuration
 
     /**
      * Get the current color mode.
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     public function colorMode(): string
     {
@@ -1604,11 +1510,6 @@ class Configuration
 
     /**
      * Get the current interactive mode.
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     public function interactiveMode(): string
     {
@@ -1629,11 +1530,6 @@ class Configuration
      * Get an update checker service instance.
      *
      * If none has been explicitly defined, this will create a new instance.
-<<<<<<< HEAD
-     *
-     * @return Checker
-=======
->>>>>>> develop
      */
     public function getChecker(): Checker
     {
@@ -1669,11 +1565,6 @@ class Configuration
      *
      * One of 'always', 'daily', 'weekly', 'monthly' or 'never'. If none is
      * explicitly set, default to 'weekly'.
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     public function getUpdateCheck(): string
     {
@@ -1756,11 +1647,6 @@ class Configuration
 
     /**
      * Get the force array indexes.
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public function forceArrayIndexes(): bool
     {
@@ -1862,11 +1748,6 @@ class Configuration
 
     /**
      * Get the configured output verbosity.
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     public function verbosity(): string
     {
@@ -1929,20 +1810,11 @@ class Configuration
      * Guess whether stdin is piped.
      *
      * This is mostly useful for deciding whether to use non-interactive mode.
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public function inputIsPiped(): bool
     {
         if ($this->pipedInput === null) {
-<<<<<<< HEAD
-            $this->pipedInput = \defined('STDIN') && static::looksLikeAPipe(\STDIN);
-=======
             $this->pipedInput = \defined('STDIN') && self::looksLikeAPipe(\STDIN);
->>>>>>> develop
         }
 
         return $this->pipedInput;
@@ -1952,20 +1824,11 @@ class Configuration
      * Guess whether shell output is piped.
      *
      * This is mostly useful for deciding whether to use non-decorated output.
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public function outputIsPiped(): bool
     {
         if ($this->pipedOutput === null) {
-<<<<<<< HEAD
-            $this->pipedOutput = static::looksLikeAPipe($this->getOutput()->getStream());
-=======
             $this->pipedOutput = self::looksLikeAPipe($this->getOutput()->getStream());
->>>>>>> develop
         }
 
         return $this->pipedOutput;
@@ -1975,11 +1838,6 @@ class Configuration
      * Guess whether an input or output stream is piped.
      *
      * @param resource|int $stream
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     private static function looksLikeAPipe($stream): bool
     {

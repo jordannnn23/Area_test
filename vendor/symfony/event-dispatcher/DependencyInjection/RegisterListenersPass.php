@@ -25,98 +25,37 @@ use Symfony\Contracts\EventDispatcher\Event;
  */
 class RegisterListenersPass implements CompilerPassInterface
 {
-<<<<<<< HEAD
-    protected $dispatcherService;
-    protected $listenerTag;
-    protected $subscriberTag;
-    protected $eventAliasesParameter;
-
-    private $hotPathEvents = [];
-    private $hotPathTagName = 'container.hot_path';
-    private $noPreloadEvents = [];
-    private $noPreloadTagName = 'container.no_preload';
-
-    public function __construct(string $dispatcherService = 'event_dispatcher', string $listenerTag = 'kernel.event_listener', string $subscriberTag = 'kernel.event_subscriber', string $eventAliasesParameter = 'event_dispatcher.event_aliases')
-    {
-        if (0 < \func_num_args()) {
-            trigger_deprecation('symfony/event-dispatcher', '5.3', 'Configuring "%s" is deprecated.', __CLASS__);
-        }
-
-        $this->dispatcherService = $dispatcherService;
-        $this->listenerTag = $listenerTag;
-        $this->subscriberTag = $subscriberTag;
-        $this->eventAliasesParameter = $eventAliasesParameter;
-    }
-=======
     private array $hotPathEvents = [];
     private array $noPreloadEvents = [];
->>>>>>> develop
 
     /**
      * @return $this
      */
-<<<<<<< HEAD
-    public function setHotPathEvents(array $hotPathEvents)
-    {
-        $this->hotPathEvents = array_flip($hotPathEvents);
-
-        if (1 < \func_num_args()) {
-            trigger_deprecation('symfony/event-dispatcher', '5.4', 'Configuring "$tagName" in "%s" is deprecated.', __METHOD__);
-            $this->hotPathTagName = func_get_arg(1);
-        }
-
-=======
     public function setHotPathEvents(array $hotPathEvents): static
     {
         $this->hotPathEvents = array_flip($hotPathEvents);
 
->>>>>>> develop
         return $this;
     }
 
     /**
      * @return $this
      */
-<<<<<<< HEAD
-    public function setNoPreloadEvents(array $noPreloadEvents): self
-    {
-        $this->noPreloadEvents = array_flip($noPreloadEvents);
-
-        if (1 < \func_num_args()) {
-            trigger_deprecation('symfony/event-dispatcher', '5.4', 'Configuring "$tagName" in "%s" is deprecated.', __METHOD__);
-            $this->noPreloadTagName = func_get_arg(1);
-        }
-
-=======
     public function setNoPreloadEvents(array $noPreloadEvents): static
     {
         $this->noPreloadEvents = array_flip($noPreloadEvents);
 
->>>>>>> develop
         return $this;
     }
 
     public function process(ContainerBuilder $container)
     {
-<<<<<<< HEAD
-        if (!$container->hasDefinition($this->dispatcherService) && !$container->hasAlias($this->dispatcherService)) {
-=======
         if (!$container->hasDefinition('event_dispatcher') && !$container->hasAlias('event_dispatcher')) {
->>>>>>> develop
             return;
         }
 
         $aliases = [];
 
-<<<<<<< HEAD
-        if ($container->hasParameter($this->eventAliasesParameter)) {
-            $aliases = $container->getParameter($this->eventAliasesParameter);
-        }
-
-        $globalDispatcherDefinition = $container->findDefinition($this->dispatcherService);
-
-        foreach ($container->findTaggedServiceIds($this->listenerTag, true) as $id => $events) {
-=======
         if ($container->hasParameter('event_dispatcher.event_aliases')) {
             $aliases = $container->getParameter('event_dispatcher.event_aliases');
         }
@@ -124,26 +63,17 @@ class RegisterListenersPass implements CompilerPassInterface
         $globalDispatcherDefinition = $container->findDefinition('event_dispatcher');
 
         foreach ($container->findTaggedServiceIds('kernel.event_listener', true) as $id => $events) {
->>>>>>> develop
             $noPreload = 0;
 
             foreach ($events as $event) {
                 $priority = $event['priority'] ?? 0;
 
                 if (!isset($event['event'])) {
-<<<<<<< HEAD
-                    if ($container->getDefinition($id)->hasTag($this->subscriberTag)) {
-                        continue;
-                    }
-
-                    $event['method'] = $event['method'] ?? '__invoke';
-=======
                     if ($container->getDefinition($id)->hasTag('kernel.event_subscriber')) {
                         continue;
                     }
 
                     $event['method'] ??= '__invoke';
->>>>>>> develop
                     $event['event'] = $this->getEventFromTypeDeclaration($container, $id, $event['method']);
                 }
 
@@ -169,32 +99,20 @@ class RegisterListenersPass implements CompilerPassInterface
                 $dispatcherDefinition->addMethodCall('addListener', [$event['event'], [new ServiceClosureArgument(new Reference($id)), $event['method']], $priority]);
 
                 if (isset($this->hotPathEvents[$event['event']])) {
-<<<<<<< HEAD
-                    $container->getDefinition($id)->addTag($this->hotPathTagName);
-=======
                     $container->getDefinition($id)->addTag('container.hot_path');
->>>>>>> develop
                 } elseif (isset($this->noPreloadEvents[$event['event']])) {
                     ++$noPreload;
                 }
             }
 
             if ($noPreload && \count($events) === $noPreload) {
-<<<<<<< HEAD
-                $container->getDefinition($id)->addTag($this->noPreloadTagName);
-=======
                 $container->getDefinition($id)->addTag('container.no_preload');
->>>>>>> develop
             }
         }
 
         $extractingDispatcher = new ExtractingEventDispatcher();
 
-<<<<<<< HEAD
-        foreach ($container->findTaggedServiceIds($this->subscriberTag, true) as $id => $tags) {
-=======
         foreach ($container->findTaggedServiceIds('kernel.event_subscriber', true) as $id => $tags) {
->>>>>>> develop
             $def = $container->getDefinition($id);
 
             // We must assume that the class value has been correctly filled, even if the service is created by a factory
@@ -232,21 +150,13 @@ class RegisterListenersPass implements CompilerPassInterface
                 }
 
                 if (isset($this->hotPathEvents[$args[0]])) {
-<<<<<<< HEAD
-                    $container->getDefinition($id)->addTag($this->hotPathTagName);
-=======
                     $container->getDefinition($id)->addTag('container.hot_path');
->>>>>>> develop
                 } elseif (isset($this->noPreloadEvents[$args[0]])) {
                     ++$noPreload;
                 }
             }
             if ($noPreload && \count($extractingDispatcher->listeners) === $noPreload) {
-<<<<<<< HEAD
-                $container->getDefinition($id)->addTag($this->noPreloadTagName);
-=======
                 $container->getDefinition($id)->addTag('container.no_preload');
->>>>>>> develop
             }
             $extractingDispatcher->listeners = [];
             ExtractingEventDispatcher::$aliases = [];
@@ -264,11 +174,7 @@ class RegisterListenersPass implements CompilerPassInterface
             || $type->isBuiltin()
             || Event::class === ($name = $type->getName())
         ) {
-<<<<<<< HEAD
-            throw new InvalidArgumentException(sprintf('Service "%s" must define the "event" attribute on "%s" tags.', $id, $this->listenerTag));
-=======
             throw new InvalidArgumentException(sprintf('Service "%s" must define the "event" attribute on "kernel.event_listener" tags.', $id));
->>>>>>> develop
         }
 
         return $name;
@@ -280,21 +186,12 @@ class RegisterListenersPass implements CompilerPassInterface
  */
 class ExtractingEventDispatcher extends EventDispatcher implements EventSubscriberInterface
 {
-<<<<<<< HEAD
-    public $listeners = [];
-
-    public static $aliases = [];
-    public static $subscriber;
-
-    public function addListener(string $eventName, $listener, int $priority = 0)
-=======
     public array $listeners = [];
 
     public static array $aliases = [];
     public static string $subscriber;
 
     public function addListener(string $eventName, callable|array $listener, int $priority = 0)
->>>>>>> develop
     {
         $this->listeners[] = [$eventName, $listener[1], $priority];
     }

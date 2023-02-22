@@ -17,30 +17,14 @@
 
 namespace Google\Service\Compute;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-class BackendServiceLogConfig extends \Google\Model
-{
-=======
 class BackendServiceLogConfig extends \Google\Collection
 {
   protected $collection_key = 'optionalFields';
->>>>>>> develop
-=======
-class BackendServiceLogConfig extends \Google\Collection
-{
-  protected $collection_key = 'optionalFields';
->>>>>>> develop
   /**
    * @var bool
    */
   public $enable;
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @var string[]
    */
   public $optionalFields;
@@ -49,10 +33,6 @@ class BackendServiceLogConfig extends \Google\Collection
    */
   public $optionalMode;
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @var float
    */
   public $sampleRate;
@@ -72,11 +52,6 @@ class BackendServiceLogConfig extends \Google\Collection
     return $this->enable;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @param string[]
    */
   public function setOptionalFields($optionalFields)
@@ -105,10 +80,6 @@ class BackendServiceLogConfig extends \Google\Collection
     return $this->optionalMode;
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @param float
    */
   public function setSampleRate($sampleRate)

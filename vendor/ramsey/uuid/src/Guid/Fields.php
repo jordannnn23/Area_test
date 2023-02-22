@@ -17,10 +17,7 @@ namespace Ramsey\Uuid\Guid;
 use Ramsey\Uuid\Exception\InvalidArgumentException;
 use Ramsey\Uuid\Fields\SerializableFieldsTrait;
 use Ramsey\Uuid\Rfc4122\FieldsInterface;
-<<<<<<< HEAD
-=======
 use Ramsey\Uuid\Rfc4122\MaxTrait;
->>>>>>> develop
 use Ramsey\Uuid\Rfc4122\NilTrait;
 use Ramsey\Uuid\Rfc4122\VariantTrait;
 use Ramsey\Uuid\Rfc4122\VersionTrait;
@@ -48,43 +45,19 @@ use const STR_PAD_LEFT;
  */
 final class Fields implements FieldsInterface
 {
-<<<<<<< HEAD
-=======
     use MaxTrait;
->>>>>>> develop
     use NilTrait;
     use SerializableFieldsTrait;
     use VariantTrait;
     use VersionTrait;
 
     /**
-<<<<<<< HEAD
-     * @var string
-     */
-    private $bytes;
-
-    /**
-=======
->>>>>>> develop
      * @param string $bytes A 16-byte binary string representation of a UUID
      *
      * @throws InvalidArgumentException if the byte string is not exactly 16 bytes
      * @throws InvalidArgumentException if the byte string does not represent a GUID
      * @throws InvalidArgumentException if the byte string does not contain a valid version
      */
-<<<<<<< HEAD
-    public function __construct(string $bytes)
-    {
-        if (strlen($bytes) !== 16) {
-            throw new InvalidArgumentException(
-                'The byte string must be 16 bytes long; '
-                . 'received ' . strlen($bytes) . ' bytes'
-            );
-        }
-
-        $this->bytes = $bytes;
-
-=======
     public function __construct(private string $bytes)
     {
         if (strlen($this->bytes) !== 16) {
@@ -94,7 +67,6 @@ final class Fields implements FieldsInterface
             );
         }
 
->>>>>>> develop
         if (!$this->isCorrectVariant()) {
             throw new InvalidArgumentException(
                 'The byte string received does not conform to the RFC '
@@ -172,9 +144,6 @@ final class Fields implements FieldsInterface
 
     public function getClockSeq(): Hexadecimal
     {
-<<<<<<< HEAD
-        $clockSeq = hexdec(bin2hex(substr($this->bytes, 8, 2))) & 0x3fff;
-=======
         if ($this->isMax()) {
             $clockSeq = 0xffff;
         } elseif ($this->isNil()) {
@@ -182,7 +151,6 @@ final class Fields implements FieldsInterface
         } else {
             $clockSeq = hexdec(bin2hex(substr($this->bytes, 8, 2))) & 0x3fff;
         }
->>>>>>> develop
 
         return new Hexadecimal(str_pad(dechex($clockSeq), 4, '0', STR_PAD_LEFT));
     }
@@ -204,11 +172,7 @@ final class Fields implements FieldsInterface
 
     public function getVersion(): ?int
     {
-<<<<<<< HEAD
-        if ($this->isNil()) {
-=======
         if ($this->isNil() || $this->isMax()) {
->>>>>>> develop
             return null;
         }
 
@@ -220,11 +184,7 @@ final class Fields implements FieldsInterface
 
     private function isCorrectVariant(): bool
     {
-<<<<<<< HEAD
-        if ($this->isNil()) {
-=======
         if ($this->isNil() || $this->isMax()) {
->>>>>>> develop
             return true;
         }
 

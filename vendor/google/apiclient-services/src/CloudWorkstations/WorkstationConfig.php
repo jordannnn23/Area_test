@@ -46,18 +46,9 @@ class WorkstationConfig extends \Google\Collection
    * @var string
    */
   public $displayName;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   protected $encryptionKeyType = CustomerEncryptionKey::class;
   protected $encryptionKeyDataType = '';
   public $encryptionKey;
->>>>>>> develop
-=======
-  protected $encryptionKeyType = CustomerEncryptionKey::class;
-  protected $encryptionKeyDataType = '';
-  public $encryptionKey;
->>>>>>> develop
   /**
    * @var string
    */
@@ -196,11 +187,6 @@ class WorkstationConfig extends \Google\Collection
     return $this->displayName;
   }
   /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
    * @param CustomerEncryptionKey
    */
   public function setEncryptionKey(CustomerEncryptionKey $encryptionKey)
@@ -215,10 +201,6 @@ class WorkstationConfig extends \Google\Collection
     return $this->encryptionKey;
   }
   /**
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
    * @param string
    */
   public function setEtag($etag)

@@ -3,11 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
-<<<<<<< HEAD
- * (c) 2012-2022 Justin Hileman
-=======
  * (c) 2012-2023 Justin Hileman
->>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -52,11 +48,7 @@ abstract class AbstractMatcher
      *
      * @param array $tokens Tokenized readline input
      *
-<<<<<<< HEAD
-     * @return bool
-=======
      * @return false
->>>>>>> develop
      */
     public function hasMatched(array $tokens): bool
     {
@@ -67,11 +59,6 @@ abstract class AbstractMatcher
      * Get current readline input word.
      *
      * @param array $tokens Tokenized readline input (see token_get_all)
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     protected function getInput(array $tokens): string
     {
@@ -88,11 +75,6 @@ abstract class AbstractMatcher
      * Get current namespace and class (if any) from readline input.
      *
      * @param array $tokens Tokenized readline input (see token_get_all)
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     protected function getNamespaceAndClass(array $tokens): string
     {
@@ -126,11 +108,6 @@ abstract class AbstractMatcher
      *
      * @param string $prefix
      * @param string $word
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public static function startsWith(string $prefix, string $word): bool
     {
@@ -142,11 +119,6 @@ abstract class AbstractMatcher
      *
      * @param mixed  $token  A PHP token (see token_get_all)
      * @param string $syntax A syntax pattern (default: variable pattern)
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public static function hasSyntax($token, string $syntax = self::VAR_SYNTAX): bool
     {
@@ -164,11 +136,6 @@ abstract class AbstractMatcher
      *
      * @param mixed  $token A PHP token (see token_get_all)
      * @param string $which A PHP token type
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public static function tokenIs($token, string $which): bool
     {
@@ -183,11 +150,6 @@ abstract class AbstractMatcher
      * Check whether $token is an operator.
      *
      * @param mixed $token A PHP token (see token_get_all)
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public static function isOperator($token): bool
     {
@@ -208,11 +170,6 @@ abstract class AbstractMatcher
      *
      * @param array $coll  A list of token types
      * @param mixed $token A PHP token (see token_get_all)
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
->>>>>>> develop
      */
     public static function hasToken(array $coll, $token): bool
     {

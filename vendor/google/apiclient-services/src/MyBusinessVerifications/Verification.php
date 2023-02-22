@@ -22,19 +22,10 @@ class Verification extends \Google\Model
   /**
    * @var string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   public $announcement;
   /**
    * @var string
    */
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   public $createTime;
   /**
    * @var string
@@ -52,11 +43,6 @@ class Verification extends \Google\Model
   /**
    * @param string
    */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
   public function setAnnouncement($announcement)
   {
     $this->announcement = $announcement;
@@ -71,10 +57,6 @@ class Verification extends \Google\Model
   /**
    * @param string
    */
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
   public function setCreateTime($createTime)
   {
     $this->createTime = $createTime;

@@ -3,11 +3,7 @@
 /*
  * This file is part of Psy Shell.
  *
-<<<<<<< HEAD
- * (c) 2012-2022 Justin Hileman
-=======
  * (c) 2012-2023 Justin Hileman
->>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -72,11 +68,6 @@ class DocblockFormatter implements ReflectorFormatter
      *
      * @param array $vector
      * @param array $lines
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     private static function formatVector(array $vector, array $lines): string
     {
@@ -140,11 +131,6 @@ class DocblockFormatter implements ReflectorFormatter
      *
      * @param string $type Vector type
      * @param int    $max  Pad width
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     private static function getVectorParamTemplate(string $type, int $max): string
     {
@@ -160,11 +146,6 @@ class DocblockFormatter implements ReflectorFormatter
      *
      * @param string $text   String to indent
      * @param string $indent (default: '  ')
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     private static function indent(string $text, string $indent = '  '): string
     {
@@ -175,11 +156,6 @@ class DocblockFormatter implements ReflectorFormatter
      * Convert underscored or whitespace separated words into sentence case.
      *
      * @param string $text
-<<<<<<< HEAD
-     *
-     * @return string
-=======
->>>>>>> develop
      */
     private static function inflect(string $text): string
     {

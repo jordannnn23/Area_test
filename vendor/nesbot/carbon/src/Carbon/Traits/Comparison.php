@@ -1022,28 +1022,12 @@ trait Comparison
             return $current->startOfMinute()->eq($other);
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        if (preg_match('/\d(h|am|pm)$/', $tester)) {
-=======
         if (preg_match('/\d(?:h|am|pm)$/', $tester)) {
->>>>>>> develop
-=======
-        if (preg_match('/\d(?:h|am|pm)$/', $tester)) {
->>>>>>> develop
             return $current->startOfHour()->eq($other);
         }
 
         if (preg_match(
-<<<<<<< HEAD
-<<<<<<< HEAD
-            '/^(january|february|march|april|may|june|july|august|september|october|november|december)\s+\d+$/i',
-=======
             '/^(?:january|february|march|april|may|june|july|august|september|october|november|december)(?:\s+\d+)?$/i',
->>>>>>> develop
-=======
-            '/^(?:january|february|march|april|may|june|july|august|september|october|november|december)(?:\s+\d+)?$/i',
->>>>>>> develop
             $tester
         )) {
             return $current->startOfMonth()->eq($other->startOfMonth());

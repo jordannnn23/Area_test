@@ -29,28 +29,12 @@ final class Help
     private const LEFT_MARGIN = '  ';
 
     private const HELP_TEXT = [
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'Usage' => [
-=======
         'Usage'                  => [
->>>>>>> develop
-=======
-        'Usage'                  => [
->>>>>>> develop
             ['text' => 'phpunit [options] UnitTest.php'],
             ['text' => 'phpunit [options] <directory>'],
         ],
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'Code Coverage Options' => [
-=======
         'Code Coverage Options'  => [
->>>>>>> develop
-=======
-        'Code Coverage Options'  => [
->>>>>>> develop
             ['arg' => '--coverage-clover <file>', 'desc' => 'Generate code coverage report in Clover XML format'],
             ['arg' => '--coverage-cobertura <file>', 'desc' => 'Generate code coverage report in Cobertura XML format'],
             ['arg' => '--coverage-crap4j <file>', 'desc' => 'Generate code coverage report in Crap4J XML format'],
@@ -66,15 +50,7 @@ final class Help
             ['arg' => '--no-coverage', 'desc' => 'Ignore code coverage configuration'],
         ],
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'Logging Options' => [
-=======
         'Logging Options'        => [
->>>>>>> develop
-=======
-        'Logging Options'        => [
->>>>>>> develop
             ['arg' => '--log-junit <file>', 'desc' => 'Log test execution in JUnit XML format to file'],
             ['arg' => '--log-teamcity <file>', 'desc' => 'Log test execution in TeamCity format to file'],
             ['arg' => '--testdox-html <file>', 'desc' => 'Write agile documentation in HTML format to file'],
@@ -142,18 +118,6 @@ final class Help
             ['arg'    => '--printer <printer>', 'desc' => 'TestListener implementation to use'],
             ['spacer' => ''],
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-            ['arg' => '--order-by <order>', 'desc' => 'Run tests in order: default|defects|duration|no-depends|random|reverse|size'],
-            ['arg' => '--random-order-seed <N>', 'desc' => 'Use a specific random seed <N> for random order'],
-            ['arg' => '--cache-result', 'desc' => 'Write test results to cache file'],
-            ['arg' => '--do-not-cache-result', 'desc' => 'Do not write test results to cache file'],
-        ],
-
-        'Configuration Options' => [
-=======
-=======
->>>>>>> develop
             ['arg'    => '--order-by <order>', 'desc' => 'Run tests in order: default|defects|duration|no-depends|random|reverse|size'],
             ['arg'    => '--random-order-seed <N>', 'desc' => 'Use a specific random seed <N> for random order'],
             ['arg'    => '--cache-result', 'desc' => 'Write test results to cache file'],
@@ -161,10 +125,6 @@ final class Help
         ],
 
         'Configuration Options'  => [
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
             ['arg' => '--prepend <file>', 'desc' => 'A PHP script that is included as early as possible'],
             ['arg' => '--bootstrap <file>', 'desc' => 'A PHP script that is included before the tests run'],
             ['arg' => '-c|--configuration <file>', 'desc' => 'Read configuration from XML file'],
@@ -178,15 +138,7 @@ final class Help
             ['arg' => '--migrate-configuration', 'desc' => 'Migrate configuration file to current format'],
         ],
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'Miscellaneous Options' => [
-=======
         'Miscellaneous Options'  => [
->>>>>>> develop
-=======
-        'Miscellaneous Options'  => [
->>>>>>> develop
             ['arg' => '-h|--help', 'desc' => 'Prints this usage information'],
             ['arg' => '--version', 'desc' => 'Prints the version and exits'],
             ['arg' => '--atleast-version <min>', 'desc' => 'Checks that version is greater than min and exits'],

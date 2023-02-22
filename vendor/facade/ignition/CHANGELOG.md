@@ -2,11 +2,6 @@
 
 All notable changes to `ignition` will be documented in this file
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> develop
 ## 2.17.6 - 2022-06-30
 
 ### What's Changed
@@ -19,10 +14,6 @@ All notable changes to `ignition` will be documented in this file
 
 **Full Changelog**: https://github.com/facade/ignition/compare/2.17.5...2.17.6
 
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> develop
 ## 2.17.5 - 2022-02-23
 
 ## What's Changed
