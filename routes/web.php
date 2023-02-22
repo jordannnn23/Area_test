@@ -41,4 +41,8 @@ Route::get('youtube/register/{user_id}', [YoutubeController::class, 'register'])
 Route::get('youtube/unregister/{user_id}', [YoutubeController::class, 'unregister'])->name('youtube_unregister');
 Route::get('dashboard/profile/{email}', [ProfileController::class, 'index']);
 
+Route::middleware('auth')->group(function () {
+    Route::get('profile', [ProfileController::class, 'send_infos']);
+});
+
 require __DIR__.'/auth.php';

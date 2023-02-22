@@ -13,6 +13,7 @@ class Youtube_infos extends Model
         'user_id',
         'channel_id',
         'followers',
+        'channel_id',
         'videos',
         'views',
         'description',

@@ -44,7 +44,7 @@ class Subscriber {
         if ($http_function)
             $response = $http_function($url);
         else
-            $response = $this->http($url, $url);
+            $response = $this->http($url);
 
         $result = json_decode($response, true);
         $rss_url = $result['responseData']['url'];

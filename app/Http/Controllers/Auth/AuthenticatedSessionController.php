@@ -35,6 +35,7 @@ class AuthenticatedSessionController extends Controller
             'status' => '200',
             'message' => 'User log with success !'
         ]);
+        // dd($request);
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
