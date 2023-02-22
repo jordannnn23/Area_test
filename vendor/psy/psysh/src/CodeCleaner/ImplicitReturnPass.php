@@ -4,7 +4,11 @@
  * This file is part of Psy Shell.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (c) 2012-2022 Justin Hileman
+=======
+ * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
 =======
  * (c) 2012-2023 Justin Hileman
 >>>>>>> develop
@@ -120,8 +124,11 @@ class ImplicitReturnPass extends CodeCleanerPass
      *
      * @param Node $node
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */

@@ -36,7 +36,10 @@ class QualityNsrNsrDataMetadata extends \Google\Collection
    * @var string
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public $lastTimeProcessedGoldmineInSeconds;
   /**
    * @var string
@@ -52,6 +55,9 @@ class QualityNsrNsrDataMetadata extends \Google\Collection
   /**
    * @var string
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public $raffiaLookupKey;
   /**
@@ -109,7 +115,10 @@ class QualityNsrNsrDataMetadata extends \Google\Collection
    * @param string
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public function setLastTimeProcessedGoldmineInSeconds($lastTimeProcessedGoldmineInSeconds)
   {
     $this->lastTimeProcessedGoldmineInSeconds = $lastTimeProcessedGoldmineInSeconds;
@@ -166,6 +175,9 @@ class QualityNsrNsrDataMetadata extends \Google\Collection
   /**
    * @param string
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public function setRaffiaLookupKey($raffiaLookupKey)
   {

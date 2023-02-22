@@ -190,6 +190,12 @@ class ProjectsLocationsApisVersionsSpecs extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+   * @opt_param string filter An expression that can be used to filter the list.
+   * Filters use the Common Expression Language and can refer to all message
+   * fields.
+>>>>>>> develop
 =======
    * @opt_param string filter An expression that can be used to filter the list.
    * Filters use the Common Expression Language and can refer to all message

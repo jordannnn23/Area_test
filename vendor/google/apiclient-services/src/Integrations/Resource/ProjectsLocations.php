@@ -18,8 +18,11 @@
 namespace Google\Service\Integrations\Resource;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse;
 
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 /**
@@ -32,6 +35,7 @@ use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTaskEntitiesRe
  */
 class ProjectsLocations extends \Google\Service\Resource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   /**
    * This is a UI only method and will be moved away. Returns a list of common
@@ -48,6 +52,8 @@ class ProjectsLocations extends \Google\Service\Resource
     $params = array_merge($params, $optParams);
     return $this->call('listTaskEntities', [$params], GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse::class);
   }
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 }

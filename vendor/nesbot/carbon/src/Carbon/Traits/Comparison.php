@@ -1023,7 +1023,11 @@ trait Comparison
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (preg_match('/\d(h|am|pm)$/', $tester)) {
+=======
+        if (preg_match('/\d(?:h|am|pm)$/', $tester)) {
+>>>>>>> develop
 =======
         if (preg_match('/\d(?:h|am|pm)$/', $tester)) {
 >>>>>>> develop
@@ -1032,7 +1036,11 @@ trait Comparison
 
         if (preg_match(
 <<<<<<< HEAD
+<<<<<<< HEAD
             '/^(january|february|march|april|may|june|july|august|september|october|november|december)\s+\d+$/i',
+=======
+            '/^(?:january|february|march|april|may|june|july|august|september|october|november|december)(?:\s+\d+)?$/i',
+>>>>>>> develop
 =======
             '/^(?:january|february|march|april|may|june|july|august|september|october|november|december)(?:\s+\d+)?$/i',
 >>>>>>> develop

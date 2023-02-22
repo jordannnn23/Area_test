@@ -47,11 +47,17 @@ class ApiVersion extends \Google\Model
    * @var string
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public $primarySpec;
   /**
    * @var string
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public $state;
   /**
@@ -147,7 +153,10 @@ class ApiVersion extends \Google\Model
    * @param string
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public function setPrimarySpec($primarySpec)
   {
     $this->primarySpec = $primarySpec;
@@ -162,6 +171,9 @@ class ApiVersion extends \Google\Model
   /**
    * @param string
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public function setState($state)
   {

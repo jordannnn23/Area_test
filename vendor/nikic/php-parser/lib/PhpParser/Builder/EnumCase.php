@@ -79,8 +79,13 @@ class EnumCase implements PhpParser\Builder
             $this->name,
             $this->value,
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->attributes,
             $this->attributeGroups
+=======
+            $this->attributeGroups,
+            $this->attributes
+>>>>>>> develop
 =======
             $this->attributeGroups,
             $this->attributes

@@ -18,8 +18,11 @@
 namespace Google\Service\Integrations\Resource;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaArchiveBundleRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaArchiveBundleResponse;
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaExecuteIntegrationsRequest;
@@ -40,6 +43,7 @@ class ProjectsLocationsProductsIntegrations extends \Google\Service\Resource
 {
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * PROTECT WITH A VISIBILITY LABEL. THIS METHOD WILL BE MOVED TO A SEPARATE
    * SERVICE. Soft-deletes the bundle. (integrations.archiveBundle)
    *
@@ -56,6 +60,8 @@ class ProjectsLocationsProductsIntegrations extends \Google\Service\Resource
     return $this->call('archiveBundle', [$params], GoogleCloudIntegrationsV1alphaArchiveBundleResponse::class);
   }
   /**
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
    * Executes integrations synchronously by passing the trigger id in the request

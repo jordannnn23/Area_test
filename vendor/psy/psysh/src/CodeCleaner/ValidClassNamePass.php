@@ -4,7 +4,11 @@
  * This file is part of Psy Shell.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (c) 2012-2022 Justin Hileman
+=======
+ * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
 =======
  * (c) 2012-2023 Justin Hileman
 >>>>>>> develop
@@ -275,8 +279,11 @@ class ValidClassNamePass extends NamespaceAwarePass
      *
      * @param Stmt $stmt
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return string
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -300,8 +307,11 @@ class ValidClassNamePass extends NamespaceAwarePass
      *
      * @param string $name
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -322,8 +332,11 @@ class ValidClassNamePass extends NamespaceAwarePass
      *
      * @param string $name
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -337,8 +350,11 @@ class ValidClassNamePass extends NamespaceAwarePass
      *
      * @param string $name
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -368,8 +384,11 @@ class ValidClassNamePass extends NamespaceAwarePass
      * @param string $msg
      * @param Stmt   $stmt
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return FatalErrorException
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */

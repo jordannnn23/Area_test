@@ -12,9 +12,15 @@
     "require": {
         "php": "^7.2.5|^8.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
         "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
         "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+=======
+        "illuminate/console": "^6.0|^7.0|^8.0|^9.0|^10.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0",
+>>>>>>> develop
 =======
         "illuminate/console": "^6.0|^7.0|^8.0|^9.0|^10.0",
         "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0",
@@ -29,7 +35,11 @@
     },
     "suggest": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0|^9.0)."
+=======
+        "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0|^9.0|^10.0)."
+>>>>>>> develop
 =======
         "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0|^9.0|^10.0)."
 >>>>>>> develop

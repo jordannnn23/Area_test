@@ -4,7 +4,11 @@
  * This file is part of Psy Shell.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (c) 2012-2022 Justin Hileman
+=======
+ * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
 =======
  * (c) 2012-2023 Justin Hileman
 >>>>>>> develop
@@ -91,7 +95,11 @@ abstract class Command extends BaseCommand
      * These arguments will be excluded from help output.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array
+=======
+     * @return string[]
+>>>>>>> develop
 =======
      * @return string[]
 >>>>>>> develop
@@ -117,7 +125,11 @@ abstract class Command extends BaseCommand
      * These options will be excluded from help output.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array
+=======
+     * @return string[]
+>>>>>>> develop
 =======
      * @return string[]
 >>>>>>> develop
@@ -130,8 +142,11 @@ abstract class Command extends BaseCommand
     /**
      * Format command aliases as text..
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return string
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -143,8 +158,11 @@ abstract class Command extends BaseCommand
     /**
      * Format command arguments as text.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return string
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -177,8 +195,11 @@ abstract class Command extends BaseCommand
     /**
      * Format options as text.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return string
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -221,8 +242,11 @@ abstract class Command extends BaseCommand
     /**
      * Calculate the maximum padding width for a set of lines.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return int
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -251,8 +275,11 @@ abstract class Command extends BaseCommand
      *
      * @param mixed $default
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return string
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -301,8 +328,11 @@ abstract class Command extends BaseCommand
     /**
      * Legacy fallback for getTable.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return TableHelper
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */

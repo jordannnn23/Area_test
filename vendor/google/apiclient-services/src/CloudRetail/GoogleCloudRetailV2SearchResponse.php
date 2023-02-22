@@ -33,6 +33,12 @@ class GoogleCloudRetailV2SearchResponse extends \Google\Collection
    */
   public $correctedQuery;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $experimentInfoType = GoogleCloudRetailV2ExperimentInfo::class;
+  protected $experimentInfoDataType = 'array';
+  public $experimentInfo;
+>>>>>>> develop
 =======
   protected $experimentInfoType = GoogleCloudRetailV2ExperimentInfo::class;
   protected $experimentInfoDataType = 'array';
@@ -107,7 +113,10 @@ class GoogleCloudRetailV2SearchResponse extends \Google\Collection
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param GoogleCloudRetailV2ExperimentInfo[]
    */
   public function setExperimentInfo($experimentInfo)
@@ -122,6 +131,9 @@ class GoogleCloudRetailV2SearchResponse extends \Google\Collection
     return $this->experimentInfo;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param GoogleCloudRetailV2SearchResponseFacet[]
    */

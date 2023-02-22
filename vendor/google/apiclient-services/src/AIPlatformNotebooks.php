@@ -363,7 +363,10 @@ class AIPlatformNotebooks extends \Google\Service
                 ],
               ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
             ],'reportEvent' => [
               'path' => 'v1/{+name}:reportEvent',
               'httpMethod' => 'POST',
@@ -374,6 +377,9 @@ class AIPlatformNotebooks extends \Google\Service
                   'required' => true,
                 ],
               ],
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             ],'reset' => [
               'path' => 'v1/{+name}:reset',

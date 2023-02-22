@@ -10,6 +10,10 @@ declare(strict_types=1);
 namespace Nette\Utils;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use JetBrains\PhpStorm\Language;
+>>>>>>> develop
 =======
 use JetBrains\PhpStorm\Language;
 >>>>>>> develop
@@ -208,14 +212,20 @@ class Arrays
 	 * @return string[]
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public static function grep(array $array, string $pattern, int $flags = 0): array
 =======
+=======
+>>>>>>> develop
 	public static function grep(
 		array $array,
 		#[Language('RegExp')]
 		string $pattern,
 		int $flags = 0
 	): array
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 	{
 		return Strings::pcre('preg_grep', [$pattern, $array, $flags]);

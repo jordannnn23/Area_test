@@ -19,8 +19,13 @@ class Php7 extends \PhpParser\ParserAbstract
 {
     protected $tokenToSymbolMapSize = 396;
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $actionTableSize = 1217;
     protected $gotoTableSize = 604;
+=======
+    protected $actionTableSize = 1223;
+    protected $gotoTableSize = 626;
+>>>>>>> develop
 =======
     protected $actionTableSize = 1223;
     protected $gotoTableSize = 626;
@@ -33,7 +38,11 @@ class Php7 extends \PhpParser\ParserAbstract
 
     protected $YY2TBLSTATE = 429;
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $numNonLeafStates = 717;
+=======
+    protected $numNonLeafStates = 726;
+>>>>>>> develop
 =======
     protected $numNonLeafStates = 726;
 >>>>>>> develop
@@ -254,6 +263,7 @@ class Php7 extends \PhpParser\ParserAbstract
 
     protected $action = array(
 <<<<<<< HEAD
+<<<<<<< HEAD
           132,  133,  134,  570,  135,  136,    0,  729,  730,  731,
           137,   37,  929,  450,  451,  452,-32766,-32766,-32766,-32767,
         -32767,-32767,-32767,  101,  102,  103,  104,  105, 1085, 1086,
@@ -377,6 +387,8 @@ class Php7 extends \PhpParser\ParserAbstract
            22,   26,  292,  400,  590,  594,  621,  681, 1166, 1214,
          1163, 1292,    0, 1179,    0,    0,  322
 =======
+=======
+>>>>>>> develop
           132,  133,  134,  575,  135,  136,    0,  738,  739,  740,
           137,   37,  850,  825,  851,  476,-32766,-32766,-32766,-32767,
         -32767,-32767,-32767,  101,  102,  103,  104,  105, 1097, 1098,
@@ -500,11 +512,15 @@ class Php7 extends \PhpParser\ParserAbstract
             0, 1210, 1024, -276, -103,   17,   22,   26,  292,  400,
           596,  600,  628,  689, 1178, 1228, 1175, 1306,    0,    0,
          1254,    0,  322
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
     protected $actionCheck = array(
             2,    3,    4,    5,    6,    7,    0,    9,   10,   11,
+<<<<<<< HEAD
 <<<<<<< HEAD
            12,   13,  128,  129,  130,  131,    9,   10,   11,   44,
            45,   46,   47,   48,   49,   50,   51,   52,  116,  117,
@@ -514,6 +530,8 @@ class Php7 extends \PhpParser\ParserAbstract
            31,  116,   14,    9,   10,   11,  106,  107,    8,   71,
            72,   73,   74,   75,   76,   77,  116,   30,   80,   32,
 =======
+=======
+>>>>>>> develop
            12,   13,  106,    1,  108,   31,    9,   10,   11,   44,
            45,   46,   47,   48,   49,   50,   51,   52,  116,  117,
           118,  119,  120,  121,  122,   37,   38,   30,    1,   32,
@@ -521,12 +539,16 @@ class Php7 extends \PhpParser\ParserAbstract
            43,  138,  106,  107,    8,   57,    9,   10,   11,    9,
            10,  155,  116,    9,   10,   11,    9,   10,   11,   71,
            72,   73,   74,   75,   76,   77,  163,   30,   80,   32,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
            33,   34,   35,   36,   30,   87,   88,   89,   90,   91,
            92,   93,   94,   95,   96,   97,   98,   99,  100,  101,
           102,  103,  104,  105,  106,  107,  108,  109,  110,  111,
           112,  113,  114,  115,  116,  117,  118,  119,  120,  121,
           122,  123,  124,  125,  126,  127,  128,  129,  130,  131,
+<<<<<<< HEAD
 <<<<<<< HEAD
           132,  133,   70,   80,  136,  137,  138,  139,  140,  141,
           142,  143,  144,    8,    1,   80,    8,   80,  150,  151,
@@ -540,6 +562,8 @@ class Php7 extends \PhpParser\ParserAbstract
            30,  156,   32,   33,   34,   71,   72,   73,   74,   75,
            76,   77,  146,    1,   80,   31,   80,  147,  148,   83,
 =======
+=======
+>>>>>>> develop
           132,  133,    8,   80,  136,  137,  138,  139,  140,  141,
           142,  143,  144,   51,    1,  161,   31,   80,  150,  151,
           152,    8,  154,    9,   10,   11,    2,    3,    4,    5,
@@ -551,14 +575,22 @@ class Php7 extends \PhpParser\ParserAbstract
           157,   57,   97,  128,   30,  162,   32,   33,   34,   35,
            30,   14,   32,   33,   34,   71,   72,   73,   74,   75,
            76,   77,  134,  135,   80,  147,  148,   50,   51,   52,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             8,   87,   88,   89,   90,   91,   92,   93,   94,   95,
            96,   97,   98,   99,  100,  101,  102,  103,  104,  105,
           106,  107,  108,  109,  110,  111,  112,  113,  114,  115,
           116,  117,  118,  119,  120,  121,  122,  123,  124,  125,
 <<<<<<< HEAD
+<<<<<<< HEAD
           126,  127,  128,  129,  130,  131,  132,  133,   84,    1,
           136,  137,  138,  139,  140,  141,  142,  143,  144,  164,
+=======
+          126,  127,  128,  129,  130,  131,  132,  133,  164,    8,
+          136,  137,  138,  139,  140,  141,  142,  143,  144,   80,
+>>>>>>> develop
 =======
           126,  127,  128,  129,  130,  131,  132,  133,  164,    8,
           136,  137,  138,  139,  140,  141,  142,  143,  144,   80,
@@ -568,6 +600,7 @@ class Php7 extends \PhpParser\ParserAbstract
            13,   30,    8,   32,   33,   34,   35,   36,   37,   38,
            39,   40,   41,   42,   43,   44,   45,   46,   47,   48,
 <<<<<<< HEAD
+<<<<<<< HEAD
            49,   50,   51,   52,   53,   54,   55,  106,   57,  108,
             9,   10,   11,   53,   54,   55,  164,   57,  164,  164,
            69,  117,  118,  159,   57,  161,  122,  101,   30,   69,
@@ -575,17 +608,23 @@ class Php7 extends \PhpParser\ParserAbstract
            73,   74,   75,   76,   77,   97,  106,   80,  108,  123,
            70,    9,   10,   11,   87,   88,   89,   90,   91,   92,
 =======
+=======
+>>>>>>> develop
            49,   50,   51,   52,   53,   54,   55,   30,   57,  160,
             8,  106,  107,  164,   31,    9,  137,  129,  130,  131,
            69,  116,  117,  118,   57,  161,   80,  122,    9,   10,
            11,  164,    1,  128,  155,  156,  157,   30,   71,   72,
            73,   74,   75,   76,   77,    8,  106,   80,  108,   30,
             1,   32,   33,   85,   87,   88,   89,   90,   91,   92,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
            93,   94,   95,   96,   97,   98,   99,  100,  101,  102,
           103,  104,  105,  106,  107,  108,  109,  110,  111,  112,
           113,  114,  115,  116,  117,  118,  119,  120,  121,  122,
           123,  124,  125,  126,  127,  128,  129,  130,  131,  132,
+<<<<<<< HEAD
 <<<<<<< HEAD
           133,    8,   97,  136,  137,  138,  139,  140,  141,  142,
           143,  144,  160,    8,  134,  135,  164,  150,  151,  152,
@@ -743,6 +782,8 @@ class Php7 extends \PhpParser\ParserAbstract
           458,  458,  458,  458,  307,  307,  307,  307,    0,    0,
           307,    0,    0,    0,  458,  458,  458,  458,  458,  458,
 =======
+=======
+>>>>>>> develop
           133,    8,  156,  136,  137,  138,  139,  140,  141,  142,
           143,  144,   37,   38,  146,  138,  116,  150,  151,  152,
             2,    3,    4,    5,    6,    7,  119,  120,  121,  122,
@@ -900,6 +941,9 @@ class Php7 extends \PhpParser\ParserAbstract
             0,    0,    0,    0,    0,    0,    0,  458,  458,  458,
           458,  458,  458,  307,  307,  307,  307,    0,    0,  307,
             0,    0,    0,  458,  458,  458,  458,  458,  458,  458,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
           458,  458,  458,  458,  458,  458,  458,  458,  458,  458,
           458,  458,  458,  458,  458,  458,  458,  458,  458,  458,
@@ -914,6 +958,7 @@ class Php7 extends \PhpParser\ParserAbstract
           458,  458,  458,  458,  458,  458,  458,  458,  458,  458,
           458,  458,  458,  458,  458,  458,  458,  458,  458,  458,
           458,  458,  458,  458,  458,  458,  458,  458,  458,  458,
+<<<<<<< HEAD
 <<<<<<< HEAD
           458,  458,  458,  458,  458,  458,  458,  458,  458,  291,
           291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
@@ -944,6 +989,8 @@ class Php7 extends \PhpParser\ParserAbstract
             0,    0,  747,  782,    0,  782,    0,  747,  747,  747,
             0,    0,    0,    0,  769,  762
 =======
+=======
+>>>>>>> develop
           458,  458,  458,  458,  458,  458,  458,  458,  291,  291,
           291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
           291,  291,  291,  291,  291,  291,  291,  291,  291,  291,
@@ -972,6 +1019,9 @@ class Php7 extends \PhpParser\ParserAbstract
             0,    0,  765,    0,    0,    0,    0,    0,    0,    0,
             0,  771,  778,    0,  778,    0,  771,  771,  771,    0,
             0,    0,    0,  785,  683
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -979,15 +1029,21 @@ class Php7 extends \PhpParser\ParserAbstract
             3,32767,  103,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,  101,32767,32767,32767,32767,32767,32767,32767,
 <<<<<<< HEAD
+<<<<<<< HEAD
         32767,32767,32767,32767,32767,32767,32767,  588,  588,  588,
           588,32767,32767,  250,  103,32767,32767,  464,  382,  382,
           382,32767,32767,  532,  532,  532,  532,  532,  532,32767,
         32767,32767,32767,32767,32767,  464,32767,32767,32767,32767,
 =======
+=======
+>>>>>>> develop
         32767,32767,32767,32767,32767,32767,32767,  593,  593,  593,
           593,32767,32767,  253,  103,32767,32767,  467,  385,  385,
           385,32767,32767,  537,  537,  537,  537,  537,  537,32767,
         32767,32767,32767,32767,32767,  467,32767,32767,32767,32767,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
@@ -996,6 +1052,7 @@ class Php7 extends \PhpParser\ParserAbstract
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,  101,32767,
+<<<<<<< HEAD
 <<<<<<< HEAD
         32767,32767,   37,    7,    8,   10,   11,   50,   17,  320,
         32767,32767,32767,32767,  103,32767,32767,32767,32767,32767,
@@ -1127,6 +1184,8 @@ class Php7 extends \PhpParser\ParserAbstract
            23,   23,  105,  105,  105,  105,   87,  105,   87,  125,
             9,   87,   87,   87,  142,  142,   42,   42,   42,   42,
 =======
+=======
+>>>>>>> develop
         32767,32767,   37,    7,    8,   10,   11,   50,   17,  323,
         32767,32767,32767,32767,  103,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
@@ -1259,6 +1318,9 @@ class Php7 extends \PhpParser\ParserAbstract
            42,   42,   72,   65,   65,   96,   55,   55,   65,   65,
            65,   65,   65,   65,   65,   65,   65,   65,   78,   78,
             9,  126,   78,   78,   78,   78,   42,   42,   42,   42,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
@@ -1273,6 +1335,7 @@ class Php7 extends \PhpParser\ParserAbstract
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
+<<<<<<< HEAD
 <<<<<<< HEAD
            42,   15,  128,   65,   65,   75,   75,   25,   26,   65,
            65,   65,   65,   65,   65,   65,   65,   65,   65,   27,
@@ -1364,6 +1427,8 @@ class Php7 extends \PhpParser\ParserAbstract
           331,  523,  465, 1269, 1277,  327,   30, 1297, 1308,  338,
           563,  600
 =======
+=======
+>>>>>>> develop
            42,   23,   23,   23,   23,   15,  129,   85,   85,   48,
            85,   85,   85,   48,   48,   48,   26,   13,   48,   13,
            27,   14,   48,   48,   48,   48,   48,   48,  107,  107,
@@ -1455,6 +1520,9 @@ class Php7 extends \PhpParser\ParserAbstract
           442, 1277,  443,  526,  468,  312,  527,  304,  329,  309,
           542,  291,  330,  528,  469, 1283, 1291,  327,   30, 1311,
          1322,  338,  568,  606
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -1480,6 +1548,7 @@ class Php7 extends \PhpParser\ParserAbstract
            49,   49,   25,   25,   68,   68,   71,   71,   70,   69,
            69,   62,   74,   74,   75,   75,   76,   76,   77,   77,
 <<<<<<< HEAD
+<<<<<<< HEAD
            78,   78,   26,   26,   27,   27,   27,   27,   86,   86,
            88,   88,   81,   81,   89,   89,   90,   90,   90,   82,
            82,   85,   85,   83,   83,   91,   92,   92,   56,   56,
@@ -1500,6 +1569,8 @@ class Php7 extends \PhpParser\ParserAbstract
           142,  142,  134,  144,  144,  146,  145,  145,   61,  102,
           147,  147,   55,   55,   42,   42,   42,   42,   42,   42,
 =======
+=======
+>>>>>>> develop
            78,   78,   79,   79,   26,   26,   27,   27,   27,   27,
            27,   87,   87,   89,   89,   82,   82,   90,   90,   91,
            91,   91,   83,   83,   86,   86,   84,   84,   92,   93,
@@ -1519,6 +1590,9 @@ class Php7 extends \PhpParser\ParserAbstract
           137,  137,  134,  134,  136,  136,  144,  144,  143,  143,
           143,  143,  143,  143,  143,  135,  145,  145,  147,  146,
           146,   61,  103,  148,  148,   55,   55,   42,   42,   42,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
@@ -1528,6 +1602,7 @@ class Php7 extends \PhpParser\ParserAbstract
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
+<<<<<<< HEAD
 <<<<<<< HEAD
            42,   42,   42,   42,   42,   42,   42,  154,  148,  148,
           153,  153,  156,  157,  157,  158,  159,  159,  159,   19,
@@ -1544,6 +1619,8 @@ class Php7 extends \PhpParser\ParserAbstract
           165,  165,  165,  179,  180,  178,  178,  178,  178,  178,
           178,  178,  178,  181,  181,  181,  181
 =======
+=======
+>>>>>>> develop
            42,   42,   42,   42,   42,   42,   42,   42,   42,   42,
           155,  149,  149,  154,  154,  157,  158,  158,  159,  160,
           161,  161,  161,  161,   19,   19,   72,   72,   72,   72,
@@ -1559,6 +1636,9 @@ class Php7 extends \PhpParser\ParserAbstract
           179,  179,  179,  179,  167,  167,  167,  167,  181,  182,
           180,  180,  180,  180,  180,  180,  180,  180,  183,  183,
           183,  183
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -1583,6 +1663,7 @@ class Php7 extends \PhpParser\ParserAbstract
             3,    1,    2,    5,    7,    9,    6,    5,    6,    3,
             2,    1,    1,    1,    0,    2,    1,    3,    8,    0,
             4,    2,    1,    3,    0,    1,    0,    1,    0,    1,
+<<<<<<< HEAD
 <<<<<<< HEAD
             3,    1,    8,    9,    8,    7,    6,    8,    0,    2,
             0,    2,    1,    2,    1,    2,    1,    1,    1,    0,
@@ -1626,6 +1707,8 @@ class Php7 extends \PhpParser\ParserAbstract
             2,    1,    2,    1,    1,    1,    4,    3,    3,    3,
             3,    6,    3,    1,    1,    2,    1
 =======
+=======
+>>>>>>> develop
             3,    1,    1,    1,    8,    9,    7,    8,    7,    6,
             8,    0,    2,    0,    2,    1,    2,    1,    2,    1,
             1,    1,    0,    2,    0,    2,    0,    2,    2,    1,
@@ -1668,6 +1751,9 @@ class Php7 extends \PhpParser\ParserAbstract
             4,    3,    2,    0,    2,    2,    1,    2,    1,    1,
             1,    4,    3,    3,    3,    3,    6,    3,    1,    1,
             2,    1
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -2306,6 +2392,7 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             202 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = new Stmt\Function_($this->semStack[$stackPos-(8-3)], ['byRef' => $this->semStack[$stackPos-(8-2)], 'params' => $this->semStack[$stackPos-(8-5)], 'returnType' => $this->semStack[$stackPos-(8-7)], 'stmts' => $this->semStack[$stackPos-(8-8)], 'attrGroups' => []], $this->startAttributeStack[$stackPos-(8-1)] + $this->endAttributes);
             },
             203 => function ($stackPos) {
@@ -2404,6 +2491,8 @@ class Php7 extends \PhpParser\ParserAbstract
             233 => function ($stackPos) {
                  $this->semValue = null;
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             203 => function ($stackPos) {
@@ -2502,12 +2591,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             233 => function ($stackPos) {
                  $this->semValue = is_array($this->semStack[$stackPos-(1-1)]) ? $this->semStack[$stackPos-(1-1)] : array($this->semStack[$stackPos-(1-1)]);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             234 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(4-2)];
             },
             235 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(2-1)];
             },
@@ -2586,6 +2679,8 @@ class Php7 extends \PhpParser\ParserAbstract
             260 => function ($stackPos) {
                  $this->semValue = new Stmt\ElseIf_($this->semStack[$stackPos-(5-3)], is_array($this->semStack[$stackPos-(5-5)]) ? $this->semStack[$stackPos-(5-5)] : array($this->semStack[$stackPos-(5-5)]), $this->startAttributeStack[$stackPos-(5-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = is_array($this->semStack[$stackPos-(1-1)]) ? $this->semStack[$stackPos-(1-1)] : array($this->semStack[$stackPos-(1-1)]);
             },
             236 => function ($stackPos) {
@@ -2662,6 +2757,9 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             260 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(4-2)];
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             261 => function ($stackPos) {
@@ -2671,6 +2769,7 @@ class Php7 extends \PhpParser\ParserAbstract
                  $this->semStack[$stackPos-(2-1)][] = $this->semStack[$stackPos-(2-2)]; $this->semValue = $this->semStack[$stackPos-(2-1)];
             },
             263 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = new Stmt\ElseIf_($this->semStack[$stackPos-(6-3)], $this->semStack[$stackPos-(6-6)], $this->startAttributeStack[$stackPos-(6-1)] + $this->endAttributes);
             },
@@ -2695,6 +2794,8 @@ class Php7 extends \PhpParser\ParserAbstract
             270 => function ($stackPos) {
                  $this->semValue = array($this->semStack[$stackPos-(1-1)], false);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Stmt\ElseIf_($this->semStack[$stackPos-(5-3)], is_array($this->semStack[$stackPos-(5-5)]) ? $this->semStack[$stackPos-(5-5)] : array($this->semStack[$stackPos-(5-5)]), $this->startAttributeStack[$stackPos-(5-1)] + $this->endAttributes);
             },
             264 => function ($stackPos) {
@@ -2717,12 +2818,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             270 => function ($stackPos) {
                  $this->semValue = new Stmt\Else_($this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             271 => function ($stackPos) {
                  $this->semValue = array($this->semStack[$stackPos-(1-1)], false);
             },
             272 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(2-1)];
             },
@@ -2773,6 +2878,8 @@ class Php7 extends \PhpParser\ParserAbstract
             287 => function ($stackPos) {
                  $this->semValue = new Node\UnionType($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = array($this->semStack[$stackPos-(2-2)], true);
             },
             273 => function ($stackPos) {
@@ -2821,12 +2928,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             287 => function ($stackPos) {
                  $this->semValue = new Node\Param(new Expr\Error($this->startAttributeStack[$stackPos-(6-1)] + $this->endAttributes), null, $this->semStack[$stackPos-(6-3)], $this->semStack[$stackPos-(6-4)], $this->semStack[$stackPos-(6-5)], $this->startAttributeStack[$stackPos-(6-1)] + $this->endAttributes, $this->semStack[$stackPos-(6-2)], $this->semStack[$stackPos-(6-1)]);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             288 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             289 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -2875,6 +2986,8 @@ class Php7 extends \PhpParser\ParserAbstract
             304 => function ($stackPos) {
                  $this->semValue = new Node\IntersectionType($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Node\NullableType($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             290 => function ($stackPos) {
@@ -2921,6 +3034,9 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             304 => function ($stackPos) {
                  $this->semStack[$stackPos-(3-1)][] = $this->semStack[$stackPos-(3-3)]; $this->semValue = $this->semStack[$stackPos-(3-1)];
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             305 => function ($stackPos) {
@@ -2934,6 +3050,7 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             308 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             309 => function ($stackPos) {
@@ -2942,6 +3059,8 @@ class Php7 extends \PhpParser\ParserAbstract
             310 => function ($stackPos) {
                  $this->semValue = new Node\UnionType($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = array($this->semStack[$stackPos-(3-1)], $this->semStack[$stackPos-(3-3)]);
             },
             309 => function ($stackPos) {
@@ -2949,12 +3068,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             310 => function ($stackPos) {
                  $this->semValue = new Node\IntersectionType($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             311 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             312 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = null;
             },
@@ -3097,6 +3220,8 @@ class Php7 extends \PhpParser\ParserAbstract
             357 => function ($stackPos) {
                  $this->semValue = null;
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Node\NullableType($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             313 => function ($stackPos) {
@@ -3237,12 +3362,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             357 => function ($stackPos) {
                  $this->semValue = array($this->semStack[$stackPos-(3-1)], $this->semStack[$stackPos-(3-3)]);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             358 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             359 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -3252,6 +3381,8 @@ class Php7 extends \PhpParser\ParserAbstract
             361 => function ($stackPos) {
                  $this->semValue = 0;
 =======
+=======
+>>>>>>> develop
                  $this->semValue = array(null, $this->semStack[$stackPos-(1-1)]);
             },
             360 => function ($stackPos) {
@@ -3259,12 +3390,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             361 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             362 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             363 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -3537,6 +3672,8 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             453 => function ($stackPos) {
 =======
+=======
+>>>>>>> develop
                  $this->semValue = 0;
             },
             364 => function ($stackPos) {
@@ -3816,11 +3953,15 @@ class Php7 extends \PhpParser\ParserAbstract
                  $this->semValue = new Expr\Cast\Int_($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             456 => function ($stackPos) {
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
                  $attrs = $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes;
             $attrs['kind'] = $this->getFloatCastKind($this->semStack[$stackPos-(2-1)]);
             $this->semValue = new Expr\Cast\Double($this->semStack[$stackPos-(2-2)], $attrs);
             },
+<<<<<<< HEAD
 <<<<<<< HEAD
             454 => function ($stackPos) {
                  $this->semValue = new Expr\Cast\String_($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
@@ -3839,6 +3980,8 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             459 => function ($stackPos) {
 =======
+=======
+>>>>>>> develop
             457 => function ($stackPos) {
                  $this->semValue = new Expr\Cast\String_($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
@@ -3855,11 +3998,15 @@ class Php7 extends \PhpParser\ParserAbstract
                  $this->semValue = new Expr\Cast\Unset_($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             462 => function ($stackPos) {
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
                  $attrs = $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes;
             $attrs['kind'] = strtolower($this->semStack[$stackPos-(2-1)]) === 'exit' ? Expr\Exit_::KIND_EXIT : Expr\Exit_::KIND_DIE;
             $this->semValue = new Expr\Exit_($this->semStack[$stackPos-(2-2)], $attrs);
             },
+<<<<<<< HEAD
 <<<<<<< HEAD
             460 => function ($stackPos) {
                  $this->semValue = new Expr\ErrorSuppress($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
@@ -3949,6 +4096,8 @@ class Php7 extends \PhpParser\ParserAbstract
             488 => function ($stackPos) {
                  $this->semValue = new Expr\StaticCall($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->semStack[$stackPos-(4-4)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
             463 => function ($stackPos) {
                  $this->semValue = new Expr\ErrorSuppress($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
@@ -4027,12 +4176,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             488 => function ($stackPos) {
                  $this->semValue = new Expr\ClosureUse($this->semStack[$stackPos-(2-2)], $this->semStack[$stackPos-(2-1)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             489 => function ($stackPos) {
                  $this->semValue = new Name($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
             },
             490 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -4048,6 +4201,8 @@ class Php7 extends \PhpParser\ParserAbstract
             494 => function ($stackPos) {
                  $this->semValue = new Name\Relative(substr($this->semStack[$stackPos-(1-1)], 10), $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Expr\FuncCall($this->semStack[$stackPos-(2-1)], $this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             491 => function ($stackPos) {
@@ -4061,12 +4216,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             494 => function ($stackPos) {
                  $this->semValue = new Name($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             495 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             496 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -4079,6 +4238,8 @@ class Php7 extends \PhpParser\ParserAbstract
             499 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Name($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
             },
             497 => function ($stackPos) {
@@ -4089,6 +4250,9 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             499 => function ($stackPos) {
                  $this->semValue = new Name\Relative(substr($this->semStack[$stackPos-(1-1)], 10), $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             500 => function ($stackPos) {
@@ -4096,7 +4260,11 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             501 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = null;
+=======
+                 $this->semValue = $this->semStack[$stackPos-(1-1)];
+>>>>>>> develop
 =======
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
 >>>>>>> develop
@@ -4106,6 +4274,7 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             503 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = array();
             },
             504 => function ($stackPos) {
@@ -4178,6 +4347,8 @@ class Php7 extends \PhpParser\ParserAbstract
                  $this->semValue = Scalar\DNumber::fromString($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
             },
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Expr\Error($this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes); $this->errorState = 2;
             },
             504 => function ($stackPos) {
@@ -4248,11 +4419,15 @@ class Php7 extends \PhpParser\ParserAbstract
                  $attrs = $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes; $attrs['kind'] = Expr\Array_::KIND_LONG;
             $this->semValue = new Expr\Array_($this->semStack[$stackPos-(4-3)], $attrs);
             },
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             526 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             527 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -4271,6 +4446,8 @@ class Php7 extends \PhpParser\ParserAbstract
             532 => function ($stackPos) {
                  $this->semValue = null;
 =======
+=======
+>>>>>>> develop
                  $this->semValue = Scalar\String_::fromString($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
             },
             528 => function ($stackPos) {
@@ -4288,12 +4465,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             532 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             533 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             534 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -4306,6 +4487,8 @@ class Php7 extends \PhpParser\ParserAbstract
             537 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->parseDocString($this->semStack[$stackPos-(3-1)], $this->semStack[$stackPos-(3-2)], $this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes, $this->startAttributeStack[$stackPos-(3-3)] + $this->endAttributeStack[$stackPos-(3-3)], true);
             },
             535 => function ($stackPos) {
@@ -4316,6 +4499,9 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             537 => function ($stackPos) {
                  $this->semValue = null;
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             538 => function ($stackPos) {
@@ -4326,15 +4512,21 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             540 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             541 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(3-2)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(3-2)];
             },
             541 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             542 => function ($stackPos) {
@@ -4345,6 +4537,7 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             544 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
             545 => function ($stackPos) {
@@ -4365,6 +4558,8 @@ class Php7 extends \PhpParser\ParserAbstract
             550 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             545 => function ($stackPos) {
@@ -4384,6 +4579,9 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             550 => function ($stackPos) {
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             551 => function ($stackPos) {
@@ -4391,6 +4589,7 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             552 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             553 => function ($stackPos) {
@@ -4399,6 +4598,8 @@ class Php7 extends \PhpParser\ParserAbstract
             554 => function ($stackPos) {
                  $this->semValue = new Expr\NullsafePropertyFetch($this->semStack[$stackPos-(3-1)], $this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Expr\MethodCall($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->semStack[$stackPos-(4-4)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
             553 => function ($stackPos) {
@@ -4406,12 +4607,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             554 => function ($stackPos) {
                  $this->semValue = null;
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             555 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             556 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = new Expr\Variable($this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
@@ -4463,6 +4668,8 @@ class Php7 extends \PhpParser\ParserAbstract
             572 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(3-2)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             557 => function ($stackPos) {
@@ -4512,12 +4719,16 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             572 => function ($stackPos) {
                  $this->semValue = new Expr\StaticPropertyFetch($this->semStack[$stackPos-(3-1)], $this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             573 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             574 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = new Expr\Error($this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes); $this->errorState = 2;
             },
@@ -4616,6 +4827,8 @@ class Php7 extends \PhpParser\ParserAbstract
             },
             606 => function ($stackPos) {
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(3-2)];
             },
             575 => function ($stackPos) {
@@ -4727,6 +4940,9 @@ class Php7 extends \PhpParser\ParserAbstract
                  $this->semValue = $this->parseNumString('-' . $this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             611 => function ($stackPos) {
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },

@@ -186,6 +186,7 @@ class ProjectsLocationsDocuments extends \Google\Service\Resource
   /**
    * Sets the access control policy for a resource. Replaces any existing policy.
 <<<<<<< HEAD
+<<<<<<< HEAD
    * You can set ACL with condition for projects only. Supported operators are:
    * `=`, `!=`, `<`, `<=`, `>`, and `>=` where the left of the operator is
    * `DocumentSchemaId` or property name and the right of the operator is a number
@@ -195,6 +196,9 @@ class ProjectsLocationsDocuments extends \Google\Service\Resource
    * allowed in the expression. The expression must be < 6000 bytes in length.
    * Sample condition: `"DocumentSchemaId = \"some schema id\" " OR
    * SchemaId.floatPropertyName >= 10` (documents.setAcl)
+=======
+   * (documents.setAcl)
+>>>>>>> develop
 =======
    * (documents.setAcl)
 >>>>>>> develop

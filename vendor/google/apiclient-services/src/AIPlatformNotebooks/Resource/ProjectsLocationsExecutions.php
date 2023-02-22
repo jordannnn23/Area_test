@@ -87,7 +87,11 @@ class ProjectsLocationsExecutions extends \Google\Service\Resource
    *
    * @opt_param string filter Filter applied to resulting executions. Currently
 <<<<<<< HEAD
+<<<<<<< HEAD
    * only supports filtering executions by a specified schedule_id. Format:
+=======
+   * only supports filtering executions by a specified `schedule_id`. Format:
+>>>>>>> develop
 =======
    * only supports filtering executions by a specified `schedule_id`. Format:
 >>>>>>> develop

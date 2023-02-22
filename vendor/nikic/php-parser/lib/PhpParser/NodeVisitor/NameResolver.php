@@ -162,7 +162,11 @@ class NameResolver extends NodeVisitorAbstract
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private function addAlias(Stmt\UseUse $use, $type, Name $prefix = null) {
+=======
+    private function addAlias(Stmt\UseUse $use, int $type, Name $prefix = null) {
+>>>>>>> develop
 =======
     private function addAlias(Stmt\UseUse $use, int $type, Name $prefix = null) {
 >>>>>>> develop

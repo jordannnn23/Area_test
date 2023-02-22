@@ -20,13 +20,19 @@ class Validators
 	use Nette\StaticClass;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
 	private const BuiltinTypes = [
 		'string' => 1, 'int' => 1, 'float' => 1, 'bool' => 1, 'array' => 1, 'object' => 1,
 		'callable' => 1, 'iterable' => 1, 'void' => 1, 'null' => 1, 'mixed' => 1, 'false' => 1,
 		'never' => 1, 'true' => 1,
 	];
 
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 	/** @var array<string,?callable> */
 	protected static $validators = [
@@ -128,7 +134,12 @@ class Validators
 		?string $expected = null,
 		string $label = "item '%' in array"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	): void {
+=======
+	): void
+	{
+>>>>>>> develop
 =======
 	): void
 	{
@@ -342,7 +353,11 @@ class Validators
 		$)Dix
 XX
 <<<<<<< HEAD
+<<<<<<< HEAD
 , $value);
+=======
+			, $value);
+>>>>>>> develop
 =======
 			, $value);
 >>>>>>> develop
@@ -370,7 +385,11 @@ XX
 		$)Dix
 XX
 <<<<<<< HEAD
+<<<<<<< HEAD
 , $value);
+=======
+			, $value);
+>>>>>>> develop
 =======
 			, $value);
 >>>>>>> develop
@@ -403,7 +422,10 @@ XX
 		return preg_match('#^[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*$#D', $value) === 1;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
 
 
 	/**
@@ -438,5 +460,8 @@ XX
 XX
 			, $type);
 	}
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 }

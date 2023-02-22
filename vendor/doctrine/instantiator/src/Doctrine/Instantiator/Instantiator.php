@@ -1,6 +1,11 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> develop
 =======
 declare(strict_types=1);
 
@@ -26,8 +31,11 @@ use function strlen;
 use function unserialize;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use const PHP_VERSION_ID;
 
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 final class Instantiator implements InstantiatorInterface
@@ -40,10 +48,15 @@ final class Instantiator implements InstantiatorInterface
      * @deprecated This constant will be private in 2.0
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public const SERIALIZATION_FORMAT_USE_UNSERIALIZER = 'C';
 
     /** @deprecated This constant will be private in 2.0 */
     public const SERIALIZATION_FORMAT_AVOID_UNSERIALIZER = 'O';
+=======
+    private const SERIALIZATION_FORMAT_USE_UNSERIALIZER   = 'C';
+    private const SERIALIZATION_FORMAT_AVOID_UNSERIALIZER = 'O';
+>>>>>>> develop
 =======
     private const SERIALIZATION_FORMAT_USE_UNSERIALIZER   = 'C';
     private const SERIALIZATION_FORMAT_AVOID_UNSERIALIZER = 'O';
@@ -55,7 +68,11 @@ final class Instantiator implements InstantiatorInterface
      * @var callable[]
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     private static $cachedInstantiators = [];
+=======
+    private static array $cachedInstantiators = [];
+>>>>>>> develop
 =======
     private static array $cachedInstantiators = [];
 >>>>>>> develop
@@ -66,6 +83,7 @@ final class Instantiator implements InstantiatorInterface
      * @var object[]
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     private static $cachedCloneables = [];
 
     /**
@@ -74,11 +92,16 @@ final class Instantiator implements InstantiatorInterface
      *
      * @return object
 =======
+=======
+>>>>>>> develop
     private static array $cachedCloneables = [];
 
     /**
      * @phpstan-param class-string<T> $className
      *
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
      * @phpstan-return T
      *
@@ -87,7 +110,11 @@ final class Instantiator implements InstantiatorInterface
      * @template T of object
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function instantiate($className)
+=======
+    public function instantiate(string $className): object
+>>>>>>> develop
 =======
     public function instantiate(string $className): object
 >>>>>>> develop
@@ -114,7 +141,10 @@ final class Instantiator implements InstantiatorInterface
      * @phpstan-param class-string<T> $className
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return object
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      * @phpstan-return T
@@ -122,7 +152,11 @@ final class Instantiator implements InstantiatorInterface
      * @template T of object
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     private function buildAndCacheFromFactory(string $className)
+=======
+    private function buildAndCacheFromFactory(string $className): object
+>>>>>>> develop
 =======
     private function buildAndCacheFromFactory(string $className): object
 >>>>>>> develop
@@ -164,7 +198,11 @@ final class Instantiator implements InstantiatorInterface
             is_subclass_of($className, Serializable::class) ? self::SERIALIZATION_FORMAT_USE_UNSERIALIZER : self::SERIALIZATION_FORMAT_AVOID_UNSERIALIZER,
             strlen($className),
 <<<<<<< HEAD
+<<<<<<< HEAD
             $className
+=======
+            $className,
+>>>>>>> develop
 =======
             $className,
 >>>>>>> develop
@@ -173,9 +211,13 @@ final class Instantiator implements InstantiatorInterface
         $this->checkIfUnSerializationIsSupported($reflectionClass, $serializedString);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return static function () use ($serializedString) {
             return unserialize($serializedString);
         };
+=======
+        return static fn () => unserialize($serializedString);
+>>>>>>> develop
 =======
         return static fn () => unserialize($serializedString);
 >>>>>>> develop
@@ -198,7 +240,11 @@ final class Instantiator implements InstantiatorInterface
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (PHP_VERSION_ID >= 80100 && enum_exists($className, false)) {
+=======
+        if (enum_exists($className, false)) {
+>>>>>>> develop
 =======
         if (enum_exists($className, false)) {
 >>>>>>> develop
@@ -230,7 +276,11 @@ final class Instantiator implements InstantiatorInterface
                 $code,
                 $file,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $line
+=======
+                $line,
+>>>>>>> develop
 =======
                 $line,
 >>>>>>> develop

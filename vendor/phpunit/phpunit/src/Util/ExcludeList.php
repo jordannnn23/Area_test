@@ -64,6 +64,7 @@ final class ExcludeList
     private const EXCLUDED_CLASS_NAMES = [
         // composer
 <<<<<<< HEAD
+<<<<<<< HEAD
         ClassLoader::class => 1,
 
         // doctrine/instantiator
@@ -99,6 +100,8 @@ final class ExcludeList
         // phpunit/php-code-coverage
         CodeCoverage::class => 1,
 =======
+=======
+>>>>>>> develop
         ClassLoader::class        => 1,
 
         // doctrine/instantiator
@@ -133,12 +136,16 @@ final class ExcludeList
 
         // phpunit/php-code-coverage
         CodeCoverage::class       => 1,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 
         // phpunit/php-file-iterator
         FileIteratorFacade::class => 1,
 
         // phpunit/php-invoker
+<<<<<<< HEAD
 <<<<<<< HEAD
         Invoker::class => 1,
 
@@ -184,6 +191,8 @@ final class ExcludeList
         // sebastian/recursion-context
         Context::class => 1,
 =======
+=======
+>>>>>>> develop
         Invoker::class            => 1,
 
         // phpunit/php-text-template
@@ -227,12 +236,16 @@ final class ExcludeList
 
         // sebastian/recursion-context
         Context::class            => 1,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 
         // sebastian/resource-operations
         ResourceOperations::class => 1,
 
         // sebastian/type
+<<<<<<< HEAD
 <<<<<<< HEAD
         TypeName::class => 1,
 
@@ -245,6 +258,8 @@ final class ExcludeList
         // webmozart/assert
         Assert::class => 1,
 =======
+=======
+>>>>>>> develop
         TypeName::class           => 1,
 
         // sebastian/version
@@ -255,6 +270,9 @@ final class ExcludeList
 
         // webmozart/assert
         Assert::class             => 1,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     ];
 

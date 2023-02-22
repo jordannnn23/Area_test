@@ -41,11 +41,17 @@ class QualityShoppingShoppingAttachmentOffer extends \Google\Collection
   public $inferredImages;
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @var bool
    */
   public $isLensBuildable;
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @var string
    */
@@ -154,7 +160,10 @@ class QualityShoppingShoppingAttachmentOffer extends \Google\Collection
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param bool
    */
   public function setIsLensBuildable($isLensBuildable)
@@ -169,6 +178,9 @@ class QualityShoppingShoppingAttachmentOffer extends \Google\Collection
     return $this->isLensBuildable;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param string
    */

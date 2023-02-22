@@ -23,11 +23,17 @@ class YouTubeLiveBroadcastEvent extends \Google\Model
    * @var string
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public $brandAccountGaiaId;
   /**
    * @var string
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public $broadcastId;
   /**
@@ -43,7 +49,10 @@ class YouTubeLiveBroadcastEvent extends \Google\Model
    * @param string
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public function setBrandAccountGaiaId($brandAccountGaiaId)
   {
     $this->brandAccountGaiaId = $brandAccountGaiaId;
@@ -58,6 +67,9 @@ class YouTubeLiveBroadcastEvent extends \Google\Model
   /**
    * @param string
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public function setBroadcastId($broadcastId)
   {

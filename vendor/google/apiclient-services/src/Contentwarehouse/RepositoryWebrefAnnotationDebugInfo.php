@@ -18,9 +18,14 @@
 namespace Google\Service\Contentwarehouse;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class RepositoryWebrefAnnotationDebugInfo extends \Google\Collection
 {
   protected $collection_key = 'infoString';
+=======
+class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
+{
+>>>>>>> develop
 =======
 class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
 {
@@ -29,6 +34,7 @@ class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
    * @var string
    */
   public $description;
+<<<<<<< HEAD
 <<<<<<< HEAD
   /**
    * @var string[]
@@ -41,6 +47,8 @@ class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
    * @var string
    */
   public $url;
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 
@@ -58,6 +66,7 @@ class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
   {
     return $this->description;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   /**
    * @param string[]
@@ -101,6 +110,8 @@ class RepositoryWebrefAnnotationDebugInfo extends \Google\Model
   {
     return $this->url;
   }
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 }

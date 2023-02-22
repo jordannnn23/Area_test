@@ -23,6 +23,7 @@ class RepositoryWebrefDetailedEntityScores extends \Google\Model
    * @var float
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
   public $anchorScore;
   /**
    * @var float
@@ -31,6 +32,8 @@ class RepositoryWebrefDetailedEntityScores extends \Google\Model
   /**
    * @var float
    */
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
   public $connectedness;
@@ -62,6 +65,7 @@ class RepositoryWebrefDetailedEntityScores extends \Google\Model
    * @var float
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
   public $nbScore;
   /**
    * @var float
@@ -70,6 +74,8 @@ class RepositoryWebrefDetailedEntityScores extends \Google\Model
   /**
    * @var float
    */
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
   public $normalizedTopicality;
@@ -84,6 +90,7 @@ class RepositoryWebrefDetailedEntityScores extends \Google\Model
   /**
    * @param float
    */
+<<<<<<< HEAD
 <<<<<<< HEAD
   public function setAnchorScore($anchorScore)
   {
@@ -113,6 +120,8 @@ class RepositoryWebrefDetailedEntityScores extends \Google\Model
   /**
    * @param float
    */
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
   public function setConnectedness($connectedness)
@@ -214,6 +223,7 @@ class RepositoryWebrefDetailedEntityScores extends \Google\Model
    * @param float
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
   public function setNbScore($nbScore)
   {
     $this->nbScore = $nbScore;
@@ -242,6 +252,8 @@ class RepositoryWebrefDetailedEntityScores extends \Google\Model
   /**
    * @param float
    */
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
   public function setNormalizedTopicality($normalizedTopicality)

@@ -23,10 +23,15 @@ class NativeCalculator extends Calculator
      * Example: 32-bit: max number 1,999,999,999 (9 digits + carry)
      *          64-bit: max number 1,999,999,999,999,999,999 (18 digits + carry)
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var int
      */
     private $maxDigits;
+=======
+     */
+    private int $maxDigits;
+>>>>>>> develop
 =======
      */
     private int $maxDigits;

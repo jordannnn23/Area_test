@@ -62,7 +62,10 @@ class FetchAuthTokenCache implements
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
      * @return FetchAuthTokenInterface
      */
     public function getFetcher()
@@ -71,6 +74,9 @@ class FetchAuthTokenCache implements
     }
 
     /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
      * Implements FetchAuthTokenInterface#fetchAuthToken.
      *

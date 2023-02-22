@@ -23,11 +23,17 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
    * @var bool
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public $isCastVideo;
   /**
    * @var bool
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public $isSeedRadio;
   /**
@@ -39,6 +45,10 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
    */
   public $mscRate;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  public $scubedPSaiMusic;
+>>>>>>> develop
 =======
   public $scubedPSaiMusic;
 >>>>>>> develop
@@ -47,7 +57,10 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
    * @param bool
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public function setIsCastVideo($isCastVideo)
   {
     $this->isCastVideo = $isCastVideo;
@@ -62,6 +75,9 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
   /**
    * @param bool
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public function setIsSeedRadio($isSeedRadio)
   {
@@ -103,7 +119,10 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
     return $this->mscRate;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public function setScubedPSaiMusic($scubedPSaiMusic)
   {
     $this->scubedPSaiMusic = $scubedPSaiMusic;
@@ -112,6 +131,9 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
   {
     return $this->scubedPSaiMusic;
   }
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 }
 

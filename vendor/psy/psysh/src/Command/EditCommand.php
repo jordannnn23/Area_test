@@ -4,7 +4,11 @@
  * This file is part of Psy Shell.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (c) 2012-2022 Justin Hileman
+=======
+ * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
 =======
  * (c) 2012-2023 Justin Hileman
 >>>>>>> develop
@@ -119,8 +123,11 @@ class EditCommand extends Command implements ContextAware
      * @param bool        $noExecOption
      * @param string|null $filePath
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -162,8 +169,11 @@ class EditCommand extends Command implements ContextAware
      * @param bool   $shouldRemoveFile
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return string
      *
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      * @throws \UnexpectedValueException if file_get_contents on $filePath returns false instead of a string

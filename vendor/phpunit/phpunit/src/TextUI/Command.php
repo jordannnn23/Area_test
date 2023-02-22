@@ -722,7 +722,10 @@ class Command
                 'groups',
                 'excludeGroups',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'testsuite',
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
             ]
@@ -753,7 +756,10 @@ class Command
                 'groups',
                 'excludeGroups',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'testsuite',
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
             ]

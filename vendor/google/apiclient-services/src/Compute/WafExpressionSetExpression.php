@@ -24,11 +24,17 @@ class WafExpressionSetExpression extends \Google\Model
    */
   public $id;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   /**
    * @var int
    */
   public $sensitivity;
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 
   /**
@@ -46,7 +52,10 @@ class WafExpressionSetExpression extends \Google\Model
     return $this->id;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   /**
    * @param int
    */
@@ -61,6 +70,9 @@ class WafExpressionSetExpression extends \Google\Model
   {
     return $this->sensitivity;
   }
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 }
 

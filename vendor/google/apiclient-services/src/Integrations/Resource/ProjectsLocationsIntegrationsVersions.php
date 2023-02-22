@@ -18,10 +18,13 @@
 namespace Google\Service\Integrations\Resource;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaArchiveIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaArchiveIntegrationVersionResponse;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDeactivateIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDeactivateIntegrationVersionResponse;
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse;
@@ -35,8 +38,11 @@ use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUnpublishIntegrati
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaValidateIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaValidateIntegrationVersionResponse;
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 use Google\Service\Integrations\GoogleProtobufEmpty;
@@ -52,6 +58,7 @@ use Google\Service\Integrations\GoogleProtobufEmpty;
 class ProjectsLocationsIntegrationsVersions extends \Google\Service\Resource
 {
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * Soft-deletes the integration. Changes the status of the integration to
    * ARCHIVED. If the integration being ARCHIVED is tagged as "HEAD", the tag is
@@ -78,6 +85,8 @@ class ProjectsLocationsIntegrationsVersions extends \Google\Service\Resource
   /**
 =======
 >>>>>>> develop
+=======
+>>>>>>> develop
    * Create a integration with a draft version in the specified project.
    * (versions.create)
    *
@@ -102,6 +111,7 @@ class ProjectsLocationsIntegrationsVersions extends \Google\Service\Resource
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Sets the status of the ACTIVE integration to SNAPSHOT with a new tag
    * "PREVIOUSLY_PUBLISHED" after validating it. The "HEAD" and
    * "PUBLISH_REQUESTED" tags do not change. This RPC throws an exception if the
@@ -121,6 +131,8 @@ class ProjectsLocationsIntegrationsVersions extends \Google\Service\Resource
     return $this->call('deactivate', [$params], GoogleCloudIntegrationsV1alphaDeactivateIntegrationVersionResponse::class);
   }
   /**
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
    * Soft-deletes the integration. Changes the status of the integration to
@@ -321,6 +333,7 @@ class ProjectsLocationsIntegrationsVersions extends \Google\Service\Resource
     return $this->call('upload', [$params], GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse::class);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /**
    * Validates the given integration. If the id doesn't exist, a NotFoundException
    * is thrown. If validation fails a CanonicalCodeException is thrown. If there
@@ -338,6 +351,8 @@ class ProjectsLocationsIntegrationsVersions extends \Google\Service\Resource
     $params = array_merge($params, $optParams);
     return $this->call('validate', [$params], GoogleCloudIntegrationsV1alphaValidateIntegrationVersionResponse::class);
   }
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 }

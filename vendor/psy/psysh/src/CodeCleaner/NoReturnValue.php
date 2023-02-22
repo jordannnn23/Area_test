@@ -4,7 +4,11 @@
  * This file is part of Psy Shell.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (c) 2012-2022 Justin Hileman
+=======
+ * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
 =======
  * (c) 2012-2023 Justin Hileman
 >>>>>>> develop
@@ -30,8 +34,11 @@ class NoReturnValue
     /**
      * Get PhpParser AST expression for creating a new NoReturnValue.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return New_
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */

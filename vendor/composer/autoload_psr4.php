@@ -8,6 +8,10 @@ $baseDir = dirname($vendorDir);
 return array(
     'voku\\' => array($vendorDir . '/voku/portable-ascii/src/voku'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    'pubsubhubbub\\publisher\\' => array($vendorDir . '/pubsubhubbub/publisher/library'),
+>>>>>>> develop
 =======
     'pubsubhubbub\\publisher\\' => array($vendorDir . '/pubsubhubbub/publisher/library'),
 >>>>>>> develop
@@ -17,7 +21,10 @@ return array(
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
     'Tests\\' => array($baseDir . '/tests'),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'Symfony\\Polyfill\\Php81\\' => array($vendorDir . '/symfony/polyfill-php81'),
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
@@ -50,7 +57,11 @@ return array(
     'Psy\\' => array($vendorDir . '/psy/psysh/src'),
     'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
 <<<<<<< HEAD
+<<<<<<< HEAD
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+=======
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
+>>>>>>> develop
 =======
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
 >>>>>>> develop
@@ -66,6 +77,10 @@ return array(
     'NunoMaduro\\Collision\\' => array($vendorDir . '/nunomaduro/collision/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    'MongoDB\\' => array($vendorDir . '/mongodb/mongodb/src'),
+>>>>>>> develop
 =======
     'MongoDB\\' => array($vendorDir . '/mongodb/mongodb/src'),
 >>>>>>> develop
@@ -81,6 +96,12 @@ return array(
     'Laravel\\Sail\\' => array($vendorDir . '/laravel/sail/src'),
     'Laravel\\Breeze\\' => array($vendorDir . '/laravel/breeze/src'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    'JnJairo\\Laravel\\Ngrok\\' => array($vendorDir . '/jn-jairo/laravel-ngrok/src'),
+    'Jenssegers\\Mongodb\\' => array($vendorDir . '/jenssegers/mongodb/src'),
+    'Jean85\\' => array($vendorDir . '/jean85/pretty-package-versions/src'),
+>>>>>>> develop
 =======
     'JnJairo\\Laravel\\Ngrok\\' => array($vendorDir . '/jn-jairo/laravel-ngrok/src'),
     'Jenssegers\\Mongodb\\' => array($vendorDir . '/jenssegers/mongodb/src'),

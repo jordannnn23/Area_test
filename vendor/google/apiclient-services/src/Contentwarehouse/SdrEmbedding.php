@@ -21,6 +21,12 @@ class SdrEmbedding extends \Google\Collection
 {
   protected $collection_key = 'values';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $compressedEmbeddingsType = QualityRankembedMustangMustangRankEmbedInfo::class;
+  protected $compressedEmbeddingsDataType = '';
+  public $compressedEmbeddings;
+>>>>>>> develop
 =======
   protected $compressedEmbeddingsType = QualityRankembedMustangMustangRankEmbedInfo::class;
   protected $compressedEmbeddingsDataType = '';
@@ -37,7 +43,10 @@ class SdrEmbedding extends \Google\Collection
 
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param QualityRankembedMustangMustangRankEmbedInfo
    */
   public function setCompressedEmbeddings(QualityRankembedMustangMustangRankEmbedInfo $compressedEmbeddings)
@@ -52,6 +61,9 @@ class SdrEmbedding extends \Google\Collection
     return $this->compressedEmbeddings;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param float[]
    */

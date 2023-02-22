@@ -21,6 +21,12 @@ class QualityCalypsoAppsUniversalImageData extends \Google\Collection
 {
   protected $collection_key = 'screenshot';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $enhancedImageType = QualityCalypsoAppsUniversalImage::class;
+  protected $enhancedImageDataType = '';
+  public $enhancedImage;
+>>>>>>> develop
 =======
   protected $enhancedImageType = QualityCalypsoAppsUniversalImage::class;
   protected $enhancedImageDataType = '';
@@ -37,7 +43,10 @@ class QualityCalypsoAppsUniversalImageData extends \Google\Collection
    * @param QualityCalypsoAppsUniversalImage
    */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   public function setEnhancedImage(QualityCalypsoAppsUniversalImage $enhancedImage)
   {
     $this->enhancedImage = $enhancedImage;
@@ -52,6 +61,9 @@ class QualityCalypsoAppsUniversalImageData extends \Google\Collection
   /**
    * @param QualityCalypsoAppsUniversalImage
    */
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   public function setFeatureGraphic(QualityCalypsoAppsUniversalImage $featureGraphic)
   {

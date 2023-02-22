@@ -18,6 +18,7 @@
 namespace Google\Service\Contentwarehouse;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class RepositoryWebrefDetailedMentionScores extends \Google\Collection
 {
   protected $collection_key = 'patternInfo';
@@ -32,12 +33,17 @@ class RepositoryWebrefDetailedMentionScores extends \Google\Collection
 class RepositoryWebrefDetailedMentionScores extends \Google\Model
 {
 >>>>>>> develop
+=======
+class RepositoryWebrefDetailedMentionScores extends \Google\Model
+{
+>>>>>>> develop
   /**
    * @var float
    */
   public $resultEntityScore;
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * @param RepositoryWebrefPatternInfo[]
    */
@@ -67,6 +73,8 @@ class RepositoryWebrefDetailedMentionScores extends \Google\Model
     return $this->posteriorForLearning;
   }
   /**
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
    * @param float

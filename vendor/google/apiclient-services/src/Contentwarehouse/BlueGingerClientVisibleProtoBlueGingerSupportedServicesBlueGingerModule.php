@@ -29,11 +29,17 @@ class BlueGingerClientVisibleProtoBlueGingerSupportedServicesBlueGingerModule ex
    */
   public $services;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   /**
    * @var string
    */
   public $useCase;
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 
   /**
@@ -65,7 +71,10 @@ class BlueGingerClientVisibleProtoBlueGingerSupportedServicesBlueGingerModule ex
     return $this->services;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
   /**
    * @param string
    */
@@ -80,6 +89,9 @@ class BlueGingerClientVisibleProtoBlueGingerSupportedServicesBlueGingerModule ex
   {
     return $this->useCase;
   }
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 }
 

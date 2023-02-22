@@ -365,7 +365,11 @@ final class Test
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'backupGlobals' => self::getBooleanAnnotationSetting(
+=======
+            'backupGlobals'          => self::getBooleanAnnotationSetting(
+>>>>>>> develop
 =======
             'backupGlobals'          => self::getBooleanAnnotationSetting(
 >>>>>>> develop

@@ -35,7 +35,11 @@ class LocationsLodging extends \Google\Service\Resource
    *
    * @param string $name Required. Google identifier for this location in the
 <<<<<<< HEAD
+<<<<<<< HEAD
    * form: `accounts/{account_id}/locations/{location_id}/lodging`
+=======
+   * form: `locations/{location_id}/lodging`
+>>>>>>> develop
 =======
    * form: `locations/{location_id}/lodging`
 >>>>>>> develop

@@ -62,7 +62,10 @@ class Dataflow extends \Google\Service
   public $projects_locations_jobs_workItems;
   public $projects_locations_snapshots;
 <<<<<<< HEAD
+<<<<<<< HEAD
   public $projects_locations_sql;
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
   public $projects_locations_templates;
@@ -967,6 +970,7 @@ class Dataflow extends \Google\Service
         ]
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->projects_locations_sql = new Dataflow\Resource\ProjectsLocationsSql(
         $this,
         $this->serviceName,
@@ -996,6 +1000,8 @@ class Dataflow extends \Google\Service
           ]
         ]
     );
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
     $this->projects_locations_templates = new Dataflow\Resource\ProjectsLocationsTemplates(

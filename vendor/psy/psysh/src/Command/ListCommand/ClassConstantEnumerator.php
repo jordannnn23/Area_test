@@ -4,7 +4,11 @@
  * This file is part of Psy Shell.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (c) 2012-2022 Justin Hileman
+=======
+ * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
 =======
  * (c) 2012-2023 Justin Hileman
 >>>>>>> develop
@@ -61,6 +65,7 @@ class ClassConstantEnumerator extends Enumerator
      * Get defined constants for the given class or object Reflector.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param \Reflector $reflector
      * @param bool       $noInherit Exclude inherited constants
      *
@@ -68,12 +73,17 @@ class ClassConstantEnumerator extends Enumerator
      */
     protected function getConstants(\Reflector $reflector, bool $noInherit = false): array
 =======
+=======
+>>>>>>> develop
      * @param \ReflectionClass $reflector
      * @param bool             $noInherit Exclude inherited constants
      *
      * @return array
      */
     protected function getConstants(\ReflectionClass $reflector, bool $noInherit = false): array
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     {
         $className = $reflector->getName();
@@ -124,8 +134,11 @@ class ClassConstantEnumerator extends Enumerator
      *
      * @param \ReflectionClass $reflector
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return string
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */

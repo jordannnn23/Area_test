@@ -4,7 +4,11 @@
  * This file is part of Psy Shell.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (c) 2012-2022 Justin Hileman
+=======
+ * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
 =======
  * (c) 2012-2023 Justin Hileman
 >>>>>>> develop
@@ -23,6 +27,10 @@ use Psy\CodeCleaner\AssignThisVariablePass;
 use Psy\CodeCleaner\CalledClassPass;
 use Psy\CodeCleaner\CallTimePassByReferencePass;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Psy\CodeCleaner\CodeCleanerPass;
+>>>>>>> develop
 =======
 use Psy\CodeCleaner\CodeCleanerPass;
 >>>>>>> develop
@@ -91,8 +99,11 @@ class CodeCleaner
     /**
      * Check whether this CodeCleaner is in YOLO mode.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -105,7 +116,11 @@ class CodeCleaner
      * Get default CodeCleaner passes.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array
+=======
+     * @return CodeCleanerPass[]
+>>>>>>> develop
 =======
      * @return CodeCleanerPass[]
 >>>>>>> develop
@@ -166,7 +181,11 @@ class CodeCleaner
      * getDefaultPasses above.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array
+=======
+     * @return CodeCleanerPass[]
+>>>>>>> develop
 =======
      * @return CodeCleanerPass[]
 >>>>>>> develop
@@ -260,8 +279,11 @@ class CodeCleaner
      *
      * @param array $stackFrame
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -311,8 +333,11 @@ class CodeCleaner
      *
      * @param array|null $namespace (default: null)
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array|null
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -395,8 +420,11 @@ class CodeCleaner
      * @param \PhpParser\Error $e
      * @param string           $code
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */

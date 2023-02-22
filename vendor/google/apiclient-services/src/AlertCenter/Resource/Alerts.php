@@ -75,13 +75,19 @@ class Alerts extends \Google\Service\Resource
    *
    * @opt_param string customerId Optional. The unique identifier of the Google
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Workspace organization account of the customer the alert is associated with.
    * Inferred from the caller identity if not provided.
 =======
+=======
+>>>>>>> develop
    * Workspace account of the customer the alert is associated with. The
    * `customer_id` must have the initial "C" stripped (for example, `046psxkn`).
    * Inferred from the caller identity if not provided. [Find your customer
    * ID](https://support.google.com/cloudidentity/answer/10070793).
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @return AlertcenterEmpty
    */
@@ -100,13 +106,19 @@ class Alerts extends \Google\Service\Resource
    *
    * @opt_param string customerId Optional. The unique identifier of the Google
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Workspace organization account of the customer the alert is associated with.
    * Inferred from the caller identity if not provided.
 =======
+=======
+>>>>>>> develop
    * Workspace account of the customer the alert is associated with. The
    * `customer_id` must have the initial "C" stripped (for example, `046psxkn`).
    * Inferred from the caller identity if not provided. [Find your customer
    * ID](https://support.google.com/cloudidentity/answer/10070793).
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @return Alert
    */
@@ -126,13 +138,19 @@ class Alerts extends \Google\Service\Resource
    *
    * @opt_param string customerId Optional. The unique identifier of the Google
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Workspace organization account of the customer the alert metadata is
    * associated with. Inferred from the caller identity if not provided.
 =======
+=======
+>>>>>>> develop
    * Workspace account of the customer the alert metadata is associated with. The
    * `customer_id` must have the initial "C" stripped (for example, `046psxkn`).
    * Inferred from the caller identity if not provided. [Find your customer
    * ID](https://support.google.com/cloudidentity/answer/10070793).
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @return AlertMetadata
    */
@@ -149,13 +167,19 @@ class Alerts extends \Google\Service\Resource
    *
    * @opt_param string customerId Optional. The unique identifier of the Google
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Workspace organization account of the customer the alerts are associated
    * with. Inferred from the caller identity if not provided.
 =======
+=======
+>>>>>>> develop
    * Workspace account of the customer the alerts are associated with. The
    * `customer_id` must have the initial "C" stripped (for example, `046psxkn`).
    * Inferred from the caller identity if not provided. [Find your customer
    * ID](https://support.google.com/cloudidentity/answer/10070793).
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @opt_param string filter Optional. A query string for filtering alert
    * results. For more details, see [Query filters](https://developers.google.com

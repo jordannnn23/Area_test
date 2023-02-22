@@ -28,6 +28,12 @@ class Feature extends \Google\Model
    */
   public $deleteTime;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $fleetDefaultMemberConfigType = CommonFleetDefaultMemberConfigSpec::class;
+  protected $fleetDefaultMemberConfigDataType = '';
+  public $fleetDefaultMemberConfig;
+>>>>>>> develop
 =======
   protected $fleetDefaultMemberConfigType = CommonFleetDefaultMemberConfigSpec::class;
   protected $fleetDefaultMemberConfigDataType = '';
@@ -97,7 +103,10 @@ class Feature extends \Google\Model
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param CommonFleetDefaultMemberConfigSpec
    */
   public function setFleetDefaultMemberConfig(CommonFleetDefaultMemberConfigSpec $fleetDefaultMemberConfig)
@@ -112,6 +121,9 @@ class Feature extends \Google\Model
     return $this->fleetDefaultMemberConfig;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param string[]
    */

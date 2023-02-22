@@ -21,11 +21,17 @@ class Artifact extends \Google\Model
 {
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @var string[]
    */
   public $annotations;
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @var string
    */
@@ -40,11 +46,17 @@ class Artifact extends \Google\Model
   public $hash;
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @var string[]
    */
   public $labels;
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @var string
    */
@@ -64,7 +76,10 @@ class Artifact extends \Google\Model
 
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param string[]
    */
   public function setAnnotations($annotations)
@@ -79,6 +94,9 @@ class Artifact extends \Google\Model
     return $this->annotations;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param string
    */
@@ -123,7 +141,10 @@ class Artifact extends \Google\Model
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param string[]
    */
   public function setLabels($labels)
@@ -138,6 +159,9 @@ class Artifact extends \Google\Model
     return $this->labels;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param string
    */

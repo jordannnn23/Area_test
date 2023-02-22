@@ -193,11 +193,17 @@ class WWWDocInfo extends \Google\Collection
   public $noimageframeoverlayreason;
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @var string
    */
   public $nsrSitechunk;
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @var bool
    */
@@ -899,7 +905,10 @@ class WWWDocInfo extends \Google\Collection
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param string
    */
   public function setNsrSitechunk($nsrSitechunk)
@@ -914,6 +923,9 @@ class WWWDocInfo extends \Google\Collection
     return $this->nsrSitechunk;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param bool
    */

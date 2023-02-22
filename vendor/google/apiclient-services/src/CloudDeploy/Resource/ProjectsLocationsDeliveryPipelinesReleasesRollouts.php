@@ -73,6 +73,11 @@ class ProjectsLocationsDeliveryPipelinesReleasesRollouts extends \Google\Service
    * (00000000-0000-0000-0000-000000000000).
    * @opt_param string rolloutId Required. ID of the `Rollout`.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+   * @opt_param string startingPhaseId Optional. The starting phase ID for the
+   * `Rollout`. If empty the `Rollout` will start at the first phase.
+>>>>>>> develop
 =======
    * @opt_param string startingPhaseId Optional. The starting phase ID for the
    * `Rollout`. If empty the `Rollout` will start at the first phase.

@@ -23,10 +23,15 @@ final class BigDecimal extends BigNumber
      * No leading zero must be present.
      * No leading minus sign must be present if the value is 0.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
      */
     private $value;
+=======
+     */
+    private string $value;
+>>>>>>> develop
 =======
      */
     private string $value;
@@ -37,10 +42,15 @@ final class BigDecimal extends BigNumber
      *
      * This must be zero or more.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var int
      */
     private $scale;
+=======
+     */
+    private int $scale;
+>>>>>>> develop
 =======
      */
     private int $scale;

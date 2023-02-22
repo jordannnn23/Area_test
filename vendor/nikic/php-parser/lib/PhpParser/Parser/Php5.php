@@ -19,8 +19,13 @@ class Php5 extends \PhpParser\ParserAbstract
 {
     protected $tokenToSymbolMapSize = 396;
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $actionTableSize = 1093;
     protected $gotoTableSize = 643;
+=======
+    protected $actionTableSize = 1099;
+    protected $gotoTableSize = 640;
+>>>>>>> develop
 =======
     protected $actionTableSize = 1099;
     protected $gotoTableSize = 640;
@@ -33,7 +38,11 @@ class Php5 extends \PhpParser\ParserAbstract
 
     protected $YY2TBLSTATE = 415;
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $numNonLeafStates = 662;
+=======
+    protected $numNonLeafStates = 663;
+>>>>>>> develop
 =======
     protected $numNonLeafStates = 663;
 >>>>>>> develop
@@ -162,6 +171,10 @@ class Php5 extends \PhpParser\ParserAbstract
         "T_PROTECTED",
         "T_PUBLIC",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        "T_READONLY",
+>>>>>>> develop
 =======
         "T_READONLY",
 >>>>>>> develop
@@ -208,7 +221,10 @@ class Php5 extends \PhpParser\ParserAbstract
         "']'",
         "'\"'",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "T_READONLY",
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
         "T_ENUM",
@@ -221,6 +237,7 @@ class Php5 extends \PhpParser\ParserAbstract
           168,  168,  168,  168,  168,  168,  168,  168,  168,  168,
           168,  168,  168,  168,  168,  168,  168,  168,  168,  168,
 <<<<<<< HEAD
+<<<<<<< HEAD
           168,  168,  168,   56,  163,  168,  160,   55,  168,  168,
           158,  159,   53,   50,    8,   51,   52,   54,  168,  168,
           168,  168,  168,  168,  168,  168,  168,  168,   31,  155,
@@ -232,6 +249,8 @@ class Php5 extends \PhpParser\ParserAbstract
           168,  168,  168,  168,  168,  168,  168,  168,  168,  168,
           168,  168,  168,  156,   35,  157,   58,  168,  168,  168,
 =======
+=======
+>>>>>>> develop
           168,  168,  168,   56,  164,  168,  161,   55,  168,  168,
           159,  160,   53,   50,    8,   51,   52,   54,  168,  168,
           168,  168,  168,  168,  168,  168,  168,  168,   31,  156,
@@ -242,6 +261,9 @@ class Php5 extends \PhpParser\ParserAbstract
           168,  168,  168,  168,  168,  168,  168,  168,  168,  168,
           168,  168,  168,  168,  168,  168,  168,  168,  168,  168,
           168,  168,  168,  157,   35,  158,   58,  168,  168,  168,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
           168,  168,  168,  168,  168,  168,  168,  168,  168,  168,
           168,  168,  168,  168,  168,  168,  168,  168,  168,  168,
@@ -265,6 +287,7 @@ class Php5 extends \PhpParser\ParserAbstract
            83,   84,   85,   86,   87,   88,   89,   90,   91,   92,
            93,   94,   95,   96,   97,   98,   99,  100,  101,  102,
           103,  104,  105,  106,  107,  108,  109,  110,  111,  112,
+<<<<<<< HEAD
 <<<<<<< HEAD
           113,  114,  115,  116,  117,  118,  119,  120,  121,  164,
           122,  123,  124,  125,  126,  127,  128,  129,  165,  130,
@@ -385,6 +408,8 @@ class Php5 extends \PhpParser\ParserAbstract
             0,    0, 1105, 1100,    0,    0,    0,    0,    0,    0,
             0,    0,  219
 =======
+=======
+>>>>>>> develop
           113,  114,  115,  116,  117,  118,  119,  120,  121,  122,
           123,  124,  125,  126,  127,  128,  129,  130,  165,  131,
           132,  133,  166,  134,  135,  136,  137,  138,  139,  140,
@@ -503,6 +528,9 @@ class Php5 extends \PhpParser\ParserAbstract
           907, 1116, 1050, 1026,  564, 1110, 1105, 1025, 1093, 1055,
             0, 1044,    0, 1057, 1056,  219, 1059, 1058, 1075,    0,
          1191, 1176, 1172, 1189, 1090, 1223, 1117, 1171,  600
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -513,9 +541,15 @@ class Php5 extends \PhpParser\ParserAbstract
            51,   52,   53,   54,   55,    9,   10,   11,   33,   34,
            35,   36,   37,   38,   39,   40,   41,   42,   69,   70,
 <<<<<<< HEAD
+<<<<<<< HEAD
            53,   54,   55,    9,   10,   57,   30,   80,   32,   33,
            34,   35,   36,   37,   38,   80,   69,   70,   83,   71,
            72,   73,   74,   75,   76,   77,    9,   70,   80,   33,
+=======
+           53,   54,   55,    9,   10,   57,   30,  116,   32,   33,
+           34,   35,   36,   37,   38,   80,   69,   70,   83,   71,
+           72,   73,   74,   75,   76,   77,  135,  136,   80,   33,
+>>>>>>> develop
 =======
            53,   54,   55,    9,   10,   57,   30,  116,   32,   33,
            34,   35,   36,   37,   38,   80,   69,   70,   83,   71,
@@ -525,6 +559,7 @@ class Php5 extends \PhpParser\ParserAbstract
            92,   93,   94,   95,   96,   97,   98,   99,  100,  101,
           102,  103,  104,  105,  106,  107,  108,  109,  110,  111,
           112,  113,  114,  115,  116,  117,  118,  119,  120,  121,
+<<<<<<< HEAD
 <<<<<<< HEAD
           122,  123,  124,  125,  126,  127,  128,  129,  130,  131,
           153,  133,  134,  135,  136,  137,  138,  139,  140,  141,
@@ -736,6 +771,8 @@ class Php5 extends \PhpParser\ParserAbstract
             0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
             0,    0,    0,    0,    0,    0,  372
 =======
+=======
+>>>>>>> develop
            31,  123,  124,  125,  126,  127,  128,  129,  130,  131,
           132,   13,  134,  135,  136,  137,  138,  139,  140,  141,
           142,    3,    4,    5,    6,    7,  148,  149,  150,   82,
@@ -945,6 +982,9 @@ class Php5 extends \PhpParser\ParserAbstract
             0,  705,  335,  347,  347,    0,  684,  667,  667,  667,
             0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
             0,    0,    0,    0,    0,    0,    0,  328
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -952,17 +992,23 @@ class Php5 extends \PhpParser\ParserAbstract
             3,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
 <<<<<<< HEAD
+<<<<<<< HEAD
         32767,32767,32767,32767,32767,  540,  540,  495,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,  297,  297,  297,
         32767,32767,32767,  528,  528,  528,  528,  528,  528,  528,
           528,  528,  528,  528,32767,32767,32767,32767,32767,32767,
           381,32767,32767,32767,32767,32767,32767,32767,32767,32767,
 =======
+=======
+>>>>>>> develop
         32767,32767,32767,32767,32767,  544,  544,  499,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,  299,  299,  299,
         32767,32767,32767,  532,  532,  532,  532,  532,  532,  532,
           532,  532,  532,  532,32767,32767,32767,32767,32767,32767,
           383,32767,32767,32767,32767,32767,32767,32767,32767,32767,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
@@ -970,6 +1016,7 @@ class Php5 extends \PhpParser\ParserAbstract
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
+<<<<<<< HEAD
 <<<<<<< HEAD
         32767,32767,32767,32767,32767,32767,32767,32767,32767,  387,
           545,32767,32767,32767,32767,32767,32767,32767,32767,32767,
@@ -1026,6 +1073,8 @@ class Php5 extends \PhpParser\ParserAbstract
           127,  127,  127,  127,  214,  217,  206,  206,  164,  127,
           127,  266
 =======
+=======
+>>>>>>> develop
         32767,32767,32767,32767,32767,32767,32767,32767,32767,  389,
           549,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,32767,  364,
@@ -1080,6 +1129,9 @@ class Php5 extends \PhpParser\ParserAbstract
             3,  260,  127,  260,  260,  127,  127,  127,  127,  127,
           127,  127,  127,  127,  127,  216,  219,  208,  208,  164,
           127,  127,  268
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -1087,6 +1139,7 @@ class Php5 extends \PhpParser\ParserAbstract
           166,  140,  140,  140,  166,  187,  168,  144,  147,  141,
           142,  143,  149,  163,  163,  163,  163,  144,  144,  165,
           165,  165,  165,  165,  165,  165,  165,  165,  165,  165,
+<<<<<<< HEAD
 <<<<<<< HEAD
           138,  159,  160,  161,  162,  184,  139,  185,  493,  494,
           377,  495,  499,  500,  501,  502,  503,  504,  505,  506,
@@ -1110,6 +1163,8 @@ class Php5 extends \PhpParser\ParserAbstract
           496,  498,  524,  540,  569,  572,  583,  590,  852,  852,
           852,  852,  847,  853,  174,  585,  519,  600,  601,  177,
 =======
+=======
+>>>>>>> develop
           138,  159,  160,  161,  162,  184,  139,  185,  494,  495,
           377,  496,  500,  501,  502,  503,  504,  505,  506,  507,
           970,  164,  145,  146,  148,  171,  176,  186,  203,  253,
@@ -1131,11 +1186,15 @@ class Php5 extends \PhpParser\ParserAbstract
           556, 1183,  750,  509,  592,  786, 1183,  888,  612,  613,
           884,  617,  618,  624,  626,  631,  633,  817,  855,  855,
           855,  855,  850,  856,  174,  891,  891, 1205, 1205,  177,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
           178,  179,  401,  402,  403,  404,  173,  202,  206,  208,
           257,  259,  261,  262,  270,  271,  272,  273,  274,  275,
           281,  282,  283,  284,  305,  306,  331,  332,  333,  406,
           407,  408,  409,  175,  180,  254,  255,  181,  182,  183,
+<<<<<<< HEAD
 <<<<<<< HEAD
           497,  497,  785,  497,  497,  497,  497,  497,  497,  497,
           497,  497,  497,  497,  497,  497,  497,  509,  578,  582,
@@ -1175,6 +1234,8 @@ class Php5 extends \PhpParser\ParserAbstract
           523,    0,    0,    0,    0,    0,    0,    0,    0,    0,
             0,  301,  301
 =======
+=======
+>>>>>>> develop
           498,  498,  498,  498,  498,  498,  861,  498,  498,  498,
           498,  498,  498,  498,  498,  498,  498,  510,  586,  538,
           601,  602,  510,  545,  546,  547,  548,  549,  550,  551,
@@ -1211,6 +1272,9 @@ class Php5 extends \PhpParser\ParserAbstract
             0,  778,    0,    0,    0,    0,    0,    0,    0,    0,
             0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
             0,    0,    0,    0,    0,    0,    0,    0,  301,  301
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -1227,6 +1291,7 @@ class Php5 extends \PhpParser\ParserAbstract
            43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
            43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
 <<<<<<< HEAD
+<<<<<<< HEAD
            43,   43,   57,   68,   15,   68,   68,   68,   68,   68,
            68,   68,   68,   68,   68,   68,   68,   68,   68,   68,
            68,   68,   68,   68,   68,   68,   68,   68,   68,   68,
@@ -1241,6 +1306,8 @@ class Php5 extends \PhpParser\ParserAbstract
            51,   51,   51,   51,   51,   51,   51,   51,   68,   68,
            68,   68,   68,   68,   27,   66,  101,   66,   66,   27,
 =======
+=======
+>>>>>>> develop
            43,   43,   57,   69,   15,   69,   69,   69,   69,   69,
            69,   69,   69,   69,   69,   69,   69,   69,   69,   69,
            69,   69,   69,   69,   69,   69,   69,   69,   69,   69,
@@ -1254,26 +1321,36 @@ class Php5 extends \PhpParser\ParserAbstract
            32,  120,    6,   69,   32,   29,  120,   32,   32,   32,
            32,   32,   32,   32,   32,   32,   32,   50,   69,   69,
            69,   69,   69,   69,   27,   77,   77,   77,   77,   27,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
            27,   27,   27,   27,   27,   27,   27,   27,   27,   27,
            27,   27,   27,   27,   27,   27,   27,   27,   27,   27,
            27,   27,   27,   27,   27,   27,   27,   27,   27,   27,
            27,   27,   27,   27,   27,   27,   27,   27,   27,   27,
 <<<<<<< HEAD
+<<<<<<< HEAD
           117,  117,   29,  117,  117,  117,  117,  117,  117,  117,
           117,  117,  117,  117,  117,  117,  117,  117,   61,   61,
            61,    6,  117,  110,  110,  110,  110,  110,  110,  110,
           110,  110,  110,  125,   57,  125,   57,   57,   57,   57,
 =======
+=======
+>>>>>>> develop
           119,  119,  119,  119,  119,  119,   33,  119,  119,  119,
           119,  119,  119,  119,  119,  119,  119,  119,   67,  110,
            67,   67,  119,  111,  111,  111,  111,  111,  111,  111,
           111,  111,  111,  142,   57,   72,   57,   57,   57,   57,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
            57,   57,   57,   57,   57,   57,   57,   57,   57,   57,
            57,   57,   57,   57,   57,   57,   57,   57,   57,   57,
            57,   57,   57,   57,   57,   57,   57,   57,   57,   57,
            57,   57,   57,   57,   57,   57,   57,   57,   57,   57,
+<<<<<<< HEAD
 <<<<<<< HEAD
            32,   71,   32,   32,   69,   69,   69,   32,   40,   40,
            32,   32,   32,   32,   32,   32,   32,   32,   32,   32,
@@ -1341,6 +1418,8 @@ class Php5 extends \PhpParser\ParserAbstract
          1203, 1159,  347,  490,  491,  376, 1182,  392, 1198,  437,
          1205, 1213,  343,  539,  566
 =======
+=======
+>>>>>>> develop
            51,   51,   51,   51,   51,   51,   84,   51,   51,   51,
            51,   51,   51,   51,   51,   51,   51,    5,    5,    5,
             5,    5,    5,    5,   63,   46,  124,   63,  129,   98,
@@ -1405,6 +1484,9 @@ class Php5 extends \PhpParser\ParserAbstract
           434,  435, 1083,  355, 1168,  354,  449,  320, 1155,  580,
          1118,  456, 1208, 1164,  348,  491,  492,  376, 1187,  392,
          1203,  438, 1210, 1218,  344,  540,  567
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -1427,6 +1509,7 @@ class Php5 extends \PhpParser\ParserAbstract
            33,   33,   33,   33,   33,   33,   33,   33,   33,   33,
            33,   33,   14,   14,   54,   54,   56,   55,   55,   48,
 <<<<<<< HEAD
+<<<<<<< HEAD
            48,   58,   58,   59,   59,   60,   60,   15,   16,   16,
            16,   63,   63,   63,   64,   64,   67,   67,   65,   65,
            69,   69,   41,   41,   50,   50,   53,   53,   53,   52,
@@ -1441,6 +1524,8 @@ class Php5 extends \PhpParser\ParserAbstract
            90,   90,   98,   98,   97,   97,   97,   97,   97,   97,
            89,   89,  100,   99,   99,   46,   46,   40,   40,   43,
 =======
+=======
+>>>>>>> develop
            48,   58,   58,   59,   59,   60,   60,   61,   61,   15,
            16,   16,   16,   64,   64,   64,   65,   65,   68,   68,
            66,   66,   70,   70,   41,   41,   50,   50,   53,   53,
@@ -1455,6 +1540,9 @@ class Php5 extends \PhpParser\ParserAbstract
            89,   89,   91,   91,   99,   99,   98,   98,   98,   98,
            98,   98,   90,   90,  101,  100,  100,   46,   46,   40,
            40,   43,   43,   43,   43,   43,   43,   43,   43,   43,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
            43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
            43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
@@ -1463,6 +1551,7 @@ class Php5 extends \PhpParser\ParserAbstract
            43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
            43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
            43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
+<<<<<<< HEAD
 <<<<<<< HEAD
            43,   43,   43,   43,   43,   43,   43,   43,   43,   43,
            43,   43,   43,   43,   43,   34,   34,   47,   47,  105,
@@ -1485,6 +1574,8 @@ class Php5 extends \PhpParser\ParserAbstract
           125,  125,  125,  142,  143,  141,  141,  141,  141,  141,
           141,  141,  144,  144,  144
 =======
+=======
+>>>>>>> develop
            43,   43,   43,   43,   43,   43,   43,   34,   34,   47,
            47,  106,  106,  107,  107,  107,  107,  113,  102,  102,
           109,  109,  115,  115,  116,  117,  118,  118,  118,  118,
@@ -1504,6 +1595,9 @@ class Php5 extends \PhpParser\ParserAbstract
           139,  140,  140,  140,  110,  110,  141,  141,  142,  142,
           142,  142,  142,  127,  127,  127,  127,  144,  145,  143,
           143,  143,  143,  143,  143,  143,  146,  146,  146
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -1525,6 +1619,7 @@ class Php5 extends \PhpParser\ParserAbstract
             2,    3,    2,    3,    2,    3,    3,    3,    3,    1,
             2,    2,    5,    7,    9,    5,    6,    3,    3,    2,
             2,    1,    1,    1,    0,    2,    8,    0,    4,    1,
+<<<<<<< HEAD
 <<<<<<< HEAD
             3,    0,    1,    0,    1,    0,    1,   10,    7,    6,
             5,    1,    2,    2,    0,    2,    0,    2,    0,    2,
@@ -1567,6 +1662,8 @@ class Php5 extends \PhpParser\ParserAbstract
             2,    1,    2,    1,    1,    1,    4,    3,    3,    3,
             6,    3,    1,    1,    1
 =======
+=======
+>>>>>>> develop
             3,    0,    1,    0,    1,    0,    1,    1,    1,   10,
             7,    6,    5,    1,    2,    2,    0,    2,    0,    2,
             0,    2,    1,    3,    1,    4,    1,    4,    1,    1,
@@ -1607,6 +1704,9 @@ class Php5 extends \PhpParser\ParserAbstract
             1,    1,    1,    0,    0,    2,    3,    1,    3,    1,
             4,    2,    2,    2,    2,    1,    2,    1,    1,    1,
             4,    3,    3,    3,    6,    3,    1,    1,    1
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     );
 
@@ -2161,6 +2261,7 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             177 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = new Stmt\Function_($this->semStack[$stackPos-(10-3)], ['byRef' => $this->semStack[$stackPos-(10-2)], 'params' => $this->semStack[$stackPos-(10-5)], 'returnType' => $this->semStack[$stackPos-(10-7)], 'stmts' => $this->semStack[$stackPos-(10-9)]], $this->startAttributeStack[$stackPos-(10-1)] + $this->endAttributes);
             },
             178 => function ($stackPos) {
@@ -2192,6 +2293,8 @@ class Php5 extends \PhpParser\ParserAbstract
             186 => function ($stackPos) {
                  $this->semValue = array();
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             178 => function ($stackPos) {
@@ -2222,6 +2325,9 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             186 => function ($stackPos) {
                  $this->semValue = null;
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             187 => function ($stackPos) {
@@ -2235,6 +2341,7 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             190 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = array($this->semStack[$stackPos-(1-1)]);
             },
             191 => function ($stackPos) {
@@ -2246,6 +2353,8 @@ class Php5 extends \PhpParser\ParserAbstract
             193 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(4-2)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = array();
             },
             191 => function ($stackPos) {
@@ -2256,6 +2365,9 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             193 => function ($stackPos) {
                  $this->semStack[$stackPos-(3-1)][] = $this->semStack[$stackPos-(3-3)]; $this->semValue = $this->semStack[$stackPos-(3-1)];
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             194 => function ($stackPos) {
@@ -2269,6 +2381,7 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             197 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = null;
             },
             198 => function ($stackPos) {
@@ -2343,6 +2456,8 @@ class Php5 extends \PhpParser\ParserAbstract
             221 => function ($stackPos) {
                  $this->semValue = new Stmt\Else_(is_array($this->semStack[$stackPos-(2-2)]) ? $this->semStack[$stackPos-(2-2)] : array($this->semStack[$stackPos-(2-2)]), $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(4-2)];
             },
             198 => function ($stackPos) {
@@ -2416,6 +2531,9 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             221 => function ($stackPos) {
                  $this->semValue = new Stmt\ElseIf_($this->semStack[$stackPos-(4-2)], $this->semStack[$stackPos-(4-4)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             222 => function ($stackPos) {
@@ -2423,6 +2541,7 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             223 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = new Stmt\Else_($this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
             },
             224 => function ($stackPos) {
@@ -2431,6 +2550,8 @@ class Php5 extends \PhpParser\ParserAbstract
             225 => function ($stackPos) {
                  $this->semValue = array($this->semStack[$stackPos-(2-2)], true);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Stmt\Else_(is_array($this->semStack[$stackPos-(2-2)]) ? $this->semStack[$stackPos-(2-2)] : array($this->semStack[$stackPos-(2-2)]), $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             224 => function ($stackPos) {
@@ -2438,12 +2559,16 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             225 => function ($stackPos) {
                  $this->semValue = new Stmt\Else_($this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             226 => function ($stackPos) {
                  $this->semValue = array($this->semStack[$stackPos-(1-1)], false);
             },
             227 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -2477,6 +2602,8 @@ class Php5 extends \PhpParser\ParserAbstract
             237 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = array($this->semStack[$stackPos-(2-2)], true);
             },
             228 => function ($stackPos) {
@@ -2508,12 +2635,16 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             237 => function ($stackPos) {
                  $this->semValue = new Node\Identifier('callable', $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             238 => function ($stackPos) {
                  $this->semValue = null;
             },
             239 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(2-2)];
             },
@@ -2597,6 +2728,8 @@ class Php5 extends \PhpParser\ParserAbstract
             265 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(3-2)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             240 => function ($stackPos) {
@@ -2678,12 +2811,16 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             265 => function ($stackPos) {
                  $this->semValue = new Stmt\TraitUse($this->semStack[$stackPos-(3-2)], $this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             266 => function ($stackPos) {
                  $this->semValue = array();
             },
             267 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semStack[$stackPos-(2-1)][] = $this->semStack[$stackPos-(2-2)]; $this->semValue = $this->semStack[$stackPos-(2-1)];
             },
@@ -2989,6 +3126,8 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             368 => function ($stackPos) {
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(3-2)];
             },
             268 => function ($stackPos) {
@@ -3298,11 +3437,15 @@ class Php5 extends \PhpParser\ParserAbstract
                  $this->semValue = new Expr\Cast\Int_($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             370 => function ($stackPos) {
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
                  $attrs = $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes;
             $attrs['kind'] = $this->getFloatCastKind($this->semStack[$stackPos-(2-1)]);
             $this->semValue = new Expr\Cast\Double($this->semStack[$stackPos-(2-2)], $attrs);
             },
+<<<<<<< HEAD
 <<<<<<< HEAD
             369 => function ($stackPos) {
                  $this->semValue = new Expr\Cast\String_($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
@@ -3321,6 +3464,8 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             374 => function ($stackPos) {
 =======
+=======
+>>>>>>> develop
             371 => function ($stackPos) {
                  $this->semValue = new Expr\Cast\String_($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
@@ -3337,11 +3482,15 @@ class Php5 extends \PhpParser\ParserAbstract
                  $this->semValue = new Expr\Cast\Unset_($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
             },
             376 => function ($stackPos) {
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
                  $attrs = $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes;
             $attrs['kind'] = strtolower($this->semStack[$stackPos-(2-1)]) === 'exit' ? Expr\Exit_::KIND_EXIT : Expr\Exit_::KIND_DIE;
             $this->semValue = new Expr\Exit_($this->semStack[$stackPos-(2-2)], $attrs);
             },
+<<<<<<< HEAD
 <<<<<<< HEAD
             375 => function ($stackPos) {
                  $this->semValue = new Expr\ErrorSuppress($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
@@ -3351,6 +3500,10 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             377 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
+=======
+            377 => function ($stackPos) {
+                 $this->semValue = new Expr\ErrorSuppress($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
+>>>>>>> develop
 =======
             377 => function ($stackPos) {
                  $this->semValue = new Expr\ErrorSuppress($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
@@ -3361,6 +3514,7 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             379 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = new Expr\ShellExec($this->semStack[$stackPos-(3-2)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
             },
             380 => function ($stackPos) {
@@ -3405,6 +3559,8 @@ class Php5 extends \PhpParser\ParserAbstract
                  $this->semValue = new Expr\ArrayDimFetch(Scalar\String_::fromString($this->semStack[$stackPos-(4-1)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes), $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             380 => function ($stackPos) {
@@ -3448,11 +3604,15 @@ class Php5 extends \PhpParser\ParserAbstract
                  $attrs = $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes; $attrs['kind'] = Expr\Array_::KIND_SHORT;
             $this->semValue = new Expr\Array_($this->semStack[$stackPos-(3-2)], $attrs);
             },
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             393 => function ($stackPos) {
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
             394 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
@@ -3493,6 +3653,8 @@ class Php5 extends \PhpParser\ParserAbstract
             406 => function ($stackPos) {
                  $this->semValue = $this->fixupPhp5StaticPropCall($this->semStack[$stackPos-(2-1)], $this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Expr\ArrayDimFetch(Scalar\String_::fromString($this->semStack[$stackPos-(4-1)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes), $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
             395 => function ($stackPos) {
@@ -3531,6 +3693,9 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             406 => function ($stackPos) {
                  $this->semValue = new Expr\FuncCall($this->semStack[$stackPos-(2-1)], $this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             407 => function ($stackPos) {
@@ -3538,6 +3703,7 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             408 => function ($stackPos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
             409 => function ($stackPos) {
@@ -3570,6 +3736,8 @@ class Php5 extends \PhpParser\ParserAbstract
             418 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Expr\StaticCall($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->semStack[$stackPos-(4-4)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
             409 => function ($stackPos) {
@@ -3601,6 +3769,9 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             418 => function ($stackPos) {
                  $this->semValue = new Name\Relative(substr($this->semStack[$stackPos-(1-1)], 10), $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             419 => function ($stackPos) {
@@ -3610,6 +3781,7 @@ class Php5 extends \PhpParser\ParserAbstract
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             421 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = new Expr\PropertyFetch($this->semStack[$stackPos-(3-1)], $this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
             },
@@ -3875,6 +4047,8 @@ class Php5 extends \PhpParser\ParserAbstract
             508 => function ($stackPos) {
                  $this->semValue = new Expr\FuncCall($this->semStack[$stackPos-(2-1)], $this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             422 => function ($stackPos) {
@@ -4138,12 +4312,16 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             508 => function ($stackPos) {
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(6-2)], $this->semStack[$stackPos-(6-5)], $this->startAttributeStack[$stackPos-(6-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             509 => function ($stackPos) {
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
             510 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
@@ -4159,6 +4337,8 @@ class Php5 extends \PhpParser\ParserAbstract
             514 => function ($stackPos) {
                  $this->semValue = new Expr\Variable($this->semStack[$stackPos-(2-2)], $this->startAttributeStack[$stackPos-(2-1)] + $this->endAttributes);
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Expr\PropertyFetch($this->semStack[$stackPos-(3-1)], $this->semStack[$stackPos-(3-3)], $this->startAttributeStack[$stackPos-(3-1)] + $this->endAttributes);
             },
             511 => function ($stackPos) {
@@ -4172,12 +4352,16 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             514 => function ($stackPos) {
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             515 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             516 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
@@ -4220,6 +4404,8 @@ class Php5 extends \PhpParser\ParserAbstract
             529 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
 =======
+=======
+>>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(3-2)];
             },
             517 => function ($stackPos) {
@@ -4260,12 +4446,16 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             529 => function ($stackPos) {
                  $this->semValue = new Expr\ArrayDimFetch($this->semStack[$stackPos-(4-1)], $this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             },
             530 => function ($stackPos) {
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },
             531 => function ($stackPos) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                  $this->semValue = $this->semStack[$stackPos-(3-2)];
             },
@@ -4367,6 +4557,8 @@ class Php5 extends \PhpParser\ParserAbstract
             },
             564 => function ($stackPos) {
 =======
+=======
+>>>>>>> develop
                  $this->semValue = new Expr\Variable($this->semStack[$stackPos-(4-3)], $this->startAttributeStack[$stackPos-(4-1)] + $this->endAttributes);
             },
             532 => function ($stackPos) {
@@ -4478,6 +4670,9 @@ class Php5 extends \PhpParser\ParserAbstract
                  $this->semValue = $this->parseNumString($this->semStack[$stackPos-(1-1)], $this->startAttributeStack[$stackPos-(1-1)] + $this->endAttributes);
             },
             568 => function ($stackPos) {
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
                  $this->semValue = $this->semStack[$stackPos-(1-1)];
             },

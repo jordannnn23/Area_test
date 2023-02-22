@@ -127,7 +127,10 @@ class WorkflowExecutions extends \Google\Service
                   'required' => true,
                 ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
                 'filter' => [
                   'location' => 'query',
                   'type' => 'string',
@@ -136,6 +139,9 @@ class WorkflowExecutions extends \Google\Service
                   'location' => 'query',
                   'type' => 'string',
                 ],
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
                 'pageSize' => [
                   'location' => 'query',

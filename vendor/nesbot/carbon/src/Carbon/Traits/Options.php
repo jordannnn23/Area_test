@@ -442,7 +442,11 @@ trait Options
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         foreach (['dumpProperties', 'constructedObjectId'] as $property) {
+=======
+        foreach (['dumpProperties', 'constructedObjectId', 'constructed'] as $property) {
+>>>>>>> develop
 =======
         foreach (['dumpProperties', 'constructedObjectId', 'constructed'] as $property) {
 >>>>>>> develop

@@ -3,13 +3,19 @@
 All notable changes of the PHPUnit 9.5 release series are documented in this file using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
 ## [9.5.28] - 2023-01-14
 
 ### Fixed
 
 * [#5120](https://github.com/sebastianbergmann/phpunit/issues/5120): Test Runner incorrectly treats `--testsuite` and `--list-tests` as not combinable options
 
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 ## [9.5.27] - 2022-12-09
 
@@ -222,6 +228,10 @@ All notable changes of the PHPUnit 9.5 release series are documented in this fil
 * [#4535](https://github.com/sebastianbergmann/phpunit/issues/4535): `getMockFromWsdl()` does not handle methods that do not have parameters correctly
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[9.5.28]: https://github.com/sebastianbergmann/phpunit/compare/9.5.27...9.5.28
+>>>>>>> develop
 =======
 [9.5.28]: https://github.com/sebastianbergmann/phpunit/compare/9.5.27...9.5.28
 >>>>>>> develop

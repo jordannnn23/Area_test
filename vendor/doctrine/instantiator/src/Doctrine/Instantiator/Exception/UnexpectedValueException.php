@@ -1,6 +1,11 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> develop
 =======
 declare(strict_types=1);
 
@@ -26,7 +31,11 @@ class UnexpectedValueException extends BaseUnexpectedValueException implements E
     public static function fromSerializationTriggeredException(
         ReflectionClass $reflectionClass,
 <<<<<<< HEAD
+<<<<<<< HEAD
         Exception $exception
+=======
+        Exception $exception,
+>>>>>>> develop
 =======
         Exception $exception,
 >>>>>>> develop
@@ -35,15 +44,21 @@ class UnexpectedValueException extends BaseUnexpectedValueException implements E
             sprintf(
                 'An exception was raised while trying to instantiate an instance of "%s" via un-serialization',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $reflectionClass->getName()
             ),
             0,
             $exception
 =======
+=======
+>>>>>>> develop
                 $reflectionClass->getName(),
             ),
             0,
             $exception,
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
         );
     }
@@ -59,7 +74,11 @@ class UnexpectedValueException extends BaseUnexpectedValueException implements E
         int $errorCode,
         string $errorFile,
 <<<<<<< HEAD
+<<<<<<< HEAD
         int $errorLine
+=======
+        int $errorLine,
+>>>>>>> develop
 =======
         int $errorLine,
 >>>>>>> develop
@@ -71,15 +90,21 @@ class UnexpectedValueException extends BaseUnexpectedValueException implements E
                 $reflectionClass->getName(),
                 $errorFile,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $errorLine
             ),
             0,
             new Exception($errorString, $errorCode)
 =======
+=======
+>>>>>>> develop
                 $errorLine,
             ),
             0,
             new Exception($errorString, $errorCode),
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
         );
     }

@@ -394,7 +394,12 @@ class Image
 		$newHeight,
 		int $flags = self::FIT
 <<<<<<< HEAD
+<<<<<<< HEAD
 	): array {
+=======
+	): array
+	{
+>>>>>>> develop
 =======
 	): array
 	{

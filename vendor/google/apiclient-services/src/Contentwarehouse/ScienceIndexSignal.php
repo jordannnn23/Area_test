@@ -22,7 +22,10 @@ class ScienceIndexSignal extends \Google\Collection
   protected $collection_key = 'author';
   protected $internal_gapi_mappings = [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "holdingsId" => "HoldingsId",
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
         "htmlTitleFp" => "HtmlTitleFp",
@@ -40,10 +43,13 @@ class ScienceIndexSignal extends \Google\Collection
   ];
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * @var string[]
    */
   public $holdingsId;
   /**
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
    * @var string
@@ -99,6 +105,7 @@ class ScienceIndexSignal extends \Google\Collection
 
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * @param string[]
    */
   public function setHoldingsId($holdingsId)
@@ -113,6 +120,8 @@ class ScienceIndexSignal extends \Google\Collection
     return $this->holdingsId;
   }
   /**
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
    * @param string

@@ -54,6 +54,10 @@ class ChromeManagement extends \Google\Service
   public $customers_telemetry_devices;
   public $customers_telemetry_events;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  public $customers_telemetry_users;
+>>>>>>> develop
 =======
   public $customers_telemetry_users;
 >>>>>>> develop
@@ -419,7 +423,10 @@ class ChromeManagement extends \Google\Service
         ]
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
     $this->customers_telemetry_users = new ChromeManagement\Resource\CustomersTelemetryUsers(
         $this,
         $this->serviceName,
@@ -470,6 +477,9 @@ class ChromeManagement extends \Google\Service
           ]
         ]
     );
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
   }
 }

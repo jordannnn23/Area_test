@@ -4,7 +4,11 @@
  * This file is part of Psy Shell.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (c) 2012-2022 Justin Hileman
+=======
+ * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
 =======
  * (c) 2012-2023 Justin Hileman
 >>>>>>> develop
@@ -101,8 +105,11 @@ class ListPass extends CodeCleanerPass
      *
      * @param Expr $item
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */

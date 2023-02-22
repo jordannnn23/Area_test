@@ -18,12 +18,16 @@
 namespace Google\Service\Integrations\Resource;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaArchiveIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaArchiveIntegrationVersionResponse;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDeactivateIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDeactivateIntegrationVersionResponse;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaGetBundleResponse;
+=======
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse;
+>>>>>>> develop
 =======
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaDownloadIntegrationVersionResponse;
 >>>>>>> develop
@@ -35,12 +39,17 @@ use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTakeoverEditLockRe
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaTakeoverEditLockResponse;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUnpublishIntegrationVersionRequest;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUpdateBundleRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUpdateBundleResponse;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaValidateIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaValidateIntegrationVersionResponse;
+=======
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest;
+use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse;
+>>>>>>> develop
 =======
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse;
@@ -58,6 +67,7 @@ use Google\Service\Integrations\GoogleProtobufEmpty;
 class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Resource
 {
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * Soft-deletes the integration. Changes the status of the integration to
    * ARCHIVED. If the integration being ARCHIVED is tagged as "HEAD", the tag is
@@ -84,6 +94,8 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
   /**
 =======
 >>>>>>> develop
+=======
+>>>>>>> develop
    * Create a integration with a draft version in the specified project.
    * (versions.create)
    *
@@ -108,6 +120,7 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Sets the status of the ACTIVE integration to SNAPSHOT with a new tag
    * "PREVIOUSLY_PUBLISHED" after validating it. The "HEAD" and
    * "PUBLISH_REQUESTED" tags do not change. This RPC throws an exception if the
@@ -127,6 +140,8 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
     return $this->call('deactivate', [$params], GoogleCloudIntegrationsV1alphaDeactivateIntegrationVersionResponse::class);
   }
   /**
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
    * Soft-deletes the integration. Changes the status of the integration to
@@ -183,6 +198,7 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * PROTECT WITH A VISIBILITY LABEL. THIS METHOD WILL BE MOVED TO A SEPARATE
    * SERVICE. RPC to get details of the Bundle (versions.getBundle)
    *
@@ -197,6 +213,8 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
     return $this->call('getBundle', [$params], GoogleCloudIntegrationsV1alphaGetBundleResponse::class);
   }
   /**
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
    * Returns the list of all integration versions in the specified project.
@@ -327,6 +345,7 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * THIS METHOD WILL BE MOVED TO A SEPARATE SERVICE. RPC to update the Bundle
    * (versions.updateBundle)
    *
@@ -342,6 +361,8 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
     return $this->call('updateBundle', [$params], GoogleCloudIntegrationsV1alphaUpdateBundleResponse::class);
   }
   /**
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
    * Uploads an integration. The content can be a previously downloaded
@@ -362,6 +383,7 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
     return $this->call('upload', [$params], GoogleCloudIntegrationsV1alphaUploadIntegrationVersionResponse::class);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   /**
    * Validates the given integration. If the id doesn't exist, a NotFoundException
    * is thrown. If validation fails a CanonicalCodeException is thrown. If there
@@ -379,6 +401,8 @@ class ProjectsLocationsProductsIntegrationsVersions extends \Google\Service\Reso
     $params = array_merge($params, $optParams);
     return $this->call('validate', [$params], GoogleCloudIntegrationsV1alphaValidateIntegrationVersionResponse::class);
   }
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 }

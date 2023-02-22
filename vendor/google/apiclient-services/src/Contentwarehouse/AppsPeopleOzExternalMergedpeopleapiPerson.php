@@ -149,6 +149,12 @@ class AppsPeopleOzExternalMergedpeopleapiPerson extends \Google\Collection
   protected $nameDataType = 'array';
   public $name;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $namePronunciationAudioMetadataInfoType = AppsPeopleOzExternalMergedpeopleapiNamePronunciationAudioMetadataInfo::class;
+  protected $namePronunciationAudioMetadataInfoDataType = 'array';
+  public $namePronunciationAudioMetadataInfo;
+>>>>>>> develop
 =======
   protected $namePronunciationAudioMetadataInfoType = AppsPeopleOzExternalMergedpeopleapiNamePronunciationAudioMetadataInfo::class;
   protected $namePronunciationAudioMetadataInfoDataType = 'array';
@@ -843,7 +849,10 @@ class AppsPeopleOzExternalMergedpeopleapiPerson extends \Google\Collection
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param AppsPeopleOzExternalMergedpeopleapiNamePronunciationAudioMetadataInfo[]
    */
   public function setNamePronunciationAudioMetadataInfo($namePronunciationAudioMetadataInfo)
@@ -858,6 +867,9 @@ class AppsPeopleOzExternalMergedpeopleapiPerson extends \Google\Collection
     return $this->namePronunciationAudioMetadataInfo;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param AppsPeopleOzExternalMergedpeopleapiNickname[]
    */

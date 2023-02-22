@@ -111,7 +111,11 @@ class Playlists extends \Google\Service\Resource
    * @opt_param string channelId Return the playlists owned by the specified
    * channel ID.
 <<<<<<< HEAD
+<<<<<<< HEAD
    * @opt_param string hl Returen content in specified language
+=======
+   * @opt_param string hl Return content in specified language
+>>>>>>> develop
 =======
    * @opt_param string hl Return content in specified language
 >>>>>>> develop

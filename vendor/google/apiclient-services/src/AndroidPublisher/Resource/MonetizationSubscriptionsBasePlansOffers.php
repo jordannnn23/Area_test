@@ -77,7 +77,11 @@ class MonetizationSubscriptionsBasePlansOffers extends \Google\Service\Resource
    * @opt_param string regionsVersion.version Required. A string representing
    * version of the available regions being used for the specified resource. The
 <<<<<<< HEAD
+<<<<<<< HEAD
    * current version is 2022/01.
+=======
+   * current version is 2022/02.
+>>>>>>> develop
 =======
    * current version is 2022/02.
 >>>>>>> develop
@@ -196,7 +200,11 @@ class MonetizationSubscriptionsBasePlansOffers extends \Google\Service\Resource
    * @opt_param string regionsVersion.version Required. A string representing
    * version of the available regions being used for the specified resource. The
 <<<<<<< HEAD
+<<<<<<< HEAD
    * current version is 2022/01.
+=======
+   * current version is 2022/02.
+>>>>>>> develop
 =======
    * current version is 2022/02.
 >>>>>>> develop

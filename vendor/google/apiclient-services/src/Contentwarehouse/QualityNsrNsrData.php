@@ -184,6 +184,12 @@ class QualityNsrNsrData extends \Google\Collection
    */
   public $url;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $versionedAsrDataType = QualityNsrVersionedFloatSignal::class;
+  protected $versionedAsrDataDataType = 'array';
+  public $versionedAsrData;
+>>>>>>> develop
 =======
   protected $versionedAsrDataType = QualityNsrVersionedFloatSignal::class;
   protected $versionedAsrDataDataType = 'array';
@@ -799,7 +805,10 @@ class QualityNsrNsrData extends \Google\Collection
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param QualityNsrVersionedFloatSignal[]
    */
   public function setVersionedAsrData($versionedAsrData)
@@ -814,6 +823,9 @@ class QualityNsrNsrData extends \Google\Collection
     return $this->versionedAsrData;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param QualityNsrNSRVersionedData[]
    */

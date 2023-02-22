@@ -95,9 +95,12 @@ class BcMathCalculator extends Calculator
     /**
      * {@inheritdoc}
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @psalm-suppress InvalidNullableReturnType
      * @psalm-suppress NullableReturnStatement
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */
@@ -109,9 +112,12 @@ class BcMathCalculator extends Calculator
     /**
      * {@inheritDoc}
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @psalm-suppress NullableReturnStatement
      * @psalm-suppress InvalidNullableReturnType
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
      */

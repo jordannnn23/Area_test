@@ -30,7 +30,11 @@ final class Help
 
     private const HELP_TEXT = [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Usage' => [
+=======
+        'Usage'                  => [
+>>>>>>> develop
 =======
         'Usage'                  => [
 >>>>>>> develop
@@ -39,7 +43,11 @@ final class Help
         ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Code Coverage Options' => [
+=======
+        'Code Coverage Options'  => [
+>>>>>>> develop
 =======
         'Code Coverage Options'  => [
 >>>>>>> develop
@@ -59,7 +67,11 @@ final class Help
         ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Logging Options' => [
+=======
+        'Logging Options'        => [
+>>>>>>> develop
 =======
         'Logging Options'        => [
 >>>>>>> develop
@@ -131,6 +143,7 @@ final class Help
             ['spacer' => ''],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             ['arg' => '--order-by <order>', 'desc' => 'Run tests in order: default|defects|duration|no-depends|random|reverse|size'],
             ['arg' => '--random-order-seed <N>', 'desc' => 'Use a specific random seed <N> for random order'],
             ['arg' => '--cache-result', 'desc' => 'Write test results to cache file'],
@@ -139,6 +152,8 @@ final class Help
 
         'Configuration Options' => [
 =======
+=======
+>>>>>>> develop
             ['arg'    => '--order-by <order>', 'desc' => 'Run tests in order: default|defects|duration|no-depends|random|reverse|size'],
             ['arg'    => '--random-order-seed <N>', 'desc' => 'Use a specific random seed <N> for random order'],
             ['arg'    => '--cache-result', 'desc' => 'Write test results to cache file'],
@@ -146,6 +161,9 @@ final class Help
         ],
 
         'Configuration Options'  => [
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
             ['arg' => '--prepend <file>', 'desc' => 'A PHP script that is included as early as possible'],
             ['arg' => '--bootstrap <file>', 'desc' => 'A PHP script that is included before the tests run'],
@@ -161,7 +179,11 @@ final class Help
         ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Miscellaneous Options' => [
+=======
+        'Miscellaneous Options'  => [
+>>>>>>> develop
 =======
         'Miscellaneous Options'  => [
 >>>>>>> develop

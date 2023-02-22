@@ -20,6 +20,12 @@ namespace Google\Service\BigQueryReservation;
 class Reservation extends \Google\Model
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $autoscaleType = Autoscale::class;
+  protected $autoscaleDataType = '';
+  public $autoscale;
+>>>>>>> develop
 =======
   protected $autoscaleType = Autoscale::class;
   protected $autoscaleDataType = '';
@@ -35,11 +41,17 @@ class Reservation extends \Google\Model
   public $creationTime;
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @var string
    */
   public $edition;
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @var bool
    */
@@ -63,7 +75,10 @@ class Reservation extends \Google\Model
 
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param Autoscale
    */
   public function setAutoscale(Autoscale $autoscale)
@@ -78,6 +93,9 @@ class Reservation extends \Google\Model
     return $this->autoscale;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param string
    */
@@ -108,7 +126,10 @@ class Reservation extends \Google\Model
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param string
    */
   public function setEdition($edition)
@@ -123,6 +144,9 @@ class Reservation extends \Google\Model
     return $this->edition;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param bool
    */

@@ -19,9 +19,15 @@ namespace Google\Service\CloudWorkstations\Resource;
 
 use Google\Service\CloudWorkstations\CancelOperationRequest;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Google\Service\CloudWorkstations\ListOperationsResponse;
 use Google\Service\CloudWorkstations\Operation;
 use Google\Service\CloudWorkstations\WorkstationsEmpty;
+=======
+use Google\Service\CloudWorkstations\GoogleProtobufEmpty;
+use Google\Service\CloudWorkstations\ListOperationsResponse;
+use Google\Service\CloudWorkstations\Operation;
+>>>>>>> develop
 =======
 use Google\Service\CloudWorkstations\GoogleProtobufEmpty;
 use Google\Service\CloudWorkstations\ListOperationsResponse;
@@ -53,7 +59,11 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
    * @param CancelOperationRequest $postBody
    * @param array $optParams Optional parameters.
 <<<<<<< HEAD
+<<<<<<< HEAD
    * @return WorkstationsEmpty
+=======
+   * @return GoogleProtobufEmpty
+>>>>>>> develop
 =======
    * @return GoogleProtobufEmpty
 >>>>>>> develop
@@ -63,7 +73,11 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
     $params = ['name' => $name, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
 <<<<<<< HEAD
+<<<<<<< HEAD
     return $this->call('cancel', [$params], WorkstationsEmpty::class);
+=======
+    return $this->call('cancel', [$params], GoogleProtobufEmpty::class);
+>>>>>>> develop
 =======
     return $this->call('cancel', [$params], GoogleProtobufEmpty::class);
 >>>>>>> develop
@@ -77,7 +91,11 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource to be deleted.
    * @param array $optParams Optional parameters.
 <<<<<<< HEAD
+<<<<<<< HEAD
    * @return WorkstationsEmpty
+=======
+   * @return GoogleProtobufEmpty
+>>>>>>> develop
 =======
    * @return GoogleProtobufEmpty
 >>>>>>> develop
@@ -87,7 +105,11 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
     $params = ['name' => $name];
     $params = array_merge($params, $optParams);
 <<<<<<< HEAD
+<<<<<<< HEAD
     return $this->call('delete', [$params], WorkstationsEmpty::class);
+=======
+    return $this->call('delete', [$params], GoogleProtobufEmpty::class);
+>>>>>>> develop
 =======
     return $this->call('delete', [$params], GoogleProtobufEmpty::class);
 >>>>>>> develop

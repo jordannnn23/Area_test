@@ -17,6 +17,10 @@ use Carbon\CarbonInterface;
 use Carbon\CarbonInterval;
 use Carbon\CarbonPeriod;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Carbon\CarbonPeriodImmutable;
+>>>>>>> develop
 =======
 use Carbon\CarbonPeriodImmutable;
 >>>>>>> develop
@@ -610,6 +614,7 @@ trait Converter
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $period = (new CarbonPeriod())->setDateClass(static::class)->setStartDate($this);
 
         if ($interval) {
@@ -621,6 +626,8 @@ trait Converter
         } elseif ($end) {
             $period->setEndDate($end);
 =======
+=======
+>>>>>>> develop
         $period = ($this->isMutable() ? new CarbonPeriod() : new CarbonPeriodImmutable())
             ->setDateClass(static::class)
             ->setStartDate($this);
@@ -633,6 +640,9 @@ trait Converter
             $period = $period->setRecurrences($end);
         } elseif ($end) {
             $period = $period->setEndDate($end);
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
         }
 

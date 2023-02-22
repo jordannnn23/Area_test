@@ -3,13 +3,19 @@
 All notable changes are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
 ## [9.2.24] - 2023-01-26
 
 ### Changed
 
 * [#970](https://github.com/sebastianbergmann/php-code-coverage/issues/970): CSS and JavaScript assets are now referenced using `?v=%s` URLs in the HTML report to avoid cache issues
 
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
 ## [9.2.23] - 2022-12-28
 
@@ -468,6 +474,10 @@ All notable changes are documented in this file using the [Keep a CHANGELOG](htt
 * This component is no longer supported on PHP 7.1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[9.2.24]: https://github.com/sebastianbergmann/php-code-coverage/compare/9.2.23...9.2.24
+>>>>>>> develop
 =======
 [9.2.24]: https://github.com/sebastianbergmann/php-code-coverage/compare/9.2.23...9.2.24
 >>>>>>> develop

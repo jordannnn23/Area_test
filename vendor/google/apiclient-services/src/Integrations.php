@@ -41,7 +41,10 @@ class Integrations extends \Google\Service
   public $callback;
   public $connectorPlatformRegions;
 <<<<<<< HEAD
+<<<<<<< HEAD
   public $projects_locations;
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
   public $projects_locations_appsScriptProjects;
@@ -55,7 +58,10 @@ class Integrations extends \Google\Service
   public $projects_locations_integrations_executions_suspensions;
   public $projects_locations_integrations_versions;
 <<<<<<< HEAD
+<<<<<<< HEAD
   public $projects_locations_products;
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
   public $projects_locations_products_authConfigs;
@@ -64,7 +70,10 @@ class Integrations extends \Google\Service
   public $projects_locations_products_integrations_executions;
   public $projects_locations_products_integrations_executions_suspensions;
 <<<<<<< HEAD
+<<<<<<< HEAD
   public $projects_locations_products_integrations_executionsnapshots;
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
   public $projects_locations_products_integrations_versions;
@@ -140,6 +149,7 @@ class Integrations extends \Google\Service
         ]
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->projects_locations = new Integrations\Resource\ProjectsLocations(
         $this,
         $this->serviceName,
@@ -160,6 +170,8 @@ class Integrations extends \Google\Service
           ]
         ]
     );
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
     $this->projects_locations_appsScriptProjects = new Integrations\Resource\ProjectsLocationsAppsScriptProjects(
@@ -653,6 +665,7 @@ class Integrations extends \Google\Service
         [
           'methods' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'archive' => [
               'path' => 'v1alpha/{+name}:archive',
               'httpMethod' => 'POST',
@@ -664,6 +677,9 @@ class Integrations extends \Google\Service
                 ],
               ],
             ],'create' => [
+=======
+            'create' => [
+>>>>>>> develop
 =======
             'create' => [
 >>>>>>> develop
@@ -681,6 +697,7 @@ class Integrations extends \Google\Service
                 ],
               ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             ],'deactivate' => [
               'path' => 'v1alpha/{+name}:deactivate',
               'httpMethod' => 'POST',
@@ -691,6 +708,8 @@ class Integrations extends \Google\Service
                   'required' => true,
                 ],
               ],
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
             ],'delete' => [
@@ -812,6 +831,7 @@ class Integrations extends \Google\Service
                 ],
               ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             ],'validate' => [
               'path' => 'v1alpha/{+name}:validate',
               'httpMethod' => 'POST',
@@ -852,6 +872,8 @@ class Integrations extends \Google\Service
                   'required' => true,
                 ],
               ],
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
             ],
@@ -1049,6 +1071,7 @@ class Integrations extends \Google\Service
         [
           'methods' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'archiveBundle' => [
               'path' => 'v1alpha/{+name}:archiveBundle',
               'httpMethod' => 'POST',
@@ -1060,6 +1083,9 @@ class Integrations extends \Google\Service
                 ],
               ],
             ],'execute' => [
+=======
+            'execute' => [
+>>>>>>> develop
 =======
             'execute' => [
 >>>>>>> develop
@@ -1287,6 +1313,7 @@ class Integrations extends \Google\Service
         ]
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
     $this->projects_locations_products_integrations_executionsnapshots = new Integrations\Resource\ProjectsLocationsProductsIntegrationsExecutionsnapshots(
         $this,
         $this->serviceName,
@@ -1325,12 +1352,15 @@ class Integrations extends \Google\Service
     );
 =======
 >>>>>>> develop
+=======
+>>>>>>> develop
     $this->projects_locations_products_integrations_versions = new Integrations\Resource\ProjectsLocationsProductsIntegrationsVersions(
         $this,
         $this->serviceName,
         'versions',
         [
           'methods' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'archive' => [
               'path' => 'v1alpha/{+name}:archive',
@@ -1343,6 +1373,9 @@ class Integrations extends \Google\Service
                 ],
               ],
             ],'create' => [
+=======
+            'create' => [
+>>>>>>> develop
 =======
             'create' => [
 >>>>>>> develop
@@ -1360,6 +1393,7 @@ class Integrations extends \Google\Service
                 ],
               ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             ],'deactivate' => [
               'path' => 'v1alpha/{+name}:deactivate',
               'httpMethod' => 'POST',
@@ -1370,6 +1404,8 @@ class Integrations extends \Google\Service
                   'required' => true,
                 ],
               ],
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
             ],'delete' => [
@@ -1407,6 +1443,7 @@ class Integrations extends \Google\Service
                 ],
               ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             ],'getBundle' => [
               'path' => 'v1alpha/{+name}:getBundle',
               'httpMethod' => 'GET',
@@ -1417,6 +1454,8 @@ class Integrations extends \Google\Service
                   'required' => true,
                 ],
               ],
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
             ],'list' => [
@@ -1494,6 +1533,7 @@ class Integrations extends \Google\Service
                 ],
               ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             ],'updateBundle' => [
               'path' => 'v1alpha/{+name}:updateBundle',
               'httpMethod' => 'PATCH',
@@ -1504,6 +1544,8 @@ class Integrations extends \Google\Service
                   'required' => true,
                 ],
               ],
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
             ],'upload' => [
@@ -1517,6 +1559,7 @@ class Integrations extends \Google\Service
                 ],
               ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             ],'validate' => [
               'path' => 'v1alpha/{+name}:validate',
               'httpMethod' => 'POST',
@@ -1527,6 +1570,8 @@ class Integrations extends \Google\Service
                   'required' => true,
                 ],
               ],
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
             ],

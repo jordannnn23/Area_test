@@ -47,6 +47,10 @@ class CloudRetail extends \Google\Service
   public $projects_locations_catalogs_completionData;
   public $projects_locations_catalogs_controls;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  public $projects_locations_catalogs_models;
+>>>>>>> develop
 =======
   public $projects_locations_catalogs_models;
 >>>>>>> develop
@@ -527,7 +531,10 @@ class CloudRetail extends \Google\Service
         ]
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
     $this->projects_locations_catalogs_models = new CloudRetail\Resource\ProjectsLocationsCatalogsModels(
         $this,
         $this->serviceName,
@@ -624,6 +631,9 @@ class CloudRetail extends \Google\Service
           ]
         ]
     );
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
     $this->projects_locations_catalogs_operations = new CloudRetail\Resource\ProjectsLocationsCatalogsOperations(
         $this,

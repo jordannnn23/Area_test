@@ -21,6 +21,12 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
 {
   protected $collection_key = 'htmlAttribution';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $decorationType = SocialGraphApiProtoDecorationOverlay::class;
+  protected $decorationDataType = 'array';
+  public $decoration;
+>>>>>>> develop
 =======
   protected $decorationType = SocialGraphApiProtoDecorationOverlay::class;
   protected $decorationDataType = 'array';
@@ -54,6 +60,12 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
    */
   public $monogramBackground;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  protected $originalPhotoType = SocialGraphApiProtoImageReference::class;
+  protected $originalPhotoDataType = '';
+  public $originalPhoto;
+>>>>>>> develop
 =======
   protected $originalPhotoType = SocialGraphApiProtoImageReference::class;
   protected $originalPhotoDataType = '';
@@ -77,7 +89,10 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
 
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param SocialGraphApiProtoDecorationOverlay[]
    */
   public function setDecoration($decoration)
@@ -92,6 +107,9 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
     return $this->decoration;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param string
    */
@@ -192,7 +210,10 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param SocialGraphApiProtoImageReference
    */
   public function setOriginalPhoto(SocialGraphApiProtoImageReference $originalPhoto)
@@ -207,6 +228,9 @@ class AppsPeopleOzExternalMergedpeopleapiPhoto extends \Google\Collection
     return $this->originalPhoto;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param AppsPeopleOzExternalMergedpeopleapiPhotoPhotoStorageId
    */

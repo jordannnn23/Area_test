@@ -49,9 +49,13 @@ class ProjectsLocationsCatalogsBranchesProducts extends \Google\Service\Resource
    * return NOT_FOUND afterwards. If conflicting updates are issued, the
    * Operations associated with the stale updates will not be marked as done until
 <<<<<<< HEAD
+<<<<<<< HEAD
    * being obsolete. This feature is only available for users who have Retail
    * Search enabled. Enable Retail Search on Cloud Console before using this
    * feature. (products.addFulfillmentPlaces)
+=======
+   * being obsolete. (products.addFulfillmentPlaces)
+>>>>>>> develop
 =======
    * being obsolete. (products.addFulfillmentPlaces)
 >>>>>>> develop
@@ -85,9 +89,13 @@ class ProjectsLocationsCatalogsBranchesProducts extends \Google\Service\Resource
    * and GetOperation API will return NOT_FOUND afterwards. If conflicting updates
    * are issued, the Operations associated with the stale updates will not be
 <<<<<<< HEAD
+<<<<<<< HEAD
    * marked as done until being obsolete. This feature is only available for users
    * who have Retail Search enabled. Enable Retail Search on Cloud Console before
    * using this feature. (products.addLocalInventories)
+=======
+   * marked as done until being obsolete. (products.addLocalInventories)
+>>>>>>> develop
 =======
    * marked as done until being obsolete. (products.addLocalInventories)
 >>>>>>> develop
@@ -274,9 +282,13 @@ class ProjectsLocationsCatalogsBranchesProducts extends \Google\Service\Resource
    * return NOT_FOUND afterwards. If conflicting updates are issued, the
    * Operations associated with the stale updates will not be marked as done until
 <<<<<<< HEAD
+<<<<<<< HEAD
    * being obsolete. This feature is only available for users who have Retail
    * Search enabled. Enable Retail Search on Cloud Console before using this
    * feature. (products.removeFulfillmentPlaces)
+=======
+   * being obsolete. (products.removeFulfillmentPlaces)
+>>>>>>> develop
 =======
    * being obsolete. (products.removeFulfillmentPlaces)
 >>>>>>> develop
@@ -308,9 +320,13 @@ class ProjectsLocationsCatalogsBranchesProducts extends \Google\Service\Resource
    * and GetOperation API will return NOT_FOUND afterwards. If conflicting updates
    * are issued, the Operations associated with the stale updates will not be
 <<<<<<< HEAD
+<<<<<<< HEAD
    * marked as done until being obsolete. This feature is only available for users
    * who have Retail Search enabled. Enable Retail Search on Cloud Console before
    * using this feature. (products.removeLocalInventories)
+=======
+   * marked as done until being obsolete. (products.removeLocalInventories)
+>>>>>>> develop
 =======
    * marked as done until being obsolete. (products.removeLocalInventories)
 >>>>>>> develop
@@ -353,9 +369,14 @@ class ProjectsLocationsCatalogsBranchesProducts extends \Google\Service\Resource
    * after one day, and the GetOperation API returns `NOT_FOUND` afterwards. If
    * conflicting updates are issued, the Operations associated with the stale
 <<<<<<< HEAD
+<<<<<<< HEAD
    * updates are not marked as done until they are obsolete. This feature is only
    * available for users who have Retail Search enabled. Enable Retail Search on
    * Cloud Console before using this feature. (products.setInventory)
+=======
+   * updates are not marked as done until they are obsolete.
+   * (products.setInventory)
+>>>>>>> develop
 =======
    * updates are not marked as done until they are obsolete.
    * (products.setInventory)

@@ -40,11 +40,17 @@ class Execution extends \Google\Model
   public $error;
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @var string[]
    */
   public $labels;
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @var string
    */
@@ -141,7 +147,10 @@ class Execution extends \Google\Model
   }
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @param string[]
    */
   public function setLabels($labels)
@@ -156,6 +165,9 @@ class Execution extends \Google\Model
     return $this->labels;
   }
   /**
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @param string
    */

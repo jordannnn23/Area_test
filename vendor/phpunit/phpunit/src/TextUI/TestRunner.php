@@ -28,6 +28,10 @@ use function mt_srand;
 use function range;
 use function realpath;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use function sort;
+>>>>>>> develop
 =======
 use function sort;
 >>>>>>> develop
@@ -576,6 +580,12 @@ final class TestRunner extends BaseTestRunner
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        $warnings = array_merge($warnings, $suite->warnings());
+        sort($warnings);
+
+>>>>>>> develop
 =======
         $warnings = array_merge($warnings, $suite->warnings());
         sort($warnings);
@@ -657,6 +667,7 @@ final class TestRunner extends BaseTestRunner
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $testSuiteWarningsPrinted = false;
 
         foreach ($suite->warnings() as $warning) {
@@ -669,6 +680,8 @@ final class TestRunner extends BaseTestRunner
             $this->write(PHP_EOL);
         }
 
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
         $suite->run($result);

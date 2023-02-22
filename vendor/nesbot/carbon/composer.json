@@ -106,6 +106,10 @@
         "phpdoc": "php phpdoc.php",
         "phpmd": "phpmd src text /phpmd.xml",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        "phpmd-test": "phpmd tests text /tests/phpmd-test.xml",
+>>>>>>> develop
 =======
         "phpmd-test": "phpmd tests text /tests/phpmd-test.xml",
 >>>>>>> develop

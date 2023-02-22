@@ -23,7 +23,11 @@ final class Version
     {
         if (self::$version === null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             self::$version = (new VersionId('9.2.23', dirname(__DIR__)))->getVersion();
+=======
+            self::$version = (new VersionId('9.2.24', dirname(__DIR__)))->getVersion();
+>>>>>>> develop
 =======
             self::$version = (new VersionId('9.2.24', dirname(__DIR__)))->getVersion();
 >>>>>>> develop

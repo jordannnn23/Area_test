@@ -1,6 +1,11 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> develop
 =======
 declare(strict_types=1);
 
@@ -42,7 +47,11 @@ class InvalidArgumentException extends BaseInvalidArgumentException implements E
         return new self(sprintf(
             'The provided class "%s" is abstract, and cannot be instantiated',
 <<<<<<< HEAD
+<<<<<<< HEAD
             $reflectionClass->getName()
+=======
+            $reflectionClass->getName(),
+>>>>>>> develop
 =======
             $reflectionClass->getName(),
 >>>>>>> develop
@@ -54,7 +63,11 @@ class InvalidArgumentException extends BaseInvalidArgumentException implements E
         return new self(sprintf(
             'The provided class "%s" is an enum, and cannot be instantiated',
 <<<<<<< HEAD
+<<<<<<< HEAD
             $className
+=======
+            $className,
+>>>>>>> develop
 =======
             $className,
 >>>>>>> develop

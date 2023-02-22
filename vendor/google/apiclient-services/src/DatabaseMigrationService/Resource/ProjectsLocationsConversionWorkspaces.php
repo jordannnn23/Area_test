@@ -169,7 +169,11 @@ class ProjectsLocationsConversionWorkspaces extends \Google\Service\Resource
    * the entities from the latest commit are returned.
    * @opt_param string filter Filter the returned entities based on AIP-160
 <<<<<<< HEAD
+<<<<<<< HEAD
    * standard
+=======
+   * standard.
+>>>>>>> develop
 =======
    * standard.
 >>>>>>> develop
@@ -182,7 +186,11 @@ class ProjectsLocationsConversionWorkspaces extends \Google\Service\Resource
    * conversionWorkspace.describeDatabaseEntities must match the call that
    * provided the page token.
 <<<<<<< HEAD
+<<<<<<< HEAD
    * @opt_param string tree The tree to fetch
+=======
+   * @opt_param string tree The tree to fetch.
+>>>>>>> develop
 =======
    * @opt_param string tree The tree to fetch.
 >>>>>>> develop

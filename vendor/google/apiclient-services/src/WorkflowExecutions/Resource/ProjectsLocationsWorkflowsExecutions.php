@@ -95,7 +95,10 @@ class ProjectsLocationsWorkflowsExecutions extends \Google\Service\Resource
    * @param array $optParams Optional parameters.
    *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> develop
    * @opt_param string filter Optional. Filters applied to the
    * [Executions.ListExecutions] results. The following fields are supported for
    * filtering: executionID, state, startTime, endTime, duration,
@@ -104,6 +107,9 @@ class ProjectsLocationsWorkflowsExecutions extends \Google\Service\Resource
    * [Executions.ListExecutions] results. By default the ordering is based on
    * descending start time. The following fields are supported for order by:
    * executionID, startTime, endTime, duration, state, and workflowRevisionID.
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
    * @opt_param int pageSize Maximum number of executions to return per call. Max
    * supported value depends on the selected Execution view: it's 1000 for BASIC

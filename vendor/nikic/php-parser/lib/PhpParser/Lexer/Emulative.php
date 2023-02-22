@@ -15,6 +15,10 @@ use PhpParser\Lexer\TokenEmulator\MatchTokenEmulator;
 use PhpParser\Lexer\TokenEmulator\NullsafeTokenEmulator;
 use PhpParser\Lexer\TokenEmulator\NumericLiteralSeparatorEmulator;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use PhpParser\Lexer\TokenEmulator\ReadonlyFunctionTokenEmulator;
+>>>>>>> develop
 =======
 use PhpParser\Lexer\TokenEmulator\ReadonlyFunctionTokenEmulator;
 >>>>>>> develop
@@ -29,6 +33,10 @@ class Emulative extends Lexer
     const PHP_8_0 = '8.0dev';
     const PHP_8_1 = '8.1dev';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    const PHP_8_2 = '8.2dev';
+>>>>>>> develop
 =======
     const PHP_8_2 = '8.2dev';
 >>>>>>> develop
@@ -50,7 +58,11 @@ class Emulative extends Lexer
     public function __construct(array $options = [])
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->targetPhpVersion = $options['phpVersion'] ?? Emulative::PHP_8_1;
+=======
+        $this->targetPhpVersion = $options['phpVersion'] ?? Emulative::PHP_8_2;
+>>>>>>> develop
 =======
         $this->targetPhpVersion = $options['phpVersion'] ?? Emulative::PHP_8_2;
 >>>>>>> develop
@@ -70,6 +82,10 @@ class Emulative extends Lexer
             new ReadonlyTokenEmulator(),
             new ExplicitOctalEmulator(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            new ReadonlyFunctionTokenEmulator(),
+>>>>>>> develop
 =======
             new ReadonlyFunctionTokenEmulator(),
 >>>>>>> develop

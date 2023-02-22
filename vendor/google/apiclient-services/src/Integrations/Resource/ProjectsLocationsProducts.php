@@ -18,10 +18,13 @@
 namespace Google\Service\Integrations\Resource;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateBundleRequest;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaCreateBundleResponse;
 use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse;
 
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 /**
@@ -34,6 +37,7 @@ use Google\Service\Integrations\GoogleCloudIntegrationsV1alphaListTaskEntitiesRe
  */
 class ProjectsLocationsProducts extends \Google\Service\Resource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   /**
    * PROTECT WITH A VISIBILITY LABEL. THIS METHOD WILL BE MOVED TO A SEPARATE
@@ -65,6 +69,8 @@ class ProjectsLocationsProducts extends \Google\Service\Resource
     $params = array_merge($params, $optParams);
     return $this->call('listTaskEntities', [$params], GoogleCloudIntegrationsV1alphaListTaskEntitiesResponse::class);
   }
+=======
+>>>>>>> develop
 =======
 >>>>>>> develop
 }

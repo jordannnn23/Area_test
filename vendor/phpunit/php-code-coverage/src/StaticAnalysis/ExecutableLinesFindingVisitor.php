@@ -102,6 +102,10 @@ final class ExecutableLinesFindingVisitor extends NodeVisitorAbstract
             $node instanceof Node\Stmt\Use_ ||
             $node instanceof Node\Stmt\UseUse ||
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            $node instanceof Node\Expr\ConstFetch ||
+>>>>>>> develop
 =======
             $node instanceof Node\Expr\ConstFetch ||
 >>>>>>> develop

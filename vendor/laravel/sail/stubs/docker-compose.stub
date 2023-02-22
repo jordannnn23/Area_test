@@ -4,17 +4,23 @@ services:
     laravel.test:
         build:
 <<<<<<< HEAD
+<<<<<<< HEAD
             context: ./vendor/laravel/sail/runtimes/8.1
             dockerfile: Dockerfile
             args:
                 WWWGROUP: '${WWWGROUP}'
         image: sail-8.1/app
 =======
+=======
+>>>>>>> develop
             context: ./vendor/laravel/sail/runtimes/8.2
             dockerfile: Dockerfile
             args:
                 WWWGROUP: '${WWWGROUP}'
         image: sail-8.2/app
+<<<<<<< HEAD
+>>>>>>> develop
+=======
 >>>>>>> develop
         extra_hosts:
             - 'host.docker.internal:host-gateway'
