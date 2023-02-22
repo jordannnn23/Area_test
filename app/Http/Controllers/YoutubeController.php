@@ -75,12 +75,12 @@ class YoutubeController extends Controller
 
         $authcode = $_GET['code'];
 
-        if ($client->isAccessTokenExpired()) {
-            $accessToken = $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
-            // file_put_contents($credentialsPath, json_encode($client->getAccessToken()));
-        }
-        else
-            $accessToken = $client->fetchAccessTokenWithAuthCode($authcode);
+        // if ($client->isAccessTokenExpired()) {
+        //     $accessToken = $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
+        //     // file_put_contents($credentialsPath, json_encode($client->getAccessToken()));
+        // }
+        // else
+        $accessToken = $client->fetchAccessTokenWithAuthCode($authcode);
 
         $client->setAccessToken($accessToken);
         $service = new YouTube($client);
