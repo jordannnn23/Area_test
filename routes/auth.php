@@ -73,3 +73,4 @@ Route::post('/auth/google', [GoogleController::class, 'storeInfos'])->name('stor
 Route::get('/auth/github/redirect', [GithubController::class, 'loginWithGithub'])->name('loginGithub');
  
 Route::get('/auth/github/callback', [GithubController::class, 'callbackFromGithub'])->name('redirectGithub');
+
