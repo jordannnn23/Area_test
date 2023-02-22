@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\String\Slugger;
 
+<<<<<<< HEAD
+=======
 use Symfony\Component\Intl\Transliterator\EmojiTransliterator;
+>>>>>>> develop
 use Symfony\Component\String\AbstractUnicodeString;
 use Symfony\Component\String\UnicodeString;
 use Symfony\Contracts\Translation\LocaleAwareInterface;
@@ -55,36 +58,81 @@ class AsciiSlugger implements SluggerInterface, LocaleAwareInterface
         'zh' => 'Han-Latin',
     ];
 
+<<<<<<< HEAD
+    private $defaultLocale;
+    private $symbolsMap = [
+        'en' => ['@' => 'at', '&' => 'and'],
+    ];
+=======
     private ?string $defaultLocale;
     private \Closure|array $symbolsMap = [
         'en' => ['@' => 'at', '&' => 'and'],
     ];
     private bool|string $emoji = false;
+>>>>>>> develop
 
     /**
      * Cache of transliterators per locale.
      *
      * @var \Transliterator[]
      */
+<<<<<<< HEAD
+    private $transliterators = [];
+
+    /**
+     * @param array|\Closure|null $symbolsMap
+     */
+    public function __construct(string $defaultLocale = null, $symbolsMap = null)
+    {
+        if (null !== $symbolsMap && !\is_array($symbolsMap) && !$symbolsMap instanceof \Closure) {
+            throw new \TypeError(sprintf('Argument 2 passed to "%s()" must be array, Closure or null, "%s" given.', __METHOD__, \gettype($symbolsMap)));
+        }
+
+=======
     private array $transliterators = [];
 
     public function __construct(string $defaultLocale = null, array|\Closure $symbolsMap = null)
     {
+>>>>>>> develop
         $this->defaultLocale = $defaultLocale;
         $this->symbolsMap = $symbolsMap ?? $this->symbolsMap;
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+    public function setLocale($locale)
+=======
     public function setLocale(string $locale)
+>>>>>>> develop
     {
         $this->defaultLocale = $locale;
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+    public function getLocale()
+=======
     public function getLocale(): string
+>>>>>>> develop
     {
         return $this->defaultLocale;
     }
 
     /**
+<<<<<<< HEAD
+     * {@inheritdoc}
+     */
+    public function slug(string $string, string $separator = '-', string $locale = null): AbstractUnicodeString
+    {
+        $locale = $locale ?? $this->defaultLocale;
+
+        $transliterator = [];
+        if ($locale && ('de' === $locale || 0 === strpos($locale, 'de_'))) {
+=======
      * @param bool|string $emoji true will use the same locale,
      *                           false will disable emoji,
      *                           and a string to use a specific locale
@@ -107,16 +155,20 @@ class AsciiSlugger implements SluggerInterface, LocaleAwareInterface
 
         $transliterator = [];
         if ($locale && ('de' === $locale || str_starts_with($locale, 'de_'))) {
+>>>>>>> develop
             // Use the shortcut for German in UnicodeString::ascii() if possible (faster and no requirement on intl)
             $transliterator = ['de-ASCII'];
         } elseif (\function_exists('transliterator_transliterate') && $locale) {
             $transliterator = (array) $this->createTransliterator($locale);
         }
 
+<<<<<<< HEAD
+=======
         if ($emojiTransliterator = $this->createEmojiTransliterator($locale)) {
             $transliterator[] = $emojiTransliterator;
         }
 
+>>>>>>> develop
         if ($this->symbolsMap instanceof \Closure) {
             // If the symbols map is passed as a closure, there is no need to fallback to the parent locale
             // as the closure can just provide substitutions for all locales of interest.
@@ -175,6 +227,8 @@ class AsciiSlugger implements SluggerInterface, LocaleAwareInterface
         return $this->transliterators[$locale] = $this->transliterators[$parent] = $transliterator ?? null;
     }
 
+<<<<<<< HEAD
+=======
     private function createEmojiTransliterator(?string $locale): ?EmojiTransliterator
     {
         if (\is_string($this->emoji)) {
@@ -194,6 +248,7 @@ class AsciiSlugger implements SluggerInterface, LocaleAwareInterface
         return null;
     }
 
+>>>>>>> develop
     private static function getParentLocale(?string $locale): ?string
     {
         if (!$locale) {

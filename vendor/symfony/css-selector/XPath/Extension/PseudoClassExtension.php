@@ -26,6 +26,22 @@ use Symfony\Component\CssSelector\XPath\XPathExpr;
  */
 class PseudoClassExtension extends AbstractExtension
 {
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+    public function getPseudoClassTranslators(): array
+    {
+        return [
+            'root' => [$this, 'translateRoot'],
+            'first-child' => [$this, 'translateFirstChild'],
+            'last-child' => [$this, 'translateLastChild'],
+            'first-of-type' => [$this, 'translateFirstOfType'],
+            'last-of-type' => [$this, 'translateLastOfType'],
+            'only-child' => [$this, 'translateOnlyChild'],
+            'only-of-type' => [$this, 'translateOnlyOfType'],
+            'empty' => [$this, 'translateEmpty'],
+=======
     public function getPseudoClassTranslators(): array
     {
         return [
@@ -37,6 +53,7 @@ class PseudoClassExtension extends AbstractExtension
             'only-child' => $this->translateOnlyChild(...),
             'only-of-type' => $this->translateOnlyOfType(...),
             'empty' => $this->translateEmpty(...),
+>>>>>>> develop
         ];
     }
 
@@ -109,6 +126,12 @@ class PseudoClassExtension extends AbstractExtension
         return $xpath->addCondition('not(*) and not(string-length())');
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     public function getName(): string
     {
         return 'pseudo-class';

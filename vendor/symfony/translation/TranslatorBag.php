@@ -17,7 +17,11 @@ use Symfony\Component\Translation\Catalogue\TargetOperation;
 final class TranslatorBag implements TranslatorBagInterface
 {
     /** @var MessageCatalogue[] */
+<<<<<<< HEAD
+    private $catalogues = [];
+=======
     private array $catalogues = [];
+>>>>>>> develop
 
     public function addCatalogue(MessageCatalogue $catalogue): void
     {
@@ -35,6 +39,12 @@ final class TranslatorBag implements TranslatorBagInterface
         }
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     public function getCatalogue(string $locale = null): MessageCatalogueInterface
     {
         if (null === $locale || !isset($this->catalogues[$locale])) {
@@ -44,6 +54,12 @@ final class TranslatorBag implements TranslatorBagInterface
         return $this->catalogues[$locale];
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     public function getCatalogues(): array
     {
         return array_values($this->catalogues);

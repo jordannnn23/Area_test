@@ -21,6 +21,10 @@ use Ramsey\Uuid\Type\Integer as IntegerObject;
 use function escapeshellarg;
 use function preg_split;
 use function str_getcsv;
+<<<<<<< HEAD
+use function strpos;
+=======
+>>>>>>> develop
 use function strrpos;
 use function strtolower;
 use function strtoupper;
@@ -41,7 +45,10 @@ class SystemDceSecurityProvider implements DceSecurityProviderInterface
      */
     public function getUid(): IntegerObject
     {
+<<<<<<< HEAD
+=======
         /** @var int|float|string|IntegerObject|null $uid */
+>>>>>>> develop
         static $uid = null;
 
         if ($uid instanceof IntegerObject) {
@@ -72,7 +79,10 @@ class SystemDceSecurityProvider implements DceSecurityProviderInterface
      */
     public function getGid(): IntegerObject
     {
+<<<<<<< HEAD
+=======
         /** @var int|float|string|IntegerObject|null $gid */
+>>>>>>> develop
         static $gid = null;
 
         if ($gid instanceof IntegerObject) {
@@ -105,10 +115,22 @@ class SystemDceSecurityProvider implements DceSecurityProviderInterface
             return '';
         }
 
+<<<<<<< HEAD
+        switch ($this->getOs()) {
+            case 'WIN':
+                return $this->getWindowsUid();
+            case 'DAR':
+            case 'FRE':
+            case 'LIN':
+            default:
+                return trim((string) shell_exec('id -u'));
+        }
+=======
         return match ($this->getOs()) {
             'WIN' => $this->getWindowsUid(),
             default => trim((string) shell_exec('id -u')),
         };
+>>>>>>> develop
     }
 
     /**
@@ -120,10 +142,22 @@ class SystemDceSecurityProvider implements DceSecurityProviderInterface
             return '';
         }
 
+<<<<<<< HEAD
+        switch ($this->getOs()) {
+            case 'WIN':
+                return $this->getWindowsGid();
+            case 'DAR':
+            case 'FRE':
+            case 'LIN':
+            default:
+                return trim((string) shell_exec('id -g'));
+        }
+=======
         return match ($this->getOs()) {
             'WIN' => $this->getWindowsGid(),
             default => trim((string) shell_exec('id -g')),
         };
+>>>>>>> develop
     }
 
     /**
@@ -133,7 +167,11 @@ class SystemDceSecurityProvider implements DceSecurityProviderInterface
     {
         $disabledFunctions = strtolower((string) ini_get('disable_functions'));
 
+<<<<<<< HEAD
+        return strpos($disabledFunctions, 'shell_exec') === false;
+=======
         return !str_contains($disabledFunctions, 'shell_exec');
+>>>>>>> develop
     }
 
     /**
@@ -141,6 +179,9 @@ class SystemDceSecurityProvider implements DceSecurityProviderInterface
      */
     private function getOs(): string
     {
+<<<<<<< HEAD
+        return strtoupper(substr(constant('PHP_OS'), 0, 3));
+=======
         /**
          * @psalm-suppress UnnecessaryVarAnnotation
          * @var string $phpOs
@@ -148,6 +189,7 @@ class SystemDceSecurityProvider implements DceSecurityProviderInterface
         $phpOs = constant('PHP_OS');
 
         return strtoupper(substr($phpOs, 0, 3));
+>>>>>>> develop
     }
 
     /**
@@ -226,6 +268,10 @@ class SystemDceSecurityProvider implements DceSecurityProviderInterface
             return '';
         }
 
+<<<<<<< HEAD
+        return trim((string) substr($sid, $lastHyphen + 1));
+=======
         return trim(substr($sid, $lastHyphen + 1));
+>>>>>>> develop
     }
 }

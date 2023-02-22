@@ -11,7 +11,10 @@
 
 namespace Symfony\Component\Translation\Command;
 
+<<<<<<< HEAD
+=======
 use Symfony\Component\Console\Attribute\AsCommand;
+>>>>>>> develop
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Completion\CompletionInput;
 use Symfony\Component\Console\Completion\CompletionSuggestions;
@@ -29,15 +32,28 @@ use Symfony\Component\Translation\TranslatorBag;
 /**
  * @author Mathieu Santostefano <msantostefano@protonmail.com>
  */
+<<<<<<< HEAD
+=======
 #[AsCommand(name: 'translation:push', description: 'Push translations to a given provider.')]
+>>>>>>> develop
 final class TranslationPushCommand extends Command
 {
     use TranslationTrait;
 
+<<<<<<< HEAD
+    protected static $defaultName = 'translation:push';
+    protected static $defaultDescription = 'Push translations to a given provider.';
+
+    private $providers;
+    private $reader;
+    private $transPaths;
+    private $enabledLocales;
+=======
     private TranslationProviderCollection $providers;
     private TranslationReaderInterface $reader;
     private array $transPaths;
     private array $enabledLocales;
+>>>>>>> develop
 
     public function __construct(TranslationProviderCollection $providers, TranslationReaderInterface $reader, array $transPaths = [], array $enabledLocales = [])
     {
@@ -73,6 +89,12 @@ final class TranslationPushCommand extends Command
         }
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     protected function configure()
     {
         $keys = $this->providers->keys();
@@ -110,6 +132,12 @@ EOF
         ;
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $provider = $this->providers->get($input->getArgument('provider'));

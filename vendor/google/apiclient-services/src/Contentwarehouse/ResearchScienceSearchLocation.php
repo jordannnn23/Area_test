@@ -47,7 +47,11 @@ class ResearchScienceSearchLocation extends \Google\Collection
   /**
    * @var string
    */
+<<<<<<< HEAD
+  public $locationResource;
+=======
   public $locationSource;
+>>>>>>> develop
   /**
    * @var string
    */
@@ -144,16 +148,28 @@ class ResearchScienceSearchLocation extends \Google\Collection
   /**
    * @param string
    */
+<<<<<<< HEAD
+  public function setLocationResource($locationResource)
+  {
+    $this->locationResource = $locationResource;
+=======
   public function setLocationSource($locationSource)
   {
     $this->locationSource = $locationSource;
+>>>>>>> develop
   }
   /**
    * @return string
    */
+<<<<<<< HEAD
+  public function getLocationResource()
+  {
+    return $this->locationResource;
+=======
   public function getLocationSource()
   {
     return $this->locationSource;
+>>>>>>> develop
   }
   /**
    * @param string

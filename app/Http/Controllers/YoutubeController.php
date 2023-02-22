@@ -85,6 +85,7 @@ class YoutubeController extends Controller
         if (!$find_youtube) {
             $youtube_infos = Youtube_infos::create([
                 'user_id' => Auth::id(),
+                'channel_id' => $response['items'][0]['id'],
                 'followers' => $response['items'][0]['statistics']['subscriberCount'],
                 'videos' => $response['items'][0]['statistics']['videoCount'],
                 'views' => $response['items'][0]['statistics']['viewCount'],
@@ -104,6 +105,7 @@ class YoutubeController extends Controller
             $find_youtube->videos = $response['items'][0]['statistics']['videoCount'];
             $find_youtube->views = $response['items'][0]['statistics']['viewCount'];
             $find_youtube->description = $response['items'][0]['snippet']['description'];
+            $find_youtube->channel_id = $response['items'][0]['id'];
 
             $find_youtube->update();
         }

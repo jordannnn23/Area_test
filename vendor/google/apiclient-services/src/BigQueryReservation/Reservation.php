@@ -19,9 +19,12 @@ namespace Google\Service\BigQueryReservation;
 
 class Reservation extends \Google\Model
 {
+<<<<<<< HEAD
+=======
   protected $autoscaleType = Autoscale::class;
   protected $autoscaleDataType = '';
   public $autoscale;
+>>>>>>> develop
   /**
    * @var string
    */
@@ -31,10 +34,13 @@ class Reservation extends \Google\Model
    */
   public $creationTime;
   /**
+<<<<<<< HEAD
+=======
    * @var string
    */
   public $edition;
   /**
+>>>>>>> develop
    * @var bool
    */
   public $ignoreIdleSlots;
@@ -56,6 +62,8 @@ class Reservation extends \Google\Model
   public $updateTime;
 
   /**
+<<<<<<< HEAD
+=======
    * @param Autoscale
    */
   public function setAutoscale(Autoscale $autoscale)
@@ -70,6 +78,7 @@ class Reservation extends \Google\Model
     return $this->autoscale;
   }
   /**
+>>>>>>> develop
    * @param string
    */
   public function setConcurrency($concurrency)
@@ -98,6 +107,8 @@ class Reservation extends \Google\Model
     return $this->creationTime;
   }
   /**
+<<<<<<< HEAD
+=======
    * @param string
    */
   public function setEdition($edition)
@@ -112,6 +123,7 @@ class Reservation extends \Google\Model
     return $this->edition;
   }
   /**
+>>>>>>> develop
    * @param bool
    */
   public function setIgnoreIdleSlots($ignoreIdleSlots)

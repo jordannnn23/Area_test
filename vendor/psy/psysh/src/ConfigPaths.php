@@ -3,7 +3,11 @@
 /*
  * This file is part of Psy Shell.
  *
+<<<<<<< HEAD
+ * (c) 2012-2022 Justin Hileman
+=======
  * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -154,6 +158,11 @@ class ConfigPaths
      * everywhere else).
      *
      * @see self::homeConfigDir
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     public function currentConfigDir(): string
     {
@@ -256,6 +265,11 @@ class ConfigPaths
      * Get a runtime directory.
      *
      * Defaults to `/psysh` inside the system's temp dir.
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     public function runtimeDir(): string
     {

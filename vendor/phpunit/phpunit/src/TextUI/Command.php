@@ -721,6 +721,10 @@ class Command
                 'filter',
                 'groups',
                 'excludeGroups',
+<<<<<<< HEAD
+                'testsuite',
+=======
+>>>>>>> develop
             ]
         );
 
@@ -748,6 +752,10 @@ class Command
                 'filter',
                 'groups',
                 'excludeGroups',
+<<<<<<< HEAD
+                'testsuite',
+=======
+>>>>>>> develop
             ]
         );
 

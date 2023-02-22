@@ -32,15 +32,36 @@ use Throwable;
 class GuidBuilder implements UuidBuilderInterface
 {
     /**
+<<<<<<< HEAD
+     * @var NumberConverterInterface
+     */
+    private $numberConverter;
+
+    /**
+     * @var TimeConverterInterface
+     */
+    private $timeConverter;
+
+    /**
+=======
+>>>>>>> develop
      * @param NumberConverterInterface $numberConverter The number converter to
      *     use when constructing the Guid
      * @param TimeConverterInterface $timeConverter The time converter to use
      *     for converting timestamps extracted from a UUID to Unix timestamps
      */
     public function __construct(
+<<<<<<< HEAD
+        NumberConverterInterface $numberConverter,
+        TimeConverterInterface $timeConverter
+    ) {
+        $this->numberConverter = $numberConverter;
+        $this->timeConverter = $timeConverter;
+=======
         private NumberConverterInterface $numberConverter,
         private TimeConverterInterface $timeConverter
     ) {
+>>>>>>> develop
     }
 
     /**

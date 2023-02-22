@@ -19,6 +19,8 @@ use League\OAuth1\Client\Server\Twitter as TwitterServer;
 class SocialiteManager extends Manager implements Contracts\Factory
 {
     /**
+<<<<<<< HEAD
+=======
      * The application instance.
      *
      * @var \Illuminate\Contracts\Foundation\Application
@@ -28,6 +30,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     protected $app;
 
     /**
+>>>>>>> develop
      * Get a driver instance.
      *
      * @param  string  $driver

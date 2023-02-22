@@ -3,7 +3,11 @@
 /*
  * This file is part of Psy Shell.
  *
+<<<<<<< HEAD
+ * (c) 2012-2022 Justin Hileman
+=======
  * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -49,7 +53,11 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class Shell extends Application
 {
+<<<<<<< HEAD
+    const VERSION = 'v0.11.10';
+=======
     const VERSION = 'v0.11.12';
+>>>>>>> develop
 
     /** @deprecated */
     const PROMPT = '>>> ';
@@ -229,7 +237,11 @@ class Shell extends Application
     }
 
     /**
+<<<<<<< HEAD
+     * @return array
+=======
      * @return Matcher\AbstractMatcher[]
+>>>>>>> develop
      */
     protected function getDefaultMatchers(): array
     {
@@ -594,6 +606,11 @@ class Shell extends Application
      * Run execution loop listeners on user input.
      *
      * @param string $input
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     public function onInput(string $input): string
     {
@@ -610,6 +627,11 @@ class Shell extends Application
      * Run execution loop listeners on code to be executed.
      *
      * @param string $code
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     public function onExecute(string $code): string
     {
@@ -810,7 +832,11 @@ class Shell extends Application
     /**
      * Get PHP files to be parsed and executed before running the interactive shell.
      *
+<<<<<<< HEAD
+     * @return array
+=======
      * @return string[]
+>>>>>>> develop
      */
     public function getIncludes(): array
     {
@@ -905,7 +931,11 @@ class Shell extends Application
      *
      * This is useful for commands which manipulate the buffer.
      *
+<<<<<<< HEAD
+     * @return array
+=======
      * @return string[]
+>>>>>>> develop
      */
     public function getCodeBuffer(): array
     {
@@ -1203,6 +1233,11 @@ class Shell extends Application
      * Check whether the last exec was successful.
      *
      * Returns true if a return value was logged rather than an exception.
+<<<<<<< HEAD
+     *
+     * @return bool
+=======
+>>>>>>> develop
      */
     public function getLastExecSuccess(): bool
     {
@@ -1215,6 +1250,11 @@ class Shell extends Application
      * @todo extract this to somewhere it makes more sense
      *
      * @param \Throwable $e
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     public function formatException(\Throwable $e): string
     {
@@ -1259,6 +1299,11 @@ class Shell extends Application
      * Helper for getting an output style for the given ErrorException's level.
      *
      * @param \ErrorException $e
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     protected function getSeverity(\ErrorException $e): string
     {
@@ -1289,6 +1334,11 @@ class Shell extends Application
      * Helper for getting an output style for the given ErrorException's level.
      *
      * @param \Throwable $e
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     protected function getMessageLabel(\Throwable $e): string
     {
@@ -1507,6 +1557,11 @@ class Shell extends Application
 
     /**
      * Get the shell output header.
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     protected function getHeader(): string
     {
@@ -1517,6 +1572,11 @@ class Shell extends Application
      * Get the current version of Psy Shell.
      *
      * @deprecated call self::getVersionHeader instead
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     public function getVersion(): string
     {
@@ -1527,6 +1587,11 @@ class Shell extends Application
      * Get a pretty header including the current version of Psy Shell.
      *
      * @param bool $useUnicode
+<<<<<<< HEAD
+     *
+     * @return string
+=======
+>>>>>>> develop
      */
     public static function getVersionHeader(bool $useUnicode = false): string
     {

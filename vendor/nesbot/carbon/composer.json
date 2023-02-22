@@ -105,7 +105,10 @@
         "phpcs": "php-cs-fixer fix -v --diff --dry-run",
         "phpdoc": "php phpdoc.php",
         "phpmd": "phpmd src text /phpmd.xml",
+<<<<<<< HEAD
+=======
         "phpmd-test": "phpmd tests text /tests/phpmd-test.xml",
+>>>>>>> develop
         "phpstan": "phpstan analyse --configuration phpstan.neon",
         "phpunit": "phpunit --verbose",
         "style-check": [

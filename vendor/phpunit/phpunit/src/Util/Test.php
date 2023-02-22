@@ -364,7 +364,11 @@ final class Test
     public static function getBackupSettings(string $className, string $methodName): array
     {
         return [
+<<<<<<< HEAD
+            'backupGlobals' => self::getBooleanAnnotationSetting(
+=======
             'backupGlobals'          => self::getBooleanAnnotationSetting(
+>>>>>>> develop
                 $className,
                 $methodName,
                 'backupGlobals'

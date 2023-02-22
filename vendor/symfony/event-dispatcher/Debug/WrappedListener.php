@@ -21,6 +21,32 @@ use Symfony\Component\VarDumper\Caster\ClassStub;
  */
 final class WrappedListener
 {
+<<<<<<< HEAD
+    private $listener;
+    private $optimizedListener;
+    private $name;
+    private $called;
+    private $stoppedPropagation;
+    private $stopwatch;
+    private $dispatcher;
+    private $pretty;
+    private $stub;
+    private $priority;
+    private static $hasClassStub;
+
+    public function __construct($listener, ?string $name, Stopwatch $stopwatch, EventDispatcherInterface $dispatcher = null)
+    {
+        $this->listener = $listener;
+        $this->optimizedListener = $listener instanceof \Closure ? $listener : (\is_callable($listener) ? \Closure::fromCallable($listener) : null);
+        $this->stopwatch = $stopwatch;
+        $this->dispatcher = $dispatcher;
+        $this->called = false;
+        $this->stoppedPropagation = false;
+
+        if (\is_array($listener)) {
+            $this->name = \is_object($listener[0]) ? get_debug_type($listener[0]) : $listener[0];
+            $this->pretty = $this->name.'::'.$listener[1];
+=======
     private string|array|object $listener;
     private ?\Closure $optimizedListener;
     private string $name;
@@ -46,6 +72,7 @@ final class WrappedListener
             [$this->name, $this->callableRef] = $this->parseListener($listener);
             $this->pretty = $this->name.'::'.$listener[1];
             $this->callableRef .= '::'.$listener[1];
+>>>>>>> develop
         } elseif ($listener instanceof \Closure) {
             $r = new \ReflectionFunction($listener);
             if (str_contains($r->name, '{closure}')) {
@@ -61,17 +88,29 @@ final class WrappedListener
         } else {
             $this->name = get_debug_type($listener);
             $this->pretty = $this->name.'::__invoke';
+<<<<<<< HEAD
+=======
             $this->callableRef = $listener::class.'::__invoke';
+>>>>>>> develop
         }
 
         if (null !== $name) {
             $this->name = $name;
         }
 
+<<<<<<< HEAD
+        if (null === self::$hasClassStub) {
+            self::$hasClassStub = class_exists(ClassStub::class);
+        }
+    }
+
+    public function getWrappedListener()
+=======
         self::$hasClassStub ??= class_exists(ClassStub::class);
     }
 
     public function getWrappedListener(): callable|array
+>>>>>>> develop
     {
         return $this->listener;
     }
@@ -93,11 +132,21 @@ final class WrappedListener
 
     public function getInfo(string $eventName): array
     {
+<<<<<<< HEAD
+        if (null === $this->stub) {
+            $this->stub = self::$hasClassStub ? new ClassStub($this->pretty.'()', $this->listener) : $this->pretty.'()';
+        }
+
+        return [
+            'event' => $eventName,
+            'priority' => null !== $this->priority ? $this->priority : (null !== $this->dispatcher ? $this->dispatcher->getListenerPriority($eventName, $this->listener) : null),
+=======
         $this->stub ??= self::$hasClassStub ? new ClassStub($this->pretty.'()', $this->callableRef ?? $this->listener) : $this->pretty.'()';
 
         return [
             'event' => $eventName,
             'priority' => $this->priority ??= $this->dispatcher?->getListenerPriority($eventName, $this->listener),
+>>>>>>> develop
             'pretty' => $this->pretty,
             'stub' => $this->stub,
         ];
@@ -108,7 +157,11 @@ final class WrappedListener
         $dispatcher = $this->dispatcher ?: $dispatcher;
 
         $this->called = true;
+<<<<<<< HEAD
+        $this->priority = $dispatcher->getListenerPriority($eventName, $this->listener);
+=======
         $this->priority ??= $dispatcher->getListenerPriority($eventName, $this->listener);
+>>>>>>> develop
 
         $e = $this->stopwatch->start($this->name, 'event_listener');
 
@@ -122,6 +175,8 @@ final class WrappedListener
             $this->stoppedPropagation = true;
         }
     }
+<<<<<<< HEAD
+=======
 
     private function parseListener(array $listener): array
     {
@@ -139,4 +194,5 @@ final class WrappedListener
 
         return [$listener[0], $listener[0]];
     }
+>>>>>>> develop
 }

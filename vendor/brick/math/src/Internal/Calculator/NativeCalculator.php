@@ -22,8 +22,15 @@ class NativeCalculator extends Calculator
      * For addition, it is assumed that an extra digit can hold a carry (1) without overflowing.
      * Example: 32-bit: max number 1,999,999,999 (9 digits + carry)
      *          64-bit: max number 1,999,999,999,999,999,999 (18 digits + carry)
+<<<<<<< HEAD
+     *
+     * @var int
+     */
+    private $maxDigits;
+=======
      */
     private int $maxDigits;
+>>>>>>> develop
 
     /**
      * Class constructor.

@@ -30,8 +30,16 @@ use Psr\EventDispatcher\StoppableEventInterface;
  */
 class Event implements StoppableEventInterface
 {
+<<<<<<< HEAD
+    private $propagationStopped = false;
+
+    /**
+     * {@inheritdoc}
+     */
+=======
     private bool $propagationStopped = false;
 
+>>>>>>> develop
     public function isPropagationStopped(): bool
     {
         return $this->propagationStopped;

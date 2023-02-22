@@ -3,7 +3,11 @@
 /*
  * This file is part of Psy Shell.
  *
+<<<<<<< HEAD
+ * (c) 2012-2022 Justin Hileman
+=======
  * (c) 2012-2023 Justin Hileman
+>>>>>>> develop
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -201,6 +205,11 @@ class Docblock
      * Whether or not a docblock contains a given @tag.
      *
      * @param string $tag The name of the @tag to check for
+<<<<<<< HEAD
+     *
+     * @return bool
+=======
+>>>>>>> develop
      */
     public function hasTag(string $tag): bool
     {
@@ -212,12 +221,19 @@ class Docblock
      *
      * @param string $tag
      *
+<<<<<<< HEAD
+     * @return array
+     */
+    public function tag(string $tag): array
+    {
+=======
      * @return array|null
      */
     public function tag(string $tag)
     {
         // TODO: Add proper null-type return values once the lowest PHP version supported is 7.1
 
+>>>>>>> develop
         return $this->hasTag($tag) ? $this->tags[$tag] : null;
     }
 
@@ -225,6 +241,11 @@ class Docblock
      * Whether or not a string begins with a @tag.
      *
      * @param string $str
+<<<<<<< HEAD
+     *
+     * @return bool
+=======
+>>>>>>> develop
      */
     public static function isTagged(string $str): bool
     {

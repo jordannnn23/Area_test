@@ -84,6 +84,8 @@ interface UuidInterface extends
     public function getInteger(): IntegerObject;
 
     /**
+<<<<<<< HEAD
+=======
      * Returns the string standard representation of the UUID as a URN
      *
      * @link http://en.wikipedia.org/wiki/Uniform_Resource_Name Uniform Resource Name
@@ -92,6 +94,7 @@ interface UuidInterface extends
     public function getUrn(): string;
 
     /**
+>>>>>>> develop
      * Returns the string standard representation of the UUID
      *
      * @psalm-return non-empty-string

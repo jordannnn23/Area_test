@@ -20,8 +20,12 @@
 	"require-dev": {
 		"nette/tester": "~2.0",
 		"tracy/tracy": "^2.3",
+<<<<<<< HEAD
+		"phpstan/phpstan": "^1.0"
+=======
 		"phpstan/phpstan": "^1.0",
 		"jetbrains/phpstorm-attributes": "dev-master"
+>>>>>>> develop
 	},
 	"conflict": {
 		"nette/di": "<3.0.6"

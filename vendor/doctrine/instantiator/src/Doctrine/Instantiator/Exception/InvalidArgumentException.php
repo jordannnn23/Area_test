@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
 declare(strict_types=1);
 
+>>>>>>> develop
 namespace Doctrine\Instantiator\Exception;
 
 use InvalidArgumentException as BaseInvalidArgumentException;
@@ -38,7 +41,11 @@ class InvalidArgumentException extends BaseInvalidArgumentException implements E
     {
         return new self(sprintf(
             'The provided class "%s" is abstract, and cannot be instantiated',
+<<<<<<< HEAD
+            $reflectionClass->getName()
+=======
             $reflectionClass->getName(),
+>>>>>>> develop
         ));
     }
 
@@ -46,7 +53,11 @@ class InvalidArgumentException extends BaseInvalidArgumentException implements E
     {
         return new self(sprintf(
             'The provided class "%s" is an enum, and cannot be instantiated',
+<<<<<<< HEAD
+            $className
+=======
             $className,
+>>>>>>> develop
         ));
     }
 }

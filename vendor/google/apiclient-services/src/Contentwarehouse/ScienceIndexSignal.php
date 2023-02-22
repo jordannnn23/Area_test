@@ -21,6 +21,10 @@ class ScienceIndexSignal extends \Google\Collection
 {
   protected $collection_key = 'author';
   protected $internal_gapi_mappings = [
+<<<<<<< HEAD
+        "holdingsId" => "HoldingsId",
+=======
+>>>>>>> develop
         "htmlTitleFp" => "HtmlTitleFp",
         "indexSelectionScore" => "IndexSelectionScore",
         "numBackwardLinks" => "NumBackwardLinks",
@@ -35,6 +39,13 @@ class ScienceIndexSignal extends \Google\Collection
         "visiblePrefixTerms" => "VisiblePrefixTerms",
   ];
   /**
+<<<<<<< HEAD
+   * @var string[]
+   */
+  public $holdingsId;
+  /**
+=======
+>>>>>>> develop
    * @var string
    */
   public $htmlTitleFp;
@@ -87,6 +98,23 @@ class ScienceIndexSignal extends \Google\Collection
   public $author;
 
   /**
+<<<<<<< HEAD
+   * @param string[]
+   */
+  public function setHoldingsId($holdingsId)
+  {
+    $this->holdingsId = $holdingsId;
+  }
+  /**
+   * @return string[]
+   */
+  public function getHoldingsId()
+  {
+    return $this->holdingsId;
+  }
+  /**
+=======
+>>>>>>> develop
    * @param string
    */
   public function setHtmlTitleFp($htmlTitleFp)

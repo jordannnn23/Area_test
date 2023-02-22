@@ -1,11 +1,14 @@
 CHANGELOG
 =========
 
+<<<<<<< HEAD
+=======
 6.0
 ---
 
  * Remove `LegacyEventDispatcherProxy`
 
+>>>>>>> develop
 5.4
 ---
 

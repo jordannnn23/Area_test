@@ -61,6 +61,10 @@ class Dataflow extends \Google\Service
   public $projects_locations_jobs_stages;
   public $projects_locations_jobs_workItems;
   public $projects_locations_snapshots;
+<<<<<<< HEAD
+  public $projects_locations_sql;
+=======
+>>>>>>> develop
   public $projects_locations_templates;
   public $projects_snapshots;
   public $projects_templates;
@@ -962,6 +966,38 @@ class Dataflow extends \Google\Service
           ]
         ]
     );
+<<<<<<< HEAD
+    $this->projects_locations_sql = new Dataflow\Resource\ProjectsLocationsSql(
+        $this,
+        $this->serviceName,
+        'sql',
+        [
+          'methods' => [
+            'validate' => [
+              'path' => 'v1b3/projects/{projectId}/locations/{location}/sql:validate',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'projectId' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'location' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+                'query' => [
+                  'location' => 'query',
+                  'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+=======
+>>>>>>> develop
     $this->projects_locations_templates = new Dataflow\Resource\ProjectsLocationsTemplates(
         $this,
         $this->serviceName,

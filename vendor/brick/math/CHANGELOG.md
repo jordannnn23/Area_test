@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+<<<<<<< HEAD
+=======
 ## [0.10.2](https://github.com/brick/math/releases/tag/0.10.2) - 2022-08-11
 
 👌 **Improvements**
@@ -20,11 +22,16 @@ All notable changes to this project will be documented in this file.
 
 - Minimum PHP version is now 7.4
 
+>>>>>>> develop
 ## [0.9.3](https://github.com/brick/math/releases/tag/0.9.3) - 2021-08-15
 
 🚀 **Compatibility with PHP 8.1**
 
+<<<<<<< HEAD
+- Support for custom object serialization; this removes a warning on PHP 8.1 due to the `Serializable` interface being deprecated (thanks @TRowbotham)
+=======
 - Support for custom object serialization; this removes a warning on PHP 8.1 due to the `Serializable` interface being deprecated (#60) thanks @TRowbotham
+>>>>>>> develop
 
 ## [0.9.2](https://github.com/brick/math/releases/tag/0.9.2) - 2021-01-20
 
@@ -34,7 +41,11 @@ All notable changes to this project will be documented in this file.
 
 ## [0.9.1](https://github.com/brick/math/releases/tag/0.9.1) - 2020-08-19
 
+<<<<<<< HEAD
+✨ New features
+=======
 ✨ **New features**
+>>>>>>> develop
 
 - `BigInteger::not()` returns the bitwise `NOT` value
 

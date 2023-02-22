@@ -17,9 +17,14 @@
 
 namespace Google\Service\Kmsinventory;
 
+<<<<<<< HEAD
+class GoogleCloudKmsInventoryV1ProtectedResource extends \Google\Model
+{
+=======
 class GoogleCloudKmsInventoryV1ProtectedResource extends \Google\Collection
 {
   protected $collection_key = 'cryptoKeyVersions';
+>>>>>>> develop
   /**
    * @var string
    */
@@ -35,10 +40,13 @@ class GoogleCloudKmsInventoryV1ProtectedResource extends \Google\Collection
   /**
    * @var string[]
    */
+<<<<<<< HEAD
+=======
   public $cryptoKeyVersions;
   /**
    * @var string[]
    */
+>>>>>>> develop
   public $labels;
   /**
    * @var string
@@ -106,6 +114,8 @@ class GoogleCloudKmsInventoryV1ProtectedResource extends \Google\Collection
   /**
    * @param string[]
    */
+<<<<<<< HEAD
+=======
   public function setCryptoKeyVersions($cryptoKeyVersions)
   {
     $this->cryptoKeyVersions = $cryptoKeyVersions;
@@ -120,6 +130,7 @@ class GoogleCloudKmsInventoryV1ProtectedResource extends \Google\Collection
   /**
    * @param string[]
    */
+>>>>>>> develop
   public function setLabels($labels)
   {
     $this->labels = $labels;

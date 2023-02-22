@@ -23,8 +23,13 @@ namespace Symfony\Component\CssSelector\Node;
  */
 class ElementNode extends AbstractNode
 {
+<<<<<<< HEAD
+    private $namespace;
+    private $element;
+=======
     private ?string $namespace;
     private ?string $element;
+>>>>>>> develop
 
     public function __construct(string $namespace = null, string $element = null)
     {
@@ -42,6 +47,12 @@ class ElementNode extends AbstractNode
         return $this->element;
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     public function getSpecificity(): Specificity
     {
         return new Specificity(0, 0, $this->element ? 1 : 0);

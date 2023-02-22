@@ -22,10 +22,13 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
   /**
    * @var bool
    */
+<<<<<<< HEAD
+=======
   public $isCastVideo;
   /**
    * @var bool
    */
+>>>>>>> develop
   public $isSeedRadio;
   /**
    * @var bool
@@ -35,11 +38,16 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
    * @var float
    */
   public $mscRate;
+<<<<<<< HEAD
+=======
   public $scubedPSaiMusic;
+>>>>>>> develop
 
   /**
    * @param bool
    */
+<<<<<<< HEAD
+=======
   public function setIsCastVideo($isCastVideo)
   {
     $this->isCastVideo = $isCastVideo;
@@ -54,6 +62,7 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
   /**
    * @param bool
    */
+>>>>>>> develop
   public function setIsSeedRadio($isSeedRadio)
   {
     $this->isSeedRadio = $isSeedRadio;
@@ -93,6 +102,8 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
   {
     return $this->mscRate;
   }
+<<<<<<< HEAD
+=======
   public function setScubedPSaiMusic($scubedPSaiMusic)
   {
     $this->scubedPSaiMusic = $scubedPSaiMusic;
@@ -101,6 +112,7 @@ class AssistantGroundingRankerMediaGroundingProviderFeatures extends \Google\Mod
   {
     return $this->scubedPSaiMusic;
   }
+>>>>>>> develop
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

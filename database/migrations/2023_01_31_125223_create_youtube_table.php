@@ -16,6 +16,7 @@ class CreateYoutubeTable extends Migration
         Schema::create('youtube_infos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id')->unique();
+            $table->unsignedBigInteger('channel_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('followers')->nullable();
             $table->unsignedBigInteger('videos')->nullable();

@@ -298,12 +298,16 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
      */
     public static function getCascadeFactors()
     {
+<<<<<<< HEAD
+        return static::$cascadeFactors ?: [
+=======
         return static::$cascadeFactors ?: static::getDefaultCascadeFactors();
     }
 
     protected static function getDefaultCascadeFactors(): array
     {
         return [
+>>>>>>> develop
             'milliseconds' => [Carbon::MICROSECONDS_PER_MILLISECOND, 'microseconds'],
             'seconds' => [Carbon::MILLISECONDS_PER_SECOND, 'milliseconds'],
             'minutes' => [Carbon::SECONDS_PER_MINUTE, 'seconds'],
@@ -1888,7 +1892,11 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
     /**
      * Invert the interval.
      *
+<<<<<<< HEAD
+     * @param bool|int $inverted if a parameter is passed, the passed value casted as 1 or 0 is used
+=======
      * @param bool|int $inverted if a parameter is passed, the passed value cast as 1 or 0 is used
+>>>>>>> develop
      *                           as the new value of the ->invert property.
      *
      * @return $this
@@ -2725,6 +2733,8 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
      */
     public function roundUnit($unit, $precision = 1, $function = 'round')
     {
+<<<<<<< HEAD
+=======
         if (static::getCascadeFactors() !== static::getDefaultCascadeFactors()) {
             $value = $function($this->total($unit) / $precision) * $precision;
             $inverted = $value < 0;
@@ -2734,6 +2744,7 @@ class CarbonInterval extends DateInterval implements CarbonConverterInterface
             )->invert($inverted)->cascade());
         }
 
+>>>>>>> develop
         $base = CarbonImmutable::parse('2000-01-01 00:00:00', 'UTC')
             ->roundUnit($unit, $precision, $function);
         $next = $base->add($this);

@@ -68,26 +68,46 @@ class CliTestDoxPrinter extends TestDoxPrinter
     ];
 
     private const STATUS_STYLES = [
+<<<<<<< HEAD
+        BaseTestRunner::STATUS_PASSED => [
+            'symbol' => '✔',
+            'color'  => 'fg-green',
+        ],
+        BaseTestRunner::STATUS_ERROR => [
+=======
         BaseTestRunner::STATUS_PASSED     => [
             'symbol' => '✔',
             'color'  => 'fg-green',
         ],
         BaseTestRunner::STATUS_ERROR      => [
+>>>>>>> develop
             'symbol'  => '✘',
             'color'   => 'fg-yellow',
             'message' => 'bg-yellow,fg-black',
         ],
+<<<<<<< HEAD
+        BaseTestRunner::STATUS_FAILURE => [
+=======
         BaseTestRunner::STATUS_FAILURE    => [
+>>>>>>> develop
             'symbol'  => '✘',
             'color'   => 'fg-red',
             'message' => 'bg-red,fg-white',
         ],
+<<<<<<< HEAD
+        BaseTestRunner::STATUS_SKIPPED => [
+=======
         BaseTestRunner::STATUS_SKIPPED    => [
+>>>>>>> develop
             'symbol'  => '↩',
             'color'   => 'fg-cyan',
             'message' => 'fg-cyan',
         ],
+<<<<<<< HEAD
+        BaseTestRunner::STATUS_RISKY => [
+=======
         BaseTestRunner::STATUS_RISKY      => [
+>>>>>>> develop
             'symbol'  => '☢',
             'color'   => 'fg-yellow',
             'message' => 'fg-yellow',
@@ -97,12 +117,20 @@ class CliTestDoxPrinter extends TestDoxPrinter
             'color'   => 'fg-yellow',
             'message' => 'fg-yellow',
         ],
+<<<<<<< HEAD
+        BaseTestRunner::STATUS_WARNING => [
+=======
         BaseTestRunner::STATUS_WARNING    => [
+>>>>>>> develop
             'symbol'  => '⚠',
             'color'   => 'fg-yellow',
             'message' => 'fg-yellow',
         ],
+<<<<<<< HEAD
+        BaseTestRunner::STATUS_UNKNOWN => [
+=======
         BaseTestRunner::STATUS_UNKNOWN    => [
+>>>>>>> develop
             'symbol'  => '?',
             'color'   => 'fg-blue',
             'message' => 'fg-white,bg-blue',

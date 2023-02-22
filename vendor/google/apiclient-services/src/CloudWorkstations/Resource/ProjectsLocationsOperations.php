@@ -18,9 +18,15 @@
 namespace Google\Service\CloudWorkstations\Resource;
 
 use Google\Service\CloudWorkstations\CancelOperationRequest;
+<<<<<<< HEAD
+use Google\Service\CloudWorkstations\ListOperationsResponse;
+use Google\Service\CloudWorkstations\Operation;
+use Google\Service\CloudWorkstations\WorkstationsEmpty;
+=======
 use Google\Service\CloudWorkstations\GoogleProtobufEmpty;
 use Google\Service\CloudWorkstations\ListOperationsResponse;
 use Google\Service\CloudWorkstations\Operation;
+>>>>>>> develop
 
 /**
  * The "operations" collection of methods.
@@ -46,13 +52,21 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
    * @param string $name The name of the operation resource to be cancelled.
    * @param CancelOperationRequest $postBody
    * @param array $optParams Optional parameters.
+<<<<<<< HEAD
+   * @return WorkstationsEmpty
+=======
    * @return GoogleProtobufEmpty
+>>>>>>> develop
    */
   public function cancel($name, CancelOperationRequest $postBody, $optParams = [])
   {
     $params = ['name' => $name, 'postBody' => $postBody];
     $params = array_merge($params, $optParams);
+<<<<<<< HEAD
+    return $this->call('cancel', [$params], WorkstationsEmpty::class);
+=======
     return $this->call('cancel', [$params], GoogleProtobufEmpty::class);
+>>>>>>> develop
   }
   /**
    * Deletes a long-running operation. This method indicates that the client is no
@@ -62,13 +76,21 @@ class ProjectsLocationsOperations extends \Google\Service\Resource
    *
    * @param string $name The name of the operation resource to be deleted.
    * @param array $optParams Optional parameters.
+<<<<<<< HEAD
+   * @return WorkstationsEmpty
+=======
    * @return GoogleProtobufEmpty
+>>>>>>> develop
    */
   public function delete($name, $optParams = [])
   {
     $params = ['name' => $name];
     $params = array_merge($params, $optParams);
+<<<<<<< HEAD
+    return $this->call('delete', [$params], WorkstationsEmpty::class);
+=======
     return $this->call('delete', [$params], GoogleProtobufEmpty::class);
+>>>>>>> develop
   }
   /**
    * Gets the latest state of a long-running operation. Clients can use this

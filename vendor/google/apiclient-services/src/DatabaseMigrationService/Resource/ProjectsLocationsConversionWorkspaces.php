@@ -168,7 +168,11 @@ class ProjectsLocationsConversionWorkspaces extends \Google\Service\Resource
    * @opt_param string commitId Request a specific commit id. If not specified,
    * the entities from the latest commit are returned.
    * @opt_param string filter Filter the returned entities based on AIP-160
+<<<<<<< HEAD
+   * standard
+=======
    * standard.
+>>>>>>> develop
    * @opt_param int pageSize The maximum number of entities to return. The service
    * may return fewer than this value.
    * @opt_param string pageToken The nextPageToken value received in the previous
@@ -177,7 +181,11 @@ class ProjectsLocationsConversionWorkspaces extends \Google\Service\Resource
    * left blank. When paginating, all other parameters provided to
    * conversionWorkspace.describeDatabaseEntities must match the call that
    * provided the page token.
+<<<<<<< HEAD
+   * @opt_param string tree The tree to fetch
+=======
    * @opt_param string tree The tree to fetch.
+>>>>>>> develop
    * @opt_param bool uncommitted Whether to retrieve the latest committed version
    * of the entities or the latest version. This field is ignored if a specific
    * commit_id is specified.

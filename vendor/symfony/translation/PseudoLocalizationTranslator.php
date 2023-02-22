@@ -20,16 +20,28 @@ final class PseudoLocalizationTranslator implements TranslatorInterface
 {
     private const EXPANSION_CHARACTER = '~';
 
+<<<<<<< HEAD
+    private $translator;
+    private $accents;
+    private $expansionFactor;
+    private $brackets;
+    private $parseHTML;
+=======
     private TranslatorInterface $translator;
     private bool $accents;
     private float $expansionFactor;
     private bool $brackets;
     private bool $parseHTML;
+>>>>>>> develop
 
     /**
      * @var string[]
      */
+<<<<<<< HEAD
+    private $localizableHTMLAttributes;
+=======
     private array $localizableHTMLAttributes;
+>>>>>>> develop
 
     /**
      * Available options:
@@ -83,6 +95,12 @@ final class PseudoLocalizationTranslator implements TranslatorInterface
         $this->localizableHTMLAttributes = $options['localizable_html_attributes'] ?? [];
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     public function trans(string $id, array $parameters = [], string $domain = null, string $locale = null): string
     {
         $trans = '';

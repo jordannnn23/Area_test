@@ -18,8 +18,13 @@ use DateTimeInterface;
 use Ramsey\Uuid\Converter\NumberConverterInterface;
 use Ramsey\Uuid\Exception\UnsupportedOperationException;
 use Ramsey\Uuid\Fields\FieldsInterface;
+<<<<<<< HEAD
+use Ramsey\Uuid\Nonstandard\UuidV6;
+use Ramsey\Uuid\Rfc4122\UuidV1;
+=======
 use Ramsey\Uuid\Rfc4122\UuidV1;
 use Ramsey\Uuid\Rfc4122\UuidV6;
+>>>>>>> develop
 use Ramsey\Uuid\Type\Hexadecimal;
 use Ramsey\Uuid\Type\Integer as IntegerObject;
 use Ramsey\Uuid\UuidFactory;
@@ -55,6 +60,20 @@ use function substr;
 final class LazyUuidFromString implements UuidInterface
 {
     public const VALID_REGEX = '/\A[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\z/ms';
+<<<<<<< HEAD
+    /**
+     * @var string
+     * @psalm-var non-empty-string
+     */
+    private $uuid;
+    /** @var UuidInterface|null */
+    private $unwrapped;
+
+    /** @psalm-param non-empty-string $uuid */
+    public function __construct(string $uuid)
+    {
+        $this->uuid = $uuid;
+=======
 
     private ?UuidInterface $unwrapped = null;
 
@@ -63,6 +82,7 @@ final class LazyUuidFromString implements UuidInterface
      */
     public function __construct(private string $uuid)
     {
+>>>>>>> develop
     }
 
     /** @psalm-pure */
@@ -101,6 +121,21 @@ final class LazyUuidFromString implements UuidInterface
     /**
      * {@inheritDoc}
      *
+<<<<<<< HEAD
+     * @param string $serialized
+     *
+     * @psalm-param non-empty-string $serialized
+     */
+    public function unserialize($serialized): void
+    {
+        $this->uuid = $serialized;
+    }
+
+    /**
+     * @param array{string: string} $data
+     *
+     * @psalm-param array{string: non-empty-string} $data
+=======
      * @param string $data
      *
      * @psalm-param non-empty-string $data
@@ -115,6 +150,7 @@ final class LazyUuidFromString implements UuidInterface
      *
      * @psalm-param array{string?: non-empty-string} $data
      * @psalm-suppress UnusedMethodCall
+>>>>>>> develop
      */
     public function __unserialize(array $data): void
     {

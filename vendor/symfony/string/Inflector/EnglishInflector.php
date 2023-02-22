@@ -350,6 +350,12 @@ final class EnglishInflector implements InflectorInterface
         'seiceps',
     ];
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     public function singularize(string $plural): array
     {
         $pluralRev = strrev($plural);
@@ -381,7 +387,11 @@ final class EnglishInflector implements InflectorInterface
                 if ($j === $suffixLength) {
                     // Is there any character preceding the suffix in the plural string?
                     if ($j < $pluralLength) {
+<<<<<<< HEAD
+                        $nextIsVocal = false !== strpos('aeiou', $lowerPluralRev[$j]);
+=======
                         $nextIsVocal = str_contains('aeiou', $lowerPluralRev[$j]);
+>>>>>>> develop
 
                         if (!$map[2] && $nextIsVocal) {
                             // suffix may not succeed a vocal but next char is one
@@ -426,6 +436,12 @@ final class EnglishInflector implements InflectorInterface
         return [$plural];
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     public function pluralize(string $singular): array
     {
         $singularRev = strrev($singular);
@@ -458,7 +474,11 @@ final class EnglishInflector implements InflectorInterface
                 if ($j === $suffixLength) {
                     // Is there any character preceding the suffix in the plural string?
                     if ($j < $singularLength) {
+<<<<<<< HEAD
+                        $nextIsVocal = false !== strpos('aeiou', $lowerSingularRev[$j]);
+=======
                         $nextIsVocal = str_contains('aeiou', $lowerSingularRev[$j]);
+>>>>>>> develop
 
                         if (!$map[2] && $nextIsVocal) {
                             // suffix may not succeed a vocal but next char is one

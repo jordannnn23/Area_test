@@ -61,10 +61,29 @@ class CombGenerator implements RandomGeneratorInterface
 {
     public const TIMESTAMP_BYTES = 6;
 
+<<<<<<< HEAD
+    /**
+     * @var RandomGeneratorInterface
+     */
+    private $randomGenerator;
+
+    /**
+     * @var NumberConverterInterface
+     */
+    private $converter;
+
+    public function __construct(
+        RandomGeneratorInterface $generator,
+        NumberConverterInterface $numberConverter
+    ) {
+        $this->converter = $numberConverter;
+        $this->randomGenerator = $generator;
+=======
     public function __construct(
         private RandomGeneratorInterface $generator,
         private NumberConverterInterface $numberConverter
     ) {
+>>>>>>> develop
     }
 
     /**
@@ -75,7 +94,11 @@ class CombGenerator implements RandomGeneratorInterface
      */
     public function generate(int $length): string
     {
+<<<<<<< HEAD
+        if ($length < self::TIMESTAMP_BYTES || $length < 0) {
+=======
         if ($length < self::TIMESTAMP_BYTES) {
+>>>>>>> develop
             throw new InvalidArgumentException(
                 'Length must be a positive integer greater than or equal to ' . self::TIMESTAMP_BYTES
             );
@@ -83,11 +106,19 @@ class CombGenerator implements RandomGeneratorInterface
 
         $hash = '';
         if (self::TIMESTAMP_BYTES > 0 && $length > self::TIMESTAMP_BYTES) {
+<<<<<<< HEAD
+            $hash = $this->randomGenerator->generate($length - self::TIMESTAMP_BYTES);
+        }
+
+        $lsbTime = str_pad(
+            $this->converter->toHex($this->timestamp()),
+=======
             $hash = $this->generator->generate($length - self::TIMESTAMP_BYTES);
         }
 
         $lsbTime = str_pad(
             $this->numberConverter->toHex($this->timestamp()),
+>>>>>>> develop
             self::TIMESTAMP_BYTES * 2,
             '0',
             STR_PAD_LEFT

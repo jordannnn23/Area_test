@@ -27,8 +27,13 @@ use function ob_start;
 use function preg_match;
 use function preg_match_all;
 use function reset;
+<<<<<<< HEAD
+use function str_replace;
+use function strpos;
+=======
 use function str_contains;
 use function str_replace;
+>>>>>>> develop
 use function strtolower;
 use function strtoupper;
 use function substr;
@@ -100,6 +105,14 @@ class SystemNodeProvider implements NodeProviderInterface
     {
         $disabledFunctions = strtolower((string) ini_get('disable_functions'));
 
+<<<<<<< HEAD
+        if (strpos($disabledFunctions, 'passthru') !== false) {
+            return '';
+        }
+
+        ob_start();
+        switch (strtoupper(substr(constant('PHP_OS'), 0, 3))) {
+=======
         if (str_contains($disabledFunctions, 'passthru')) {
             return '';
         }
@@ -112,6 +125,7 @@ class SystemNodeProvider implements NodeProviderInterface
 
         ob_start();
         switch (strtoupper(substr($phpOs, 0, 3))) {
+>>>>>>> develop
             case 'WIN':
                 passthru('ipconfig /all 2>&1');
 
@@ -133,6 +147,14 @@ class SystemNodeProvider implements NodeProviderInterface
 
         $ifconfig = (string) ob_get_clean();
 
+<<<<<<< HEAD
+        $node = '';
+        if (preg_match_all(self::IFCONFIG_PATTERN, $ifconfig, $matches, PREG_PATTERN_ORDER)) {
+            $node = $matches[1][0] ?? '';
+        }
+
+        return $node;
+=======
         if (preg_match_all(self::IFCONFIG_PATTERN, $ifconfig, $matches, PREG_PATTERN_ORDER)) {
             foreach ($matches[1] as $iface) {
                 if ($iface !== '00:00:00:00:00:00' && $iface !== '00-00-00-00-00-00') {
@@ -142,6 +164,7 @@ class SystemNodeProvider implements NodeProviderInterface
         }
 
         return '';
+>>>>>>> develop
     }
 
     /**
@@ -151,6 +174,9 @@ class SystemNodeProvider implements NodeProviderInterface
     {
         $mac = '';
 
+<<<<<<< HEAD
+        if (strtoupper(constant('PHP_OS')) === 'LINUX') {
+=======
         /**
          * @psalm-suppress UnnecessaryVarAnnotation
          * @var string $phpOs
@@ -158,13 +184,17 @@ class SystemNodeProvider implements NodeProviderInterface
         $phpOs = constant('PHP_OS');
 
         if (strtoupper($phpOs) === 'LINUX') {
+>>>>>>> develop
             $addressPaths = glob('/sys/class/net/*/address', GLOB_NOSORT);
 
             if ($addressPaths === false || count($addressPaths) === 0) {
                 return '';
             }
 
+<<<<<<< HEAD
+=======
             /** @var array<array-key, string> $macs */
+>>>>>>> develop
             $macs = [];
 
             array_walk($addressPaths, function (string $addressPath) use (&$macs): void {
@@ -173,10 +203,14 @@ class SystemNodeProvider implements NodeProviderInterface
                 }
             });
 
+<<<<<<< HEAD
+            $macs = array_map('trim', $macs);
+=======
             /** @var callable $trim */
             $trim = 'trim';
 
             $macs = array_map($trim, $macs);
+>>>>>>> develop
 
             // Remove invalid entries.
             $macs = array_filter($macs, function (string $address) {
@@ -184,7 +218,10 @@ class SystemNodeProvider implements NodeProviderInterface
                     && preg_match(self::SYSFS_PATTERN, $address);
             });
 
+<<<<<<< HEAD
+=======
             /** @var string|bool $mac */
+>>>>>>> develop
             $mac = reset($macs);
         }
 

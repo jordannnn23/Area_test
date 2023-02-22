@@ -33,6 +33,23 @@ class PeclUuidNameGenerator implements NameGeneratorInterface
     /** @psalm-pure */
     public function generate(UuidInterface $ns, string $name, string $hashAlgorithm): string
     {
+<<<<<<< HEAD
+        switch ($hashAlgorithm) {
+            case 'md5':
+                $uuid = uuid_generate_md5($ns->toString(), $name);
+
+                break;
+            case 'sha1':
+                $uuid = uuid_generate_sha1($ns->toString(), $name);
+
+                break;
+            default:
+                throw new NameException(sprintf(
+                    'Unable to hash namespace and name with algorithm \'%s\'',
+                    $hashAlgorithm
+                ));
+        }
+=======
         $uuid = match ($hashAlgorithm) {
             'md5' => uuid_generate_md5($ns->toString(), $name),
             'sha1' => uuid_generate_sha1($ns->toString(), $name),
@@ -43,6 +60,7 @@ class PeclUuidNameGenerator implements NameGeneratorInterface
                 )
             ),
         };
+>>>>>>> develop
 
         return uuid_parse($uuid);
     }

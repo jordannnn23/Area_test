@@ -24,6 +24,19 @@ interface MessageCatalogueInterface
 
     /**
      * Gets the catalogue locale.
+<<<<<<< HEAD
+     *
+     * @return string
+     */
+    public function getLocale();
+
+    /**
+     * Gets the domains.
+     *
+     * @return array
+     */
+    public function getDomains();
+=======
      */
     public function getLocale(): string;
 
@@ -31,6 +44,7 @@ interface MessageCatalogueInterface
      * Gets the domains.
      */
     public function getDomains(): array;
+>>>>>>> develop
 
     /**
      * Gets the messages within a given domain.
@@ -38,8 +52,15 @@ interface MessageCatalogueInterface
      * If $domain is null, it returns all messages.
      *
      * @param string $domain The domain name
+<<<<<<< HEAD
+     *
+     * @return array
+     */
+    public function all(string $domain = null);
+=======
      */
     public function all(string $domain = null): array;
+>>>>>>> develop
 
     /**
      * Sets a message translation.
@@ -55,24 +76,45 @@ interface MessageCatalogueInterface
      *
      * @param string $id     The message id
      * @param string $domain The domain name
+<<<<<<< HEAD
+     *
+     * @return bool
+     */
+    public function has(string $id, string $domain = 'messages');
+=======
      */
     public function has(string $id, string $domain = 'messages'): bool;
+>>>>>>> develop
 
     /**
      * Checks if a message has a translation (it does not take into account the fallback mechanism).
      *
      * @param string $id     The message id
      * @param string $domain The domain name
+<<<<<<< HEAD
+     *
+     * @return bool
+     */
+    public function defines(string $id, string $domain = 'messages');
+=======
      */
     public function defines(string $id, string $domain = 'messages'): bool;
+>>>>>>> develop
 
     /**
      * Gets a message translation.
      *
      * @param string $id     The message id
      * @param string $domain The domain name
+<<<<<<< HEAD
+     *
+     * @return string
+     */
+    public function get(string $id, string $domain = 'messages');
+=======
      */
     public function get(string $id, string $domain = 'messages'): string;
+>>>>>>> develop
 
     /**
      * Sets translations for a given domain.
@@ -107,15 +149,26 @@ interface MessageCatalogueInterface
 
     /**
      * Gets the fallback catalogue.
+<<<<<<< HEAD
+     *
+     * @return self|null
+     */
+    public function getFallbackCatalogue();
+=======
      */
     public function getFallbackCatalogue(): ?self;
+>>>>>>> develop
 
     /**
      * Returns an array of resources loaded to build this collection.
      *
      * @return ResourceInterface[]
      */
+<<<<<<< HEAD
+    public function getResources();
+=======
     public function getResources(): array;
+>>>>>>> develop
 
     /**
      * Adds a resource for this collection.

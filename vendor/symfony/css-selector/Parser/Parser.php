@@ -27,13 +27,23 @@ use Symfony\Component\CssSelector\Parser\Tokenizer\Tokenizer;
  */
 class Parser implements ParserInterface
 {
+<<<<<<< HEAD
+    private $tokenizer;
+=======
     private Tokenizer $tokenizer;
+>>>>>>> develop
 
     public function __construct(Tokenizer $tokenizer = null)
     {
         $this->tokenizer = $tokenizer ?? new Tokenizer();
     }
 
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+=======
+>>>>>>> develop
     public function parse(string $source): array
     {
         $reader = new Reader($source);
@@ -239,7 +249,11 @@ class Parser implements ParserInterface
                         }
                     }
 
+<<<<<<< HEAD
+                    if (empty($arguments)) {
+=======
                     if (!$arguments) {
+>>>>>>> develop
                         throw SyntaxErrorException::unexpectedToken('at least one argument', $next);
                     }
 

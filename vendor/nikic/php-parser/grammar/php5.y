@@ -264,6 +264,10 @@ optional_ellipsis:
     | T_ELLIPSIS                                            { $$ = true; }
 ;
 
+<<<<<<< HEAD
+function_declaration_statement:
+    T_FUNCTION optional_ref identifier '(' parameter_list ')' optional_return_type '{' inner_statement_list '}'
+=======
 identifier_maybe_readonly:
       identifier                                            { $$ = $1; }
     | T_READONLY                                            { $$ = Node\Identifier[$1]; }
@@ -271,6 +275,7 @@ identifier_maybe_readonly:
 
 function_declaration_statement:
     T_FUNCTION optional_ref identifier_maybe_readonly '(' parameter_list ')' optional_return_type '{' inner_statement_list '}'
+>>>>>>> develop
         { $$ = Stmt\Function_[$3, ['byRef' => $2, 'params' => $5, 'returnType' => $7, 'stmts' => $9]]; }
 ;
 
@@ -726,6 +731,10 @@ lexical_var:
       optional_ref plain_variable                           { $$ = Expr\ClosureUse[$2, $1]; }
 ;
 
+<<<<<<< HEAD
+function_call:
+      name argument_list                                    { $$ = Expr\FuncCall[$1, $2]; }
+=======
 name_readonly:
       T_READONLY                                            { $$ = Name[$1]; }
 ;
@@ -733,6 +742,7 @@ name_readonly:
 function_call:
       name argument_list                                    { $$ = Expr\FuncCall[$1, $2]; }
     | name_readonly argument_list                           { $$ = Expr\FuncCall[$1, $2]; }
+>>>>>>> develop
     | class_name_or_var T_PAAMAYIM_NEKUDOTAYIM identifier_ex argument_list
           { $$ = Expr\StaticCall[$1, $3, $4]; }
     | class_name_or_var T_PAAMAYIM_NEKUDOTAYIM '{' expr '}' argument_list

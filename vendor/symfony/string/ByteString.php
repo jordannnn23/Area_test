@@ -48,7 +48,11 @@ class ByteString extends AbstractString
             throw new InvalidArgumentException(sprintf('A strictly positive length is expected, "%d" given.', $length));
         }
 
+<<<<<<< HEAD
+        $alphabet = $alphabet ?? self::ALPHABET_ALPHANUMERIC;
+=======
         $alphabet ??= self::ALPHABET_ALPHANUMERIC;
+>>>>>>> develop
         $alphabetSize = \strlen($alphabet);
         $bits = (int) ceil(log($alphabetSize, 2.0));
         if ($bits <= 0 || $bits > 56) {
@@ -92,7 +96,11 @@ class ByteString extends AbstractString
         return '' === $str ? [] : [\ord($str)];
     }
 
+<<<<<<< HEAD
+    public function append(string ...$suffix): parent
+=======
     public function append(string ...$suffix): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string .= 1 >= \count($suffix) ? ($suffix[0] ?? '') : implode('', $suffix);
@@ -100,7 +108,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function camel(): parent
+=======
     public function camel(): static
+>>>>>>> develop
     {
         $str = clone $this;
 
@@ -132,23 +144,45 @@ class ByteString extends AbstractString
         return $chunks;
     }
 
+<<<<<<< HEAD
+    public function endsWith($suffix): bool
+    {
+        if ($suffix instanceof parent) {
+            $suffix = $suffix->string;
+        } elseif (\is_array($suffix) || $suffix instanceof \Traversable) {
+            return parent::endsWith($suffix);
+        } else {
+            $suffix = (string) $suffix;
+=======
     public function endsWith(string|iterable|AbstractString $suffix): bool
     {
         if ($suffix instanceof AbstractString) {
             $suffix = $suffix->string;
         } elseif (!\is_string($suffix)) {
             return parent::endsWith($suffix);
+>>>>>>> develop
         }
 
         return '' !== $suffix && \strlen($this->string) >= \strlen($suffix) && 0 === substr_compare($this->string, $suffix, -\strlen($suffix), null, $this->ignoreCase);
     }
 
+<<<<<<< HEAD
+    public function equalsTo($string): bool
+    {
+        if ($string instanceof parent) {
+            $string = $string->string;
+        } elseif (\is_array($string) || $string instanceof \Traversable) {
+            return parent::equalsTo($string);
+        } else {
+            $string = (string) $string;
+=======
     public function equalsTo(string|iterable|AbstractString $string): bool
     {
         if ($string instanceof AbstractString) {
             $string = $string->string;
         } elseif (!\is_string($string)) {
             return parent::equalsTo($string);
+>>>>>>> develop
         }
 
         if ('' !== $string && $this->ignoreCase) {
@@ -158,7 +192,11 @@ class ByteString extends AbstractString
         return $string === $this->string;
     }
 
+<<<<<<< HEAD
+    public function folded(): parent
+=======
     public function folded(): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = strtolower($str->string);
@@ -166,12 +204,23 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function indexOf($needle, int $offset = 0): ?int
+    {
+        if ($needle instanceof parent) {
+            $needle = $needle->string;
+        } elseif (\is_array($needle) || $needle instanceof \Traversable) {
+            return parent::indexOf($needle, $offset);
+        } else {
+            $needle = (string) $needle;
+=======
     public function indexOf(string|iterable|AbstractString $needle, int $offset = 0): ?int
     {
         if ($needle instanceof AbstractString) {
             $needle = $needle->string;
         } elseif (!\is_string($needle)) {
             return parent::indexOf($needle, $offset);
+>>>>>>> develop
         }
 
         if ('' === $needle) {
@@ -183,12 +232,23 @@ class ByteString extends AbstractString
         return false === $i ? null : $i;
     }
 
+<<<<<<< HEAD
+    public function indexOfLast($needle, int $offset = 0): ?int
+    {
+        if ($needle instanceof parent) {
+            $needle = $needle->string;
+        } elseif (\is_array($needle) || $needle instanceof \Traversable) {
+            return parent::indexOfLast($needle, $offset);
+        } else {
+            $needle = (string) $needle;
+=======
     public function indexOfLast(string|iterable|AbstractString $needle, int $offset = 0): ?int
     {
         if ($needle instanceof AbstractString) {
             $needle = $needle->string;
         } elseif (!\is_string($needle)) {
             return parent::indexOfLast($needle, $offset);
+>>>>>>> develop
         }
 
         if ('' === $needle) {
@@ -205,7 +265,11 @@ class ByteString extends AbstractString
         return '' === $this->string || preg_match('//u', $this->string);
     }
 
+<<<<<<< HEAD
+    public function join(array $strings, string $lastGlue = null): parent
+=======
     public function join(array $strings, string $lastGlue = null): static
+>>>>>>> develop
     {
         $str = clone $this;
 
@@ -220,7 +284,11 @@ class ByteString extends AbstractString
         return \strlen($this->string);
     }
 
+<<<<<<< HEAD
+    public function lower(): parent
+=======
     public function lower(): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = strtolower($str->string);
@@ -240,7 +308,19 @@ class ByteString extends AbstractString
 
         try {
             if (false === $match($regexp, $this->string, $matches, $flags | \PREG_UNMATCHED_AS_NULL, $offset)) {
+<<<<<<< HEAD
+                $lastError = preg_last_error();
+
+                foreach (get_defined_constants(true)['pcre'] as $k => $v) {
+                    if ($lastError === $v && '_ERROR' === substr($k, -6)) {
+                        throw new RuntimeException('Matching failed with '.$k.'.');
+                    }
+                }
+
+                throw new RuntimeException('Matching failed with unknown error code.');
+=======
                 throw new RuntimeException('Matching failed with error: '.preg_last_error_msg());
+>>>>>>> develop
             }
         } finally {
             restore_error_handler();
@@ -249,7 +329,11 @@ class ByteString extends AbstractString
         return $matches;
     }
 
+<<<<<<< HEAD
+    public function padBoth(int $length, string $padStr = ' '): parent
+=======
     public function padBoth(int $length, string $padStr = ' '): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = str_pad($this->string, $length, $padStr, \STR_PAD_BOTH);
@@ -257,7 +341,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function padEnd(int $length, string $padStr = ' '): parent
+=======
     public function padEnd(int $length, string $padStr = ' '): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = str_pad($this->string, $length, $padStr, \STR_PAD_RIGHT);
@@ -265,7 +353,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function padStart(int $length, string $padStr = ' '): parent
+=======
     public function padStart(int $length, string $padStr = ' '): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = str_pad($this->string, $length, $padStr, \STR_PAD_LEFT);
@@ -273,7 +365,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function prepend(string ...$prefix): parent
+=======
     public function prepend(string ...$prefix): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = (1 >= \count($prefix) ? ($prefix[0] ?? '') : implode('', $prefix)).$str->string;
@@ -281,7 +377,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function replace(string $from, string $to): parent
+=======
     public function replace(string $from, string $to): static
+>>>>>>> develop
     {
         $str = clone $this;
 
@@ -292,13 +392,29 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function replaceMatches(string $fromRegexp, $to): parent
+=======
     public function replaceMatches(string $fromRegexp, string|callable $to): static
+>>>>>>> develop
     {
         if ($this->ignoreCase) {
             $fromRegexp .= 'i';
         }
 
+<<<<<<< HEAD
+        if (\is_array($to)) {
+            if (!\is_callable($to)) {
+                throw new \TypeError(sprintf('Argument 2 passed to "%s::replaceMatches()" must be callable, array given.', static::class));
+            }
+
+            $replace = 'preg_replace_callback';
+        } else {
+            $replace = $to instanceof \Closure ? 'preg_replace_callback' : 'preg_replace';
+        }
+=======
         $replace = \is_array($to) || $to instanceof \Closure ? 'preg_replace_callback' : 'preg_replace';
+>>>>>>> develop
 
         set_error_handler(static function ($t, $m) { throw new InvalidArgumentException($m); });
 
@@ -307,7 +423,11 @@ class ByteString extends AbstractString
                 $lastError = preg_last_error();
 
                 foreach (get_defined_constants(true)['pcre'] as $k => $v) {
+<<<<<<< HEAD
+                    if ($lastError === $v && '_ERROR' === substr($k, -6)) {
+=======
                     if ($lastError === $v && str_ends_with($k, '_ERROR')) {
+>>>>>>> develop
                         throw new RuntimeException('Matching failed with '.$k.'.');
                     }
                 }
@@ -324,7 +444,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function reverse(): parent
+=======
     public function reverse(): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = strrev($str->string);
@@ -332,7 +456,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function slice(int $start = 0, int $length = null): parent
+=======
     public function slice(int $start = 0, int $length = null): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = (string) substr($this->string, $start, $length ?? \PHP_INT_MAX);
@@ -340,7 +468,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function snake(): parent
+=======
     public function snake(): static
+>>>>>>> develop
     {
         $str = $this->camel();
         $str->string = strtolower(preg_replace(['/([A-Z]+)([A-Z][a-z])/', '/([a-z\d])([A-Z])/'], '\1_\2', $str->string));
@@ -348,7 +480,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function splice(string $replacement, int $start = 0, int $length = null): parent
+=======
     public function splice(string $replacement, int $start = 0, int $length = null): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = substr_replace($this->string, $replacement, $start, $length ?? \PHP_INT_MAX);
@@ -358,7 +494,11 @@ class ByteString extends AbstractString
 
     public function split(string $delimiter, int $limit = null, int $flags = null): array
     {
+<<<<<<< HEAD
+        if (1 > $limit = $limit ?? \PHP_INT_MAX) {
+=======
         if (1 > $limit ??= \PHP_INT_MAX) {
+>>>>>>> develop
             throw new InvalidArgumentException('Split limit must be a positive integer.');
         }
 
@@ -383,9 +523,15 @@ class ByteString extends AbstractString
         return $chunks;
     }
 
+<<<<<<< HEAD
+    public function startsWith($prefix): bool
+    {
+        if ($prefix instanceof parent) {
+=======
     public function startsWith(string|iterable|AbstractString $prefix): bool
     {
         if ($prefix instanceof AbstractString) {
+>>>>>>> develop
             $prefix = $prefix->string;
         } elseif (!\is_string($prefix)) {
             return parent::startsWith($prefix);
@@ -394,7 +540,11 @@ class ByteString extends AbstractString
         return '' !== $prefix && 0 === ($this->ignoreCase ? strncasecmp($this->string, $prefix, \strlen($prefix)) : strncmp($this->string, $prefix, \strlen($prefix)));
     }
 
+<<<<<<< HEAD
+    public function title(bool $allWords = false): parent
+=======
     public function title(bool $allWords = false): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = $allWords ? ucwords($str->string) : ucfirst($str->string);
@@ -444,7 +594,11 @@ class ByteString extends AbstractString
         return $u;
     }
 
+<<<<<<< HEAD
+    public function trim(string $chars = " \t\n\r\0\x0B\x0C"): parent
+=======
     public function trim(string $chars = " \t\n\r\0\x0B\x0C"): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = trim($str->string, $chars);
@@ -452,7 +606,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function trimEnd(string $chars = " \t\n\r\0\x0B\x0C"): parent
+=======
     public function trimEnd(string $chars = " \t\n\r\0\x0B\x0C"): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = rtrim($str->string, $chars);
@@ -460,7 +618,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function trimStart(string $chars = " \t\n\r\0\x0B\x0C"): parent
+=======
     public function trimStart(string $chars = " \t\n\r\0\x0B\x0C"): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = ltrim($str->string, $chars);
@@ -468,7 +630,11 @@ class ByteString extends AbstractString
         return $str;
     }
 
+<<<<<<< HEAD
+    public function upper(): parent
+=======
     public function upper(): static
+>>>>>>> develop
     {
         $str = clone $this;
         $str->string = strtoupper($str->string);

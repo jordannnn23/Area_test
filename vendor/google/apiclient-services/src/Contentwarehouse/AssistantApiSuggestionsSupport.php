@@ -62,10 +62,13 @@ class AssistantApiSuggestionsSupport extends \Google\Collection
   /**
    * @var bool
    */
+<<<<<<< HEAD
+=======
   public $multiStepTrySayingSupported;
   /**
    * @var bool
    */
+>>>>>>> develop
   public $ruleIdInExecutionContextSupported;
   /**
    * @var bool
@@ -226,6 +229,8 @@ class AssistantApiSuggestionsSupport extends \Google\Collection
   /**
    * @param bool
    */
+<<<<<<< HEAD
+=======
   public function setMultiStepTrySayingSupported($multiStepTrySayingSupported)
   {
     $this->multiStepTrySayingSupported = $multiStepTrySayingSupported;
@@ -240,6 +245,7 @@ class AssistantApiSuggestionsSupport extends \Google\Collection
   /**
    * @param bool
    */
+>>>>>>> develop
   public function setRuleIdInExecutionContextSupported($ruleIdInExecutionContextSupported)
   {
     $this->ruleIdInExecutionContextSupported = $ruleIdInExecutionContextSupported;

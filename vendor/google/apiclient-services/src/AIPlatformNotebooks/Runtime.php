@@ -30,10 +30,13 @@ class Runtime extends \Google\Model
    * @var string
    */
   public $healthState;
+<<<<<<< HEAD
+=======
   /**
    * @var string[]
    */
   public $labels;
+>>>>>>> develop
   protected $metricsType = RuntimeMetrics::class;
   protected $metricsDataType = '';
   public $metrics;
@@ -99,6 +102,8 @@ class Runtime extends \Google\Model
     return $this->healthState;
   }
   /**
+<<<<<<< HEAD
+=======
    * @param string[]
    */
   public function setLabels($labels)
@@ -113,6 +118,7 @@ class Runtime extends \Google\Model
     return $this->labels;
   }
   /**
+>>>>>>> develop
    * @param RuntimeMetrics
    */
   public function setMetrics(RuntimeMetrics $metrics)

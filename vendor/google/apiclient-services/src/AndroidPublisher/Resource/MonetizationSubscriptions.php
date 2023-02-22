@@ -66,7 +66,11 @@ class MonetizationSubscriptions extends \Google\Service\Resource
    * field on the Subscription resource.
    * @opt_param string regionsVersion.version Required. A string representing
    * version of the available regions being used for the specified resource. The
+<<<<<<< HEAD
+   * current version is 2022/01.
+=======
    * current version is 2022/02.
+>>>>>>> develop
    * @return Subscription
    */
   public function create($packageName, Subscription $postBody, $optParams = [])
@@ -147,7 +151,11 @@ class MonetizationSubscriptions extends \Google\Service\Resource
    *
    * @opt_param string regionsVersion.version Required. A string representing
    * version of the available regions being used for the specified resource. The
+<<<<<<< HEAD
+   * current version is 2022/01.
+=======
    * current version is 2022/02.
+>>>>>>> develop
    * @opt_param string updateMask Required. The list of fields to be updated.
    * @return Subscription
    */

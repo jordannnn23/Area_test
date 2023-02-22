@@ -18,8 +18,13 @@ use Symfony\Component\Translation\Exception\UnsupportedSchemeException;
  */
 class TranslationProviderCollectionFactory
 {
+<<<<<<< HEAD
+    private $factories;
+    private $enabledLocales;
+=======
     private iterable $factories;
     private array $enabledLocales;
+>>>>>>> develop
 
     /**
      * @param iterable<mixed, ProviderFactoryInterface> $factories

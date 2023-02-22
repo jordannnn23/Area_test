@@ -22,10 +22,13 @@ class RepositoryWebrefEntityNameRatingsEntityNameRating extends \Google\Model
   /**
    * @var string
    */
+<<<<<<< HEAD
+=======
   public $comment;
   /**
    * @var string
    */
+>>>>>>> develop
   public $label;
   /**
    * @var string
@@ -35,6 +38,8 @@ class RepositoryWebrefEntityNameRatingsEntityNameRating extends \Google\Model
   /**
    * @param string
    */
+<<<<<<< HEAD
+=======
   public function setComment($comment)
   {
     $this->comment = $comment;
@@ -49,6 +54,7 @@ class RepositoryWebrefEntityNameRatingsEntityNameRating extends \Google\Model
   /**
    * @param string
    */
+>>>>>>> develop
   public function setLabel($label)
   {
     $this->label = $label;

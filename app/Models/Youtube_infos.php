@@ -12,6 +12,7 @@ class Youtube_infos extends Model
     protected $fillable = [
         'user_id',
         'followers',
+        'channel_id',
         'videos',
         'views',
         'description'

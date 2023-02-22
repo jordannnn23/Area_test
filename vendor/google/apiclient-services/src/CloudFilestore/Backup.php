@@ -36,10 +36,13 @@ class Backup extends \Google\Model
    */
   public $downloadBytes;
   /**
+<<<<<<< HEAD
+=======
    * @var string
    */
   public $kmsKey;
   /**
+>>>>>>> develop
    * @var string[]
    */
   public $labels;
@@ -129,6 +132,8 @@ class Backup extends \Google\Model
     return $this->downloadBytes;
   }
   /**
+<<<<<<< HEAD
+=======
    * @param string
    */
   public function setKmsKey($kmsKey)
@@ -143,6 +148,7 @@ class Backup extends \Google\Model
     return $this->kmsKey;
   }
   /**
+>>>>>>> develop
    * @param string[]
    */
   public function setLabels($labels)

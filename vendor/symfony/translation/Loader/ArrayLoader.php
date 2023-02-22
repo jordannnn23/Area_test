@@ -20,7 +20,14 @@ use Symfony\Component\Translation\MessageCatalogue;
  */
 class ArrayLoader implements LoaderInterface
 {
+<<<<<<< HEAD
+    /**
+     * {@inheritdoc}
+     */
+    public function load($resource, string $locale, string $domain = 'messages')
+=======
     public function load(mixed $resource, string $locale, string $domain = 'messages'): MessageCatalogue
+>>>>>>> develop
     {
         $resource = $this->flatten($resource);
         $catalogue = new MessageCatalogue($locale);

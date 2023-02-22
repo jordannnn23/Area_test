@@ -19,6 +19,8 @@ namespace Google\Service\Dataproc;
 
 class DiagnoseClusterRequest extends \Google\Model
 {
+<<<<<<< HEAD
+=======
   protected $diagnosisIntervalType = Interval::class;
   protected $diagnosisIntervalDataType = '';
   public $diagnosisInterval;
@@ -73,6 +75,7 @@ class DiagnoseClusterRequest extends \Google\Model
   {
     return $this->yarnApplicationId;
   }
+>>>>>>> develop
 }
 
 // Adding a class alias for backwards compatibility with the previous class name.

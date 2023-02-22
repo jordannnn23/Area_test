@@ -20,10 +20,13 @@ namespace Google\Service\ApigeeRegistry;
 class Artifact extends \Google\Model
 {
   /**
+<<<<<<< HEAD
+=======
    * @var string[]
    */
   public $annotations;
   /**
+>>>>>>> develop
    * @var string
    */
   public $contents;
@@ -36,10 +39,13 @@ class Artifact extends \Google\Model
    */
   public $hash;
   /**
+<<<<<<< HEAD
+=======
    * @var string[]
    */
   public $labels;
   /**
+>>>>>>> develop
    * @var string
    */
   public $mimeType;
@@ -57,6 +63,8 @@ class Artifact extends \Google\Model
   public $updateTime;
 
   /**
+<<<<<<< HEAD
+=======
    * @param string[]
    */
   public function setAnnotations($annotations)
@@ -71,6 +79,7 @@ class Artifact extends \Google\Model
     return $this->annotations;
   }
   /**
+>>>>>>> develop
    * @param string
    */
   public function setContents($contents)
@@ -113,6 +122,8 @@ class Artifact extends \Google\Model
     return $this->hash;
   }
   /**
+<<<<<<< HEAD
+=======
    * @param string[]
    */
   public function setLabels($labels)
@@ -127,6 +138,7 @@ class Artifact extends \Google\Model
     return $this->labels;
   }
   /**
+>>>>>>> develop
    * @param string
    */
   public function setMimeType($mimeType)
