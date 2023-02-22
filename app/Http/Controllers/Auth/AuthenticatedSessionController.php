@@ -31,7 +31,6 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-        // dd($request);
         return response()->json([
             'status' => '200',
             'message' => 'User log with success !'

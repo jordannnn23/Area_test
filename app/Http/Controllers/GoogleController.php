@@ -48,6 +48,7 @@ class GoogleController extends Controller
             ]);
         }
     }
+
     public function callbackFromGoogle(Request $request)
     {
         try {
@@ -56,6 +57,14 @@ class GoogleController extends Controller
             $user = Socialite::driver('google')->user();
             //dd($user);
             $finduser = User::where('google_id', $user->id)->first();
+
+            //dd("ok3");
+            // if ( $finduser ) {
+            //     $finduser->google_token = $user->google_token;
+            //     $finduser->google_refresh_token = $user->google_refresh_token;
+            //     $finduser->save();
+            //     Auth::login($finduser);
+            //     return redirect("http://localhost:3000/dashboard/services");
             //dd("ok3");
             if ( $finduser ) {
                 $email = $finduser->email;
@@ -72,15 +81,15 @@ class GoogleController extends Controller
                     'google_refresh_token'=> $user->refreshToken,
                     'password' => Hash::make($password)
                 ]);
-
                 Auth::login($newUser);
                 $data = ([
                     'subject' => 'Your password for area',
                     'body' => 'Thanks you for subscribe to Area.\n This is your password for area: '.$password
                 ]);
                 $this->send_mail($data);
+                Auth::login($user);
+                return redirect("http://localhost:3000/dashboard/services");
             }
-            return redirect("http://localhost:3000/dashboard/profile");
       
         } catch (Exception $e) {
             dd($e->getMessage());

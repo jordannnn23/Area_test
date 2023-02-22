@@ -9,6 +9,7 @@ use App\Models\User;
 class ProfileController extends Controller
 {
     //
+
     public function index($email)
     {
         $finduser = User::where('email', $email)->first();

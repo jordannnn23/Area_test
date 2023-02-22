@@ -6,6 +6,7 @@ use Google\Service\YouTube;
 use Google_Client;
 use Illuminate\Http\Request;
 use pubsubhubbub\publisher\Publisher;
+
 use App\Models\User;
 // use pubsubhubbub\subscriber\Subscriber;
 use App\Http\Controllers\Subscriber;
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Mail\MailNotify;
 use Illuminate\Support\Facades\Mail;
 use Exception;
+
 use PicoFeed\Reader\Reader;
 use PicoFeed\PicoFeedException;
 
@@ -22,6 +24,14 @@ class YoutubeController extends Controller
     //
     public function index()
     {
+        // $client = new Google_Client();
+        // $client->setDeveloperKey(env('API_YOUTUBE_KEY'));
+
+        // $youtube = new YouTube($client);
+
+        // $response = $youtube->search->listSearch('id, snippet', ['q' => 'Giannis Antetokounmpo',
+        // 'order' => 'relevance', 'maxResults' => 10, 'type' => 'video']);
+
         $client = new Google_Client();
         $client->setApplicationName('API code samples');
         $client->setScopes([
