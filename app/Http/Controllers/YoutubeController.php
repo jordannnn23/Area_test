@@ -115,7 +115,7 @@ class YoutubeController extends Controller
 
             $find_youtube->update();
         }
-        return redirect('youtube_register');
+        return redirect('youtube/register/'.$find_user->id);
     }
 
 
